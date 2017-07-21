@@ -20,7 +20,7 @@
   display: inline-block;
   vertical-align: top;
   position: relative;
-  font-size: 0.95rem;
+  font-size: 0.95em;
   font-family: $base-font-family-light;
   cursor: pointer;
   text-decoration: underline;
@@ -33,6 +33,7 @@
   display: inline-block;
   vertical-align: top;
   border: 0;
+  font-family: $base-font-family-light;
   font-size: $button-font-size;
   line-height: 1;
   //padding: 19px 41px;
@@ -71,7 +72,11 @@
   @include clearfix();
   max-width: $desktop-lg;
   margin: 0 auto;
-  padding: 0 $container-gutter;
+  padding: 0 $container-gutter-sm;
+
+  @media(min-width: $breakpoint-sm-md) {
+    padding: 0 $container-gutter;
+  }
 }
 
 

@@ -41,7 +41,7 @@ form {
 
 .form-cabinet-connection-password {
   max-width: $desktop-lg;
-  //margin: 30px auto;
+
   .form-row--login {
     max-width: 260px;
   }
@@ -116,7 +116,7 @@ form {
 
   textarea.form-control {
     min-height: 232px;
-    font-size: 1.154rem;
+    font-size: 1.154em;
   }
 
   .form-submit {
@@ -140,30 +140,6 @@ form {
     background-size: cover;
   }
 }
-
-/*.form-autorisation {
-  //max-width: 750px;
-  margin: 45px auto 0;
-  .form-control {
-    min-width: 260px;
-  }
-
-  !*.form-submit {
-    width: 162px;
-  }*!
-
-  .form-row--note {
-    margin-top: 42px;
-  }
-
-  .form-item--password .form-item__title {
-    display: block;
-  }
-
-    @media(min-width: $breakpoint-md) {
-    margin: 75px auto 0;
-  }
-}*/
 
 .form-row--note {
   margin-top: 40px;

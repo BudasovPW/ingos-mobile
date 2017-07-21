@@ -1,6 +1,6 @@
 $form-row-margin: 30px;
 $form-list-item-margin: 13px;
-$input-font-size: 1.154rem; //30px
+$input-font-size: 1.154em; //30px
 
 // TODO separate modifiers
 
@@ -10,7 +10,7 @@ $input-font-size: 1.154rem; //30px
   text-align: center;
 
   p {
-    font-size: 1rem;
+    font-size: 1em;
     text-align: left;
   }
   li {
@@ -68,7 +68,7 @@ $input-font-size: 1.154rem; //30px
 }
 
 .form-row__title {
-  font-size: 1.154rem; //30px
+  font-size: 1.154em; //30px
   line-height: 1.2;
   display: inline-block;
   padding-bottom: 7px;
@@ -103,7 +103,7 @@ $input-font-size: 1.154rem; //30px
 // Element of the form (input, textarea, select etc..)
 .form-control {
   width: 100%;
-  height: $input-height / 2;
+  height: $input-height / 2 * 1.5;
   padding: 0 19px;
   font-size: $input-font-size;
   color: #2f2f2f;
@@ -221,7 +221,6 @@ textarea.form-control {
 }
 
 .form-row--verification-troubleshooting {
-  font-size: 14px;
   .links-group {
     min-width: 360px;
   }
@@ -250,10 +249,10 @@ textarea.form-control {
 
 .form-submit {
   @extend %btn-primary;
-  min-height: $input-height / 2;
+  min-height: $input-height / 2 * 1.5;
 
   @media(min-width: $breakpoint-md) {
-    min-height: $input-height;
+    min-height: $input-height * 1.25;
   }
 }
 
@@ -294,7 +293,7 @@ textarea.form-control {
     display: block;
     padding-left: 55px;
     font-family: $base-font-family-light;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: $lineHeight;
     position: relative;
     &:before {
@@ -386,11 +385,22 @@ textarea.form-control {
 
 .parsley-errors-list {
   position: relative;
-  margin-top: 15px;
-  //bottom: -15px;
+  margin-top: 10px;
   left: 0;
   color: $brand-color;
-  font-size: $note-font-size;
+  font-size: $validation-font-size;
+
+  li {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media(min-width: $breakpoint-md) {
+    font-size: $validation-font-size-md;
+  }
 }
 
 
@@ -489,7 +499,7 @@ textarea.form-control {
   .text {
     position: absolute;
     left: 25px;
-    font-size: 1.154rem;
+    font-size: 1.154em;
     top: 50%;
     transform: translateY(-50%);
     white-space: nowrap;

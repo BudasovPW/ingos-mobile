@@ -1,16 +1,17 @@
 .page-header {
-  //background: url(../img/bg-signature-image.jpg) bottom center no-repeat $main-bg-color;
-  box-shadow:0 2px 2px 0 rgba(0,0,0,0.2);
-
+  box-shadow:0 2px 2px 0 rgba(0,0,0,0.12);
   height: 60px;
 
   @media(min-width: $breakpoint-md) {
-    height: 122px;
+    height: 120px;
   }
 }
 
 .header-row {
   height: 100%;
+  position: relative;
+  max-width: $desktop-lg;
+  margin: 0 auto;
 }
 
 

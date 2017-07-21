@@ -1,7 +1,9 @@
 // Responsive rules breakpoints
 $breakpoint-sm:             320px;
   $breakpoint-sm-max:       $breakpoint-sm - 1px;
-$breakpoint-md:             480px;
+$breakpoint-sm-md:          480px;
+  $breakpoint-sm-md-max:       $breakpoint-sm-md - 1px;
+$breakpoint-md:             570px;
   $breakpoint-md-max:       $breakpoint-md - 1px;
 $desktop-lg:                750px;
   $desktop-lg-max:          $desktop-lg - 1px;
@@ -10,7 +12,8 @@ $breakpoint-form:           570px;
 
 // Layout
 $container-width:           1170px;
-$container-gutter:          15px;
+$container-gutter:          30px;
+$container-gutter-sm:       20px;
 // $min-width:                 $tablet-breakpoint;
 
 // Colors
@@ -35,7 +38,7 @@ $color-step-active:         #e21e4b;
 
 // Font Settings
 $base-font-size:            26px;
-$button-font-size:          1.308rem; //34px
+$button-font-size:          1.308em; //34px
 
 $base-font-family-light:        'MuseoSansLight';
 $base-font-family-light-italic: 'MuseoSansLightItalic';
@@ -49,9 +52,11 @@ $font-default:              400;
 $font-light:                300;
 $bolder:                    700;
 $font-weight-black:         900;
-$note-font-size:            0.769rem; //20px
+$note-font-size:            0.769em; //20px
+$validation-font-size:      0.9em;
+$validation-font-size-md:   0.769em;
 
-// Form elements
+  // Form elements
 $input-height:              80px;
 $input-label-line-height:   $input-height;
 $form-item-padding:         30px;

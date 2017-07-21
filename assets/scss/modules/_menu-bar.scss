@@ -1,5 +1,10 @@
 .menu-bar {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  right: $container-gutter-sm;
+  height: 25px;
+  margin-top: -12px;
+
   > i {
     display: block;
     width: 40px;
@@ -13,6 +18,10 @@
   }
 
   @media(min-width: $breakpoint-md) {
+    right: $container-gutter;
+    height: 40px;
+    margin-top: -20px;
+
     > i {
       width: 60px;
       height: 8px;
