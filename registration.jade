@@ -1,10 +1,10 @@
 extends assets/jade/layouts/global/index
 block header
-	include assets/jade/layouts/global/partials/header-menu
+	include assets/jade/layouts/global/partials/header-menu-registration
 block content
 	.content-section.content-section--padding
 		.content-section__inner
-			.section-title
+			.section-title._no-b-indent
 				| Подключить личный кабинет
 
 			.section-subtitle
@@ -43,13 +43,14 @@ block content
 							| Номер мобильного телефона:
 
 						input(type='text'
-						placeholder='+7 (937) 524-54-19'
 						required,
+						pattern='.{18,}'
+						data-parsley-error-message='Введите значаение в формате +7 (XXX) XXX-XX-XX'
+						data-mask='+7 (000) 000-00-00'
+						placeholder='+7 (937) 542-54-19'
 						id='cabinet-connection-data-phone').form-control
 
-						p В формате&nbsp;
-							span.form-item__note
-								| +Х ХХХ ХХХХ-ХХХ-ХХ
+						p.form-item__note.text-center В формате + Х ХХХ ХХХХ-ХХХ-ХХ
 
 				.form-row
 					input(type='submit' value='Отправить').form-submit

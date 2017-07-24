@@ -55,3 +55,37 @@
   font-size: $note-font-size;
 }
 
+.header-menu {
+  position: relative;
+  z-index: 100;
+  top: 10px;
+  background: $main-bg-color;
+  display: none;
+
+  ._opened-menu & {
+    display: block;
+  }
+
+  &__item {
+    border-bottom: 1px solid $border-color;
+  }
+  &__link {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: $title-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @media(min-width: $breakpoint-sm-md) {
+      padding: 20px 30px;
+    }
+
+    @media(min-width: $desktop-lg) {
+      padding: 20px calc((100% - 750px + 120px)/2);
+    }
+  }
+}
+

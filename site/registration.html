@@ -13,14 +13,14 @@
           <div class="header__logo">
             <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
           </div>
-        </div><a href="#" class="menu-bar"><i></i><i></i><i></i></a>
+        </div>
       </div>
     </header>
     <main class="page-content">
       <div class="page-content__inner">
         <div class="content-section content-section--padding">
           <div class="content-section__inner">
-            <div class="section-title">Подключить личный кабинет</div>
+            <div class="section-title _no-b-indent">Подключить личный кабинет</div>
             <div class="section-subtitle">Укажите свои данные</div>
             <form method="" action="" class="form-cabinet-connection-data js-form-validate">
               <div class="form-row">
@@ -37,8 +37,8 @@
               </div>
               <div class="form-row">
                 <label for="cabinet-connection-data-phone" class="form-row__title">Номер мобильного телефона:</label>
-                <input type="text" placeholder="+7 (937) 524-54-19" required id="cabinet-connection-data-phone" class="form-control">
-                <p>В формате&nbsp;<span class="form-item__note">+Х ХХХ ХХХХ-ХХХ-ХХ</span></p>
+                <input type="text" required pattern=".{18,}" data-parsley-error-message="Введите значаение в формате +7 (XXX) XXX-XX-XX" data-mask="+7 (000) 000-00-00" placeholder="+7 (937) 542-54-19" id="cabinet-connection-data-phone" class="form-control">
+                <p class="form-item__note text-center">В формате + Х ХХХ ХХХХ-ХХХ-ХХ</p>
               </div>
               <div class="form-row">
                 <input type="submit" value="Отправить" class="form-submit">
@@ -72,6 +72,7 @@
     <!--include ../../partials/modal-popups/-->
     <script type="text/javascript" src="assets/js/libs/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/jquery.mask.js"></script>
     <script type="text/javascript" src="assets/js/vendors/bootstrap-modal.js"></script>
     <script type="text/javascript" src="assets/js/vendors/password-strength.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>

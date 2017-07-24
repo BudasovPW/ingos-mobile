@@ -36,7 +36,8 @@ var commonActions = (function (document, $) {
         openModal: '.js-open-modal',
         closeModal: '.js-close-modal',
         datepickerIcon: 'data-range-input__icon',
-        datepickerValue: 'data-range-input__value'
+        datepickerValue: 'data-range-input__value',
+        toggleMenuIcon: '.js-toggle-menu'
     };
 
     var className = {
@@ -196,6 +197,18 @@ var commonActions = (function (document, $) {
         });
     }
 
+    function _toggleMainMenu() {
+        $(selector.toggleMenuIcon).on('click', function(){
+            $('body').toggleClass('_opened-menu');
+        });
+
+        $(document).mouseup(function(e) {
+            if (!$('.header-menu__link').is(e.target) && !$(selector.toggleMenuIcon).is(e.target) && !$(selector.toggleMenuIcon).find('i').is(e.target)) {
+                $('body').removeClass('_opened-menu');
+            }
+        });
+    }
+
     function _onDocumentClick() {
 
     }
@@ -243,6 +256,8 @@ var commonActions = (function (document, $) {
         _tabs();
 
         _slidingMenu();
+
+        _toggleMainMenu();
 
         if($('input[data-validate-strength]').length) {
             $('input[data-validate-strength]').passwordStrength();

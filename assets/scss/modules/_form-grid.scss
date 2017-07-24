@@ -58,7 +58,7 @@ $form-grid-padding: 40px;
     @include form-grid-table();
   }
 
-  @media(min-width: $breakpoint-md) {
+  @media(min-width: $breakpoint-sm-md) {
     @include form-grid-table();
   }
 

@@ -17,6 +17,26 @@
     }
   }
 
+  ._opened-menu & {
+    & i {
+      position: relative;
+      top: 10px;
+      transform: rotate(-45deg);
+
+      &:not(:first-child) {
+        transform: rotate(45deg);
+        top: 0;
+      }
+      &:last-child {
+        display: none;
+      }
+
+      @media(min-width: $breakpoint-md) {
+        top: 16px;
+      }
+    }
+  }
+
   @media(min-width: $breakpoint-md) {
     right: $container-gutter;
     height: 40px;
