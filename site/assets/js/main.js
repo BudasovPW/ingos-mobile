@@ -203,7 +203,7 @@ var commonActions = (function (document, $) {
         });
 
         $(document).mouseup(function(e) {
-            if (!$('.header-menu__link').is(e.target) && !$(selector.toggleMenuIcon).is(e.target) && !$(selector.toggleMenuIcon).find('i').is(e.target)) {
+            if (!$('.header-menu__link').is(e.target) && !$('.header-menu__link').children().is(e.target) && !$(selector.toggleMenuIcon).is(e.target) && !$(selector.toggleMenuIcon).children().is(e.target)) {
                 $('body').removeClass('_opened-menu');
             }
         });

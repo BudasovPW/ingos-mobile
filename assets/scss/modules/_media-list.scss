@@ -28,11 +28,6 @@
 }
 
 
-.media-preview {
-
-}
-
-
 .media-preview__viewport {
   position: relative;
 
@@ -91,6 +86,5 @@
 
 
 .media-preview__posttime {
-  @extend p;
   margin-bottom: 0;
 }

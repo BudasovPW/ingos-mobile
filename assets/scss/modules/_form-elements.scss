@@ -316,7 +316,6 @@ textarea.form-control {
 .form-note {
   line-height: 1.4;
   text-align: center;
-  @extend p;
 }
 
 // Styled checkboxes
@@ -331,7 +330,6 @@ textarea.form-control {
     position: relative;
     cursor: pointer;
 
-    @extend p;
   }
   &:not(:checked) + label:before, &:checked + label:before {
     content: '';

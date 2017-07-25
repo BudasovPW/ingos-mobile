@@ -1,9 +1,12 @@
 extends assets/jade/layouts/global/index
 
+block header
+	include assets/jade/layouts/global/partials/header-menu-autorization
+
 block content
-	.content-section
+	.content-section.error-page-content
 		.content-section__inner
-			.section-title
+			.section-title._no-b-indent
 				| Ошибка 404.
 				br
 				| Страница не найдена

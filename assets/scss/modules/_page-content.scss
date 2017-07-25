@@ -516,12 +516,33 @@ $adventage-bottom-margin: 35px;
   }
 }
 
-
-
 .section-upload {
   position: relative;
   background: $dark-bg-color;
   padding:35px 0 1px 0;
+}
+
+.error-page-content {
+
+  p {
+    margin-bottom: 15px;
+
+    @media(min-width: $breakpoint-sm) {
+
+    }
+
+    @media(min-width: $breakpoint-md) {
+      margin-bottom: 35px;
+    }
+  }
+
+  .links-list {
+    margin-bottom: 25px;
+
+    @media(min-width: $breakpoint-md) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 

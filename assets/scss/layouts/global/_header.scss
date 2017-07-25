@@ -56,9 +56,11 @@
 }
 
 .header-menu {
-  position: relative;
+  position: absolute;
   z-index: 100;
-  top: 10px;
+  width: 100%;
+  top: 70px;
+  left: 0;
   background: $main-bg-color;
   display: none;
 
@@ -68,6 +70,12 @@
 
   &__item {
     border-bottom: 1px solid $border-color;
+    cursor: pointer;
+
+    .header-menu__submenu & {
+      border-bottom: none;
+      background: $grey-bg-color;
+    }
   }
   &__link {
     display: block;
@@ -79,6 +87,15 @@
       text-decoration: underline;
     }
 
+    .header-menu__submenu & {
+      font-size: 1rem;
+      font-family: $base-font-family-light;
+
+      @media(min-width: $breakpoint-md) {
+        font-size: 0.75rem;
+      }
+    }
+
     @media(min-width: $breakpoint-sm-md) {
       padding: 20px 30px;
     }
@@ -87,5 +104,71 @@
       padding: 20px calc((100% - 750px + 120px)/2);
     }
   }
+
+  &__submenu {
+    display: none;
+
+    &.is-visible {
+      display: block;
+    }
+  }
+  &__toggle-icon {
+    width: 24px;
+    height: 14px;
+    margin-right: 6px;
+    position: relative;
+    top: 5px;
+    float: right;
+    transition: transform 0.2s linear;
+
+    .is-active & {
+        transform: rotate(180deg);
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: -2px;
+      width: 17px;
+      height: 3px;
+      border-radius: 3px;
+      background: $arrow-color;
+      transform: rotate(-135deg);
+    }
+    &::after {
+      left: 8px;
+      transform: rotate(135deg);
+    }
+  }
+
+
+  @media(min-width: $breakpoint-md) {
+    top: 130px;
+  }
 }
+.notice-count {
+  width: 40px;
+  height: 40px;
+  background: $degree-color;
+  font-size: 0.85rem;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: $border-radius-circle;
+  top: -13px;
+  right: -1px;
+  position: relative;
+  float: right;
+
+  @media(min-width: $breakpoint-md) {
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    top: -13px;
+    right: -10px;
+  }
+}
+
 

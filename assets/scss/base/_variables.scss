@@ -20,6 +20,7 @@ $container-gutter-sm:       20px;
 $text-color:                #2f2f2f;
 $brand-color:               #e21e4b;
 $title-color:               #2c2c2c;
+$arrow-color:               #2c2c2c;
 $link-color:                #005aa4;
 $link-hover-color:          green;
 $link-accent:               #e21e4b;
@@ -63,6 +64,7 @@ $form-item-padding:         30px;
 
 // Elements decoration
 $border-radius:             4px;
+$border-radius-circle:      50%;
 $box-shadow:                0 1px 2px rgba(0,0,0,0.15);
 $transition-time:           .1s;
 

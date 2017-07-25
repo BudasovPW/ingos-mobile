@@ -171,16 +171,16 @@ $table-font-size: 13px;
   }
 
   .sum_left-border {
-    border-left: 1px solid #dcdedf;
+    border-left: 1px solid $border-color;
   }
 
   .sum_right-border {
-    border-right: 1px solid #dcdedf;
+    border-right: 1px solid $border-color;
   }
 
   .sum_top-bottom-border {
-    border-bottom: 1px solid #dcdedf;
-    border-top: 1px solid #dcdedf;
+    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $border-color;
   }
 
   .asterisk {
