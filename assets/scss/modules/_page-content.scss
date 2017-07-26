@@ -170,7 +170,7 @@
   line-height: 1.2;
   background: $dark-bg-color;
   border-radius: $border-radius;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: $base-font-family-light;
   @media(min-width: $breakpoint-md) {
     padding: 40px;
@@ -348,7 +348,7 @@ $adventage-bottom-margin: 35px;
   width: 100%;
   height: 60px;
   color: #fff;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: $base-font-family-light;
   background: $color-step-default;
   border-radius: 5px;
@@ -377,7 +377,7 @@ $adventage-bottom-margin: 35px;
 
 .obj-list {
   width: 100%;
-  font-size: 1em;
+  font-size: 1rem;
   > .type-row {}
   > .type-row,
   > .type-cell {
@@ -436,9 +436,9 @@ $adventage-bottom-margin: 35px;
   display: table;
   width: 100%;
   font-family: $base-font-family-light;
-  font-size: 0.769em;
+  font-size: 0.769rem;
   @media(min-width: $breakpoint-md) {
-    font-size: 0.923em;
+    font-size: 0.923rem;
   }
   > .type-row {
     display: table-row;
@@ -498,11 +498,11 @@ $adventage-bottom-margin: 35px;
     border-radius: 100%;
   }
   .user-question__name {
-    font-size: 1em;
+    font-size: 1rem;
   }
   .user-question__status {
     font-family: $base-font-family-light;
-    font-size: 0.846em;
+    font-size: 0.846rem;
     color: #8c9196;
   }
 

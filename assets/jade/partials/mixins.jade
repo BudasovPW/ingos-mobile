@@ -1,10 +1,16 @@
-mixin media-list-item(image, videoLength, caption, time)
+mixin media-list-item(image, caption, time)
     .media-list__item
         .media-list__item-inner
             .media-preview
-                .media-preview__viewport
-                    img(src='#{image}' alt='')
-                    .media-preview__video-length-label #{videoLength}
+                .media-preview__video
+                    video(preload='auto', poster='#{image}', data-setup='{}', controls ).vjs-default-skin.video-js.vjs-16-9
+                        source(src='https://vjs.zencdn.net/v/oceans.mp4' type='video/mp4')
+                        source(src='https://vjs.zencdn.net/v/oceans.webm' type='video/webm')
+                        p.vjs-no-js
+                            | To view this video please enable JavaScript, and consider upgrading to a web browser that
+                            a(href='http://videojs.com/html5-video-support/' target='_blank')
+                                | supports HTML5 video
+
                 .media-preview__description
                     .media-preview__caption
                         - for(var i=0; i<caption.length; i++) {

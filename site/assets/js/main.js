@@ -209,6 +209,12 @@ var commonActions = (function (document, $) {
         });
     }
 
+    function _initCustomFormElements() {
+        if($('select').length){
+            $('select').selectric();
+        }
+    }
+
     function _onDocumentClick() {
 
     }
@@ -262,6 +268,8 @@ var commonActions = (function (document, $) {
         if($('input[data-validate-strength]').length) {
             $('input[data-validate-strength]').passwordStrength();
         }
+
+        _initCustomFormElements();
 
     }
 

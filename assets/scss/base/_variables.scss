@@ -39,7 +39,7 @@ $color-step-active:         #e21e4b;
 
 // Font Settings
 $base-font-size:            26px;
-$button-font-size:          1.308em; //34px
+$button-font-size:          1.308rem; //34px
 
 $base-font-family-light:        'MuseoSansLight';
 $base-font-family-light-italic: 'MuseoSansLightItalic';
@@ -53,14 +53,15 @@ $font-default:              400;
 $font-light:                300;
 $bolder:                    700;
 $font-weight-black:         900;
-$note-font-size:            0.769em; //20px
-$validation-font-size:      0.9em;
-$validation-font-size-md:   0.769em;
+$note-font-size:            0.769rem; //20px
+$validation-font-size:      0.9rem;
+$validation-font-size-md:   0.769rem;
 
   // Form elements
 $input-height:              80px;
 $input-label-line-height:   $input-height;
 $form-item-padding:         30px;
+$form-control-focus:        #00adeb;
 
 // Elements decoration
 $border-radius:             4px;

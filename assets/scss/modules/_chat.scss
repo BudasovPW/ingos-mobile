@@ -30,7 +30,7 @@ $chat-message-font-size: 14px;
 .chat-manager__actions {
   position:absolute;
   bottom:0;
-  font-size: 1em;
+  font-size: 1rem;
   white-space: nowrap;
   @media(min-width: $breakpoint-md) {
     white-space: normal;
@@ -104,11 +104,11 @@ $chat-message-font-size: 14px;
 }
 
 .person-preview__name {
-  font-size: 1.154em;
+  font-size: 1.154rem;
 }
 
 .person-preview__contacts {
-  font-size: 1em;
+  font-size: 1rem;
   font-family: $base-font-family-light;
   margin-top: 5px;
 }

@@ -25,7 +25,7 @@
 
 .price-inline__dot-value {
   font-family: $base-font-family-light;
-  font-size: 0.462em; //12px
+  font-size: 0.462rem; //12px
   &::before {
     content: ".";
     font-size: $base-font-size;
@@ -58,7 +58,7 @@
 }
 
 .fontSizeBase {
-  font-size: 1em !important;
+  font-size: 1rem !important;
 }
 
 .marginTop20 {

@@ -11,16 +11,16 @@ block content
 					label.form-row__title
 						| Архив по годам:
 
-					input(type='password'
-						required,
-						placeholder='2016').form-control
+					select.form-control.center
+						option 2015
+						option 2016
+						option 2017
 
 
 
 	.media-list
 		+media-list-item(
 			'assets/img/media-1.png',
-			'08:20',
 			[
 				'Личные финансы с Натальей Смирновой. Выпуск 18. Паевый инвестиционный фонд (ПИФ)',
 			],
@@ -28,7 +28,6 @@ block content
 		)
 		+media-list-item(
 			'assets/img/media-2.png',
-			'08:20',
 			[
 				'Личные финансы с Натальей Смирновой. Выпуск 18. Пожизненный источник дохода',
 			],

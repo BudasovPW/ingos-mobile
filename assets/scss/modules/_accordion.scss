@@ -9,7 +9,7 @@ $accordion-title-padding: 10px;
 .accordion__section-title {
   position: relative;
   padding: 23px 0 20px 0;
-  font-size: 1.385em;
+  font-size: 1.385rem;
   cursor: pointer;
   user-select: none;
   color: $title-color;
@@ -48,7 +48,7 @@ $accordion-title-padding: 10px;
 
 .accordion__section {
   display: none;
-  font-size: 1em;
+  font-size: 1rem;
   color: $title-color;
   &:not(:last-child) {
     border-bottom: 1px solid $border-color;
@@ -69,7 +69,7 @@ $accordion-title-padding: 10px;
   text-align: left;
   .title {
     font-family: $base-font-family;
-    font-size: 1.385em;
+    font-size: 1.385rem;
   }
 
   .title__note {

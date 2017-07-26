@@ -66,30 +66,30 @@
 .btn-primary {
   @extend %btn-primary;
 
-  min-height: $input-height / 2;
+  min-height: $input-height / 2 * 1.5;
 
   @media(min-width: $breakpoint-md) {
-    min-height: $input-height;
+    min-height: $input-height * 1.25;
   }
 }
 
 .btn-primary-inverted {
   @extend %btn-primary-inverted;
 
-  min-height: $input-height / 2;
+  min-height: $input-height / 2 * 1.5;
 
   @media(min-width: $breakpoint-md) {
-    min-height: $input-height;
+    min-height: $input-height * 1.25;
   }
 }
 
 .btn-grey {
   @extend %btn-grey;
 
-  min-height: $input-height / 2;
+  min-height: $input-height / 2 * 1.5;
 
   @media(min-width: $breakpoint-md) {
-    min-height: $input-height;
+    min-height: $input-height * 1.25;
   }
 }
 
