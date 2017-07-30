@@ -1,4 +1,4 @@
-form(method='' action='')
+form(method='' action='').js-form-validate
     .form-row.content-section__inner
         label(for='profile-data-second-name').form-row__title
             | Фамилия:
@@ -33,21 +33,9 @@ form(method='' action='')
             li Справка 2 НДФЛ
 
     .form-row.section-upload
-        .content-section__inner
-            .form-row.content-section__inner
-                label.form-row__title
-                    | Выберите файлы
+        .form-row.content-section__inner
 
-                button.btn-grey.small
-                    | Выбрать
-
-                .form-row.marginTop30
-                    .form-fake.style-delete
-                        .text test 1
-
-                .form-row
-                    .form-fake.style-delete
-                        .text test 2
+            #fileUploader
 
     .form-row.content-section__inner
         input(type='submit' value='Отправить').form-submit

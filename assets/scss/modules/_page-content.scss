@@ -165,7 +165,7 @@
   display: none;
   margin-top: 15px;
   margin-bottom: 8px;
-  margin-left: -29px;
+  margin-left: -20px;
   padding: 20px;
   line-height: 1.2;
   background: $dark-bg-color;
@@ -174,6 +174,7 @@
   font-family: $base-font-family-light;
   @media(min-width: $breakpoint-md) {
     padding: 40px;
+    margin-left: -40px;
   }
 }
 
@@ -436,10 +437,9 @@ $adventage-bottom-margin: 35px;
   display: table;
   width: 100%;
   font-family: $base-font-family-light;
-  font-size: 0.769rem;
-  @media(min-width: $breakpoint-md) {
-    font-size: 0.923rem;
-  }
+  font-size: 0.923rem;
+  line-height: 1.2;
+
   > .type-row {
     display: table-row;
   }
@@ -450,16 +450,18 @@ $adventage-bottom-margin: 35px;
   }
   > .type-row >.type-cell,
   > .type-cell {
-    padding: 20px 0;
+    padding: 15px 0;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 20px 0;
+    }
   }
 
   &.full {
     display: block;
     > .type-row {
       display: block;
-      &:not(:last-child) {
-        border-bottom: 1px solid $border-color;
-      }
+      border-bottom: 2px solid $border-color;
     }
     > .type-row .type-cell,
     > .type-cell {
@@ -473,7 +475,7 @@ $adventage-bottom-margin: 35px;
           &:first-child {
             width: 130px;
             @media(min-width: $breakpoint-md) {
-              width: 185px;
+              width: 205px;
             }
           }
           &:last-child {
@@ -492,10 +494,17 @@ $adventage-bottom-margin: 35px;
 
   .icon-question {
     display: block;
-    width: 70px;
-    height: 70px;
-    border: 2px solid #8c9196;
-    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-loading.png) no-repeat top center;
+    background-size: cover;
+    margin-right: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      margin-right: 0;
+      width: 70px;
+      height: 70px;
+    }
   }
   .user-question__name {
     font-size: 1rem;
@@ -504,11 +513,16 @@ $adventage-bottom-margin: 35px;
     font-family: $base-font-family-light;
     font-size: 0.846rem;
     color: #8c9196;
+
+    @media(min-width: $breakpoint-md) {
+      margin-top: -8px;
+    }
   }
 
   &.is-solved {
     .icon-question {
-      border-color: #0ca462;
+      background: url(../img/icon-added.png) no-repeat top center;
+      background-size: cover;
     }
     .user-question__status {
       color: #0ca462;
@@ -520,6 +534,86 @@ $adventage-bottom-margin: 35px;
   position: relative;
   background: $dark-bg-color;
   padding:35px 0 1px 0;
+}
+.ajax-upload-dragdrop {
+  width: 100% !important;
+  text-align: center;
+  vertical-align: middle;
+  display: table;
+}
+.custom-drag-and-drop__text {
+  display: table-header-group;
+  font-size: 1.154rem;
+  line-height: 1.2;
+  font-family: $base-font-family-light;
+}
+.ajax-file-upload {
+  @include button();
+  color: white;
+  background: $color-step-default;
+  text-align: center;
+  width: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding: 20px 90px;
+  font-size: 1rem;
+  &:hover {
+    background-color: lighten($color-step-default,5%);
+  }
+  &:active {
+    outline: none;
+    background-color: darken($color-step-default,5%);
+  }
+}
+.ajax-file-upload-statusbar {
+  font-size: 1rem;
+  font-family: $base-font-family-light;
+  border: 1px solid $border-color;
+  width: 100% !important;
+  background: $main-bg-color;
+  border-radius: $border-radius;
+  margin-top: 20px;
+  padding: 10px 60px 10px 40px;
+  text-align: left;
+  position: relative;
+
+  @media(min-width: $breakpoint-md) {
+    padding: 15px 60px 15px 40px;
+  }
+}
+.ajax-file-upload-red {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  margin-top: -11px;
+  text-indent: -9999px;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: $title-color;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.ajax-file-upload-filename {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  word-break: break-all;
+}
+.ajax-file-upload-green,
+.ajax-file-upload-progress{
+  display: none !important;
 }
 
 .error-page-content {

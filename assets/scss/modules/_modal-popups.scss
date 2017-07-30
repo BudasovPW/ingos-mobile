@@ -5,10 +5,14 @@
 
 .modal__title {
   @extend .section-title;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-size: 25px;
   margin-top: 0;
   font-size: 1.385rem;
+
+  @media(min-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
 }
 
 .modal__subtitle {
@@ -47,7 +51,7 @@ $modal-header-border-color:   #e5e5e5;
 //** Modal footer border color
 $modal-footer-border-color:   $modal-header-border-color;
 
-$modal-width:                 584px;
+$modal-width:                 690px;
 $modal-width-sm:              300px;
 
 //
@@ -97,19 +101,23 @@ $modal-width-sm:              300px;
 .modal-dialog {
   position: absolute;
   padding: 20px;
-  top: 50%;
   left: 0;
   right: 0;
-  transform: translateY(-50%);
   width: $modal-width;
-  max-width: 100%;
-  margin: auto;
   z-index: 999;
   border-radius: $border-radius;
   background: $main-bg-color;
+  max-width: calc(100% - 40px);
+  top: 20px;
+  transform: translateY(0);
+  margin: auto auto 20px;
 
   @media(min-width: $breakpoint-md) {
     padding: $modal-inner-padding;
+    max-width: calc(100% - 60px);
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
   }
 
   button {

@@ -37,7 +37,8 @@ var commonActions = (function (document, $) {
         closeModal: '.js-close-modal',
         datepickerIcon: 'data-range-input__icon',
         datepickerValue: 'data-range-input__value',
-        toggleMenuIcon: '.js-toggle-menu'
+        toggleMenuIcon: '.js-toggle-menu',
+        fileUploader: '#fileUploader',
     };
 
     var className = {
@@ -215,6 +216,17 @@ var commonActions = (function (document, $) {
         }
     }
 
+    function _uploadFile() {
+        if($(selector.fileUploader).length) {
+            $(selector.fileUploader).uploadFile({
+                dragDropStr: "<div class='custom-drag-and-drop__text'>Выберите файлы</div>",
+                uploadStr: "Выбрать",
+                showDelete: true,
+                showFileCounter: false
+            });
+        }
+    }
+
     function _onDocumentClick() {
 
     }
@@ -270,6 +282,8 @@ var commonActions = (function (document, $) {
         }
 
         _initCustomFormElements();
+
+        _uploadFile();
 
     }
 

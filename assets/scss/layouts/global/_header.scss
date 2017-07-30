@@ -1,6 +1,8 @@
 .page-header {
   box-shadow:0 2px 2px 0 rgba(0,0,0,0.12);
   height: 60px;
+  position: relative;
+  z-index: 10;
 
   @media(min-width: $breakpoint-md) {
     height: 120px;
@@ -69,7 +71,7 @@
   }
 
   &__item {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 2px solid $border-color;
     cursor: pointer;
 
     .header-menu__submenu & {
@@ -119,7 +121,6 @@
     position: relative;
     top: 5px;
     float: right;
-    transition: transform 0.2s linear;
 
     .is-active & {
         transform: rotate(180deg);

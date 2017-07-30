@@ -1,47 +1,62 @@
 $accordion-title-padding: 10px;
 
 .accordion {
-  border-top: 1px solid $border-color;
-  //border-bottom: 1px solid $border-color;
-  margin-bottom: $content-section-margin;
+  border-bottom: 2px solid $border-color;
+  padding-top: 23px;
 }
 
 .accordion__section-title {
   position: relative;
-  padding: 23px 0 20px 0;
+  padding: 23px 0 25px 0;
   font-size: 1.385rem;
   cursor: pointer;
   user-select: none;
   color: $title-color;
-  &:not(:nth-last-child(2)) {
-    border-bottom: 1px solid $border-color;
-  }
+  border-top: 2px solid $border-color;
+
   .content-section__inner {
     position:relative;
-    padding-left: 70px;
-    &::before {
+    padding-left: 60px;
+
+    &::before,
+    &::after {
       content: "";
-      width: 22px;
-      height: 13px;
+      width: 17px;
+      height: 3px;
       position: absolute;
-      top: 10px;
-      left: 15px;
-      background: url(../img/arrow-down.png);
-      background-size: cover;
-      transition: transform 0.2s linear;
+      top: 9px;
+      left: 20px;
+      background: $title-color;
+      transform: rotate(135deg);
+
+      @media(min-width: $breakpoint-md) {
+        width: 24px;
+        height: 5px;
+        top: 17px;
+        left: 30px;
+      }
     }
-  }
+    &::after {
+      transform: rotate(-135deg);
+      left: 30px;
 
-
-  &:last-child {
-    border-bottom: 0;
+      @media(min-width: $breakpoint-md) {
+        left: 44px;
+      }
+    }
+    @media(min-width: $breakpoint-md) {
+      padding-left: 100px;
+    }
   }
 }
 
 .accordion__section-title.is-active {
   .content-section__inner {
     &::before {
-      transform: rotate(180deg);
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
     }
   }
 }
@@ -50,11 +65,13 @@ $accordion-title-padding: 10px;
   display: none;
   font-size: 1rem;
   color: $title-color;
-  &:not(:last-child) {
-    border-bottom: 1px solid $border-color;
-  }
+
   .content-section__inner {
-    padding: 50px 20px 20px 70px;
+    padding: 0 20px 25px 60px;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 30px 20px 40px 100px;
+    }
   }
   &.is-visible {
     display: block;
@@ -80,7 +97,8 @@ $accordion-title-padding: 10px;
     margin-top:8px;
   }
 
-  &::before {
+  &::before,
+  &::after{
     content: "";
     width: 22px;
     height: 13px;

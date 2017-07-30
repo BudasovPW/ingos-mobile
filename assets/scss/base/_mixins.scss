@@ -36,12 +36,12 @@
   font-family: $base-font-family-light;
   font-size: $button-font-size;
   line-height: 1;
-  //padding: 19px 41px;
   cursor: pointer;
   text-decoration: none;
   border-radius: $border-radius;
   user-select: none;
   width: 100%;
+  outline: none;
 }
 
 @mixin icon() {

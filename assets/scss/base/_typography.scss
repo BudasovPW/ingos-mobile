@@ -13,6 +13,9 @@
   &._text-indent {
     margin-bottom: 20px;
   }
+  &._tabs-indent {
+    margin-bottom: 35px;
+  }
 
   @media(min-width: $breakpoint-md) {
     margin: 70px 0;
@@ -22,6 +25,9 @@
     }
     &._text-indent {
       margin-bottom: 40px;
+    }
+    &._tabs-indent {
+      margin-bottom: 50px;
     }
   }
 }
@@ -74,6 +80,14 @@
 
   @media(min-width: $breakpoint-md) {
     margin: 10px 0;
+  }
+}
+
+.section-button {
+  margin-bottom: 30px;
+
+  @media(min-width: $breakpoint-md) {
+    margin-bottom: 70px;
   }
 }
 
@@ -173,13 +187,24 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 2px;
     left: 0;
     display: block;
-    width: 16px;
-    height: 18px;
-    background: url(../img/icons/icon-mini-change.png) no-repeat;
+    width: 13px;
+    height: 15px;
+    background: url(../img/icon-change.png) no-repeat;
     background-size: cover;
+
+    @media(min-width:$breakpoint-md) {
+      width: 26px;
+      height: 30px;
+      top: -5px;
+    }
+  }
+
+  @media(min-width:$breakpoint-md) {
+    width: 380px;
+    padding-left: 46px;
   }
 }
 

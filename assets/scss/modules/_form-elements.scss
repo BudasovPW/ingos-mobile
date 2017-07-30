@@ -316,6 +316,7 @@ textarea.form-control {
 .form-note {
   line-height: 1.4;
   text-align: center;
+  font-family: $base-font-family-light;
 }
 
 // Styled checkboxes
@@ -503,42 +504,6 @@ textarea.form-control {
   }
 
 }
-
-
-.form-fake {
-  position: relative;
-  @extend .form-control;
-  background: white;
-  padding-right: 75px;
-
-  .text {
-    position: absolute;
-    left: 25px;
-    font-size: 1.154em;
-    top: 50%;
-    transform: translateY(-50%);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    @media(min-width: $breakpoint-md) {
-      left: 45px;
-    }
-  }
-
-  &.style-delete {
-    &:after {
-      content: '';
-      position: absolute;
-      right: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 25px;
-      height: 25px;
-      background: $title-color;
-    }
-  }
-}
-
 
 $selectric-main-color:      $border-color !default;                                              // Color used in border
 $selectric-secondary-color: #2c2c2c !default;                                           // Color used in button

@@ -74,17 +74,20 @@ ol {
   }
 
   &.classic {
+    list-style: decimal;
     color: $title-color;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 17px;
     @media(min-width: $breakpoint-md) {
       margin-top: 40px;
       margin-bottom: 40px;
+      margin-left: 25px;
     }
     > li {
-      padding-left: 20px;
+      padding-left: 5px;
       @media(min-width: $breakpoint-md) {
-        padding-left: 40px;
+        padding-left: 15px;
       }
       &:not(:first-child) {
         margin-top: 20px;
@@ -94,9 +97,7 @@ ol {
         }
       }
       &:before {
-        content: counters(ol, ".");
-        font-size: 0.923rem;
-        top: 0;
+       display: none;
       }
     }
   }
@@ -108,8 +109,9 @@ p {
   font-family: $base-font-family-light;
   margin: 10px 0;
 
-  input + & {
-    margin-top: 5px;
+  input + &,
+  .parsley-errors-list + & {
+    margin-top: 10px;
     line-height: 1;
   }
 

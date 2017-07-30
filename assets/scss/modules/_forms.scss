@@ -50,8 +50,13 @@ form {
     width: 358px;
   }
 
-  @media(min-width: $breakpoint-md) {
-    //margin: 50px auto;
+  .password-row {
+    margin-bottom: 10px;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -117,6 +122,11 @@ form {
   textarea.form-control {
     min-height: 232px;
     font-size: 1.154rem;
+    padding: 15px 20px;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 20px 35px;
+    }
   }
 
   .form-submit {
