@@ -82,98 +82,68 @@
       <div class="page-content__inner">
         <div class="content-section content-section--padding">
           <div class="content-section__inner">
-            <div class="section-title _no-b-indent">Открытие индивидуального инвестиционного счета</div>
+            <div class="section-title _text-indent">Открытие индивидуального инвестиционного счета</div>
           </div>
-          <form class="form-strategy-planning">
-            <div class="form-row form-row--risks">
-              <div class="accordion-panel">
-                <div class="content-section__inner">
-                  <div class="accordion-panel__heading js-toggle-next-el">
-                    <div class="title">Определите свой риск-портфель&nbsp;<span class="title__note">(не является обязательным)</span></div>
-                  </div>
-                  <div class="accordion-panel__body">
-                    <p class="inside accordion-panel__body-item">Определение оптимального соотношения риска и доходности для размещаемых Вами средств с учетом Вашей склонности к риску, инвестиционных целей, а также всевозможных планов и сроков по выводу размещаемых средств.</p>
-                    <div class="flex-container accordion-panel__body-item">
-                      <div class="item">
-                        <div class="step-block active">
-                          <div class="inner">Шаг 1</div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="step-block">
-                          <div class="inner">Шаг 2</div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="step-block">
-                          <div class="inner">Шаг 3</div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="step-block">
-                          <div class="inner">Шаг 4</div>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="step-block">
-                          <div class="inner">Шаг 5</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-row accordion-panel__body-item accordion-panel__row">
-                      <label class="form-row__title text-left">Укажите ваш возраст:</label>
-                      <div class="form-list">
-                        <div class="form-list__item">
-                          <input type="radio" name="age" id="age-1">
-                          <label for="age-1">Менее 25 лет</label>
-                        </div>
-                        <div class="form-list__item">
-                          <input type="radio" checked="checked" name="age" id="age-2">
-                          <label for="age-2">26-35 лет</label>
-                        </div>
-                        <div class="form-list__item">
-                          <input type="radio" name="age" id="age-3">
-                          <label for="age-3">36-50 лет</label>
-                        </div>
-                        <div class="form-list__item">
-                          <input type="radio" name="age" id="age-4">
-                          <label for="age-4">Более 50 лет</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div class="obj-list-container">
+            <div class="obj-list content-section__inner">
+              <div class="type-row">
+                <div class="type-cell">Выбранная стратегия:</div>
+                <div class="type-cell">Сбалансированная</div>
+              </div>
+              <div class="type-row">
+                <div class="type-cell">Сумма инвестирования (руб.):</div>
+                <div class="type-cell">250 000.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="content-section__inner">
+            <p>Продолжая оформление заявки<br>о присоединении к договору доверительного управления,<br>Вы подтверждаете достоверность<br>и актуальность сведений, указанных о Вас.</p>
+            <form method="" action="" class="form-cabinet-connection-data js-form-validate">
+              <div class="form-list margin-bottom-0">
+                <div class="form-list__item">
+                  <input type="checkbox" checked="checked" id="form-ccv-esignature-check">
+                  <label for="form-ccv-esignature-check">Подтверждаю, что ознакомлен с&nbsp;<a href="#">условиями доверительного управления ценными бумагами с открытием и ведением индивидуального инвестиционного счета.</a></label>
+                </div>
+                <div class="form-list__item">
+                  <input type="checkbox" checked="checked" id="form-ccv-communication-check">
+                  <label for="form-ccv-communication-check">Подтверждаю достоверность предоставленных данных и подтверждаю свое желание заключить договор ДУ на открытие ИИС.</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="content-section content-section-separator">
+          <div class="content-section__inner js-phone-code">
+            <div class="get-phone-code js-get-phone-code">
+              <div class="section-subtitle">Для совершения процедуры подачи заявки на Ваш телефон будет отправлен подтверждающий код, который необходимо ввести ниже.</div>
+              <div class="form-row">
+                <label class="form-row__title"></label>
+                <button class="btn-grey js-get-phone-code-btn">Получить код</button>
+              </div>
+              <div class="form-row">
+                <div class="form-grid">
+                  <div class="cell"><a href="#" class="link-text-small">Отправить еще раз</a></div>
+                  <div class="cell"><a href="#" class="link-text-small">SMS не приходит?</a></div>
                 </div>
               </div>
             </div>
-            <div class="content-section__inner">
+            <div class="put-phone-code js-put-phone-code">
+              <div class="section-subtitle">На ваш мобильный телефон +7 (937) ххх-хх-19 выслано SMS-сообщение с кодом.</div>
               <div class="form-row">
-                <label for="cabinet-connection-data-last-name" class="form-row__title">Выберите стратегию:</label>
-                <select id="fsp-strategy-select" class="form-control">
-                  <option>Сбалансированная</option>
-                  <option>Обычная</option>
-                </select>
-                <p class="inside">Рекомендовано при инвестировании от 250 000 руб. в год; при использовании данной стратегии, лучше воспользоваться освобождением от налога на полученный доход.</p>
-                <p class="inside _b-indent"><a href="#">Подробнее о стратегиях</a></p>
+                <label for="purchase-check-code" class="form-row__title">Введите код:</label>
+                <input type="password" placeholder="••••" required id="purchase-check-code" class="form-control">
               </div>
               <div class="form-row">
-                <label for="cabinet-connection-data-last-name" class="form-row__title">Укажите сумму инвестирования (руб.):</label>
-                <input type="text" value="250000.00" placeholder="" required id="cabinet-connection-data-last-name" class="form-control">
+                <input type="submit" value="Отправить" class="form-submit">
               </div>
               <div class="form-row">
-                <div class="form-list inside">
-                  <div class="form-list__item">
-                    <input type="radio" checked="checked" name="iia-opening-agreement-status" id="iia-opening-agreement-status-1">
-                    <label for="iia-opening-agreement-status-1">На дату подачи настоящего заяления у меня отстутствует договор с другим профессиональным участником рынка ценных бумаг на ведение индивидуального инвестиционного счета.</label>
-                  </div>
-                  <div class="form-list__item">
-                    <input type="radio" name="iia-opening-agreement-status" id="iia-opening-agreement-status-2">
-                    <label for="iia-opening-agreement-status-2">На дату подачи настоящего заявления у меня действует договор на ведение индивидуального инвестиционного счета.</label>
-                  </div>
+                <div class="form-grid">
+                  <div class="cell"><a href="#" class="link-text-small">Отправить еще раз</a></div>
+                  <div class="cell"><a href="#" class="link-text-small">SMS не приходит?</a></div>
                 </div>
               </div>
-              <button class="btn-primary">Далее</button>
             </div>
-          </form>
+          </div>
         </div>
         <div class="content-section content-section--outcoming-link">
           <div class="content-section__inner"><a href="#" class="link-text">Перейти в полную версию кабинета</a></div>

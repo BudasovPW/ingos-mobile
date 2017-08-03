@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  padding: 18px $tab-content-padding-h 15px;
+  padding: 18px $tab-content-padding-h 15px !important;
   margin-bottom: -1px;
   font-family: $base-font-family;
   color: $text-color;
@@ -45,7 +45,7 @@
   -webkit-font-smoothing: antialiased;
 
   @media(min-width: $breakpoint-md) {
-    padding: 32px $tab-content-padding-h 29px;
+    padding: 32px $tab-content-padding-h 29px !important;
   }
 
   .buttoned & {

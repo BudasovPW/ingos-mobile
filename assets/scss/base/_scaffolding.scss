@@ -115,8 +115,16 @@ p {
     line-height: 1;
   }
 
+  &._b-indent {
+    margin: 10px 0 30px;
+  }
+
   @media(min-width: $breakpoint-md) {
     margin: 40px 0;
+
+    &._b-indent {
+      margin: 40px 0 80px;
+    }
   }
 }
 

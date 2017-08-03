@@ -179,11 +179,17 @@ form {
 
 
 .form-strategy-planning {
-  margin: 25px 0;
+  margin: 35px 0 25px;
+
   .form-row--risks {
+    margin-bottom: 30px;
     padding: 21px 0;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-top: 2px solid $border-color;
+    border-bottom: 2px solid $border-color;
+
+    @media(min-width: $breakpoint-md) {
+      margin-bottom: 50px;
+    }
   }
 
   .form-row--contains-selects {
@@ -209,9 +215,24 @@ form {
       padding-right: 50px;
       line-height: 1.4;
     }
+
+    @media(min-width: $breakpoint-md) {
+      margin: 25px 0;
+    }
   }
 
   .form-outgoing-link {
     margin-top: 20px;
+  }
+}
+.form-row--cards {
+  img {
+    margin: 0 10px 10px;
+    height: 30px;
+
+    @media(min-width: $breakpoint-md) {
+      margin: 0 20px 20px;
+      height: auto;
+    }
   }
 }

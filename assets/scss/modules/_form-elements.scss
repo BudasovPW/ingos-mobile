@@ -9,6 +9,10 @@ $input-font-size: 1.154rem; //30px
   margin-bottom: $form-row-margin / 2;
   text-align: center;
 
+  &._t-indent {
+    padding-top: 20px;
+  }
+
   p {
     font-size: 1rem;
     text-align: left;
@@ -19,6 +23,10 @@ $input-font-size: 1.154rem; //30px
 
   @media(min-width: $breakpoint-md) {
     margin-bottom: $form-row-margin;
+
+    &._t-indent {
+      padding-top: 30px;
+    }
   }
 }
 
@@ -107,7 +115,7 @@ $input-font-size: 1.154rem; //30px
   padding: 0 19px;
   font-size: $input-font-size;
   color: #2f2f2f;
-  border: 1px solid $border-color;
+  border: 2px solid $border-color;
   background: $dark-bg-color;
   border-radius: $border-radius;
   font-family: $base-font-family-light;
@@ -142,12 +150,13 @@ $input-font-size: 1.154rem; //30px
 }
 
 textarea.form-control {
-  padding: 7px 13px;
   resize: none;
   height: 100px;
   text-align: left;
+  padding: 15px 20px;
 
   @media(min-width: $breakpoint-md) {
+    padding: 20px 35px;
     height: 190px;
   }
 }
@@ -283,7 +292,7 @@ textarea.form-control {
   }
 
   @media(min-width: $breakpoint-md) {
-    padding-left: 55px;
+    padding-left: 52px;
   }
 
   input {
@@ -301,13 +310,22 @@ textarea.form-control {
     position: relative;
     &:before {
       content: '';
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       border-radius: 100%;
       background: $dark-bg-color;
       position: absolute;
-      left: 0;
+      left: -40px;
+      top: -1px;
       border: 1px solid $border-color;
+      box-sizing: border-box;
+
+      @media(min-width: $breakpoint-md) {
+        left: -52px;
+        top: -2px;
+        width: 30px;
+        height: 30px;
+      }
     }
 
   }
@@ -344,8 +362,8 @@ textarea.form-control {
     background: $main-bg-color;
 
     @media(min-width: $breakpoint-md) {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
       left: -55px;
     }
   }
@@ -401,11 +419,16 @@ textarea.form-control {
   color: $brand-color;
   font-size: $validation-font-size;
 
+
   li {
     padding-left: 0;
 
     &::before {
       display: none;
+    }
+
+    .text-center & {
+      text-align: center;
     }
   }
 
@@ -527,7 +550,7 @@ $selectric-font-size:       0.9rem !default;                                    
 }
 
 .selectric {
-  border: 1px solid $border-color;
+  border: 2px solid $border-color;
   border-radius: $border-radius;
   background: $selectric-bg-color;
   position: relative;
@@ -538,11 +561,13 @@ $selectric-font-size:       0.9rem !default;                                    
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0 49px 0 19px;
+    padding: 0 49px 0 20px;
     line-height: ($input-height + 2) / 2 * 1.5;
     height: $input-height / 2 * 1.5;
     user-select: none;
     text-align: left;
+    font-family: $base-font-family-light;
+    font-size: $input-font-size;
 
     .center &,
     .selectric-center & {
@@ -553,7 +578,9 @@ $selectric-font-size:       0.9rem !default;                                    
     @media(min-width: $breakpoint-md) {
       line-height: $input-height + 2;
       height: $input-height;
+      padding: 0 49px 0 35px;
     }
+
   }
 
   .button {
@@ -603,6 +630,12 @@ $selectric-font-size:       0.9rem !default;                                    
 
   ._selects-group._triple .form-controls-group__item:last-child & {
     left: -2px;
+  }
+
+  @media(min-width: $breakpoint-sm-md) {
+    .compact & {
+      border-width: 1px;
+    }
   }
 }
 
@@ -699,7 +732,7 @@ $selectric-font-size:       0.9rem !default;                                    
   margin-top: 10px;
   border-radius: $border-radius;
   background: $selectric-bg-color;
-  border: 1px solid $border-color;
+  border: 2px solid $border-color;
   z-index: -1;
   overflow: hidden;
 

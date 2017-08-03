@@ -2,14 +2,12 @@
   position: relative;
 }
 
-
 .period-block_header {
   padding: 40px 0;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
   background: $dark-bg-color;
 }
-
 
 .period-block_header-content {
   position: relative;
@@ -21,15 +19,32 @@
     width: 48px;
     height: 48px;
     background: lightblue;
+
+    &.icon-datepicker {
+      width: 35px;
+      height: 34px;
+      background: url(../img/icon-calendar-blue.png) no-repeat top center;
+      background-size: cover;
+      top: 8px;
+
+      @media(min-width: $breakpoint-md) {
+        width: 50px;
+        height: 48px;
+      }
+
+    }
   }
   > .text {
-    padding-left: 125px;
+    padding-left: 60px;
+
+    @media(min-width: $breakpoint-md) {
+      padding-left: 115px;
+    }
     .text-label {
       margin-bottom: 10px;
     }
   }
 }
-
 
 .period-block_grid {
   height: 150px;

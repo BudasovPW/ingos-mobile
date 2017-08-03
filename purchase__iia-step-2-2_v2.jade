@@ -10,6 +10,12 @@ block content
 		include assets/jade/partials/purchase-chosen-data
 		.content-section__inner
 			p Просим Вас заполнить персональные данные для оформления заявки на присоединение к договору ДУ ИИС.
+
+			p
+				| Если ваши данные не корректны, перейдите на сайт
+				a(href='#') Госуслуг
+				|  для их редактирования.
+
 			form(method='' action='').form-cabinet-connection-data.js-form-validate
 				.form-row
 					label(for='purchase-data-last-name').form-row__title.required

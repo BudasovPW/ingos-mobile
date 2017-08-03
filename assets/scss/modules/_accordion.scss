@@ -78,10 +78,9 @@ $accordion-title-padding: 10px;
   }
 }
 
-
 .accordion-panel__heading {
   position: relative;
-  padding: 0 0 0 35px;
+  padding: 0 0 0 40px;
   cursor: pointer;
   text-align: left;
   .title {
@@ -98,36 +97,44 @@ $accordion-title-padding: 10px;
   }
 
   &::before,
-  &::after{
+  &::after {
     content: "";
-    width: 22px;
-    height: 13px;
+    width: 17px;
+    height: 3px;
     position: absolute;
-    top: 6px;
-    left: 0px;
-    background: url(../img/arrow-down.png);
-    background-size: cover;
-    transition: transform 0.2s linear;
-  }
+    top: 9px;
+    left: 0;
+    background: $title-color;
+    transform: rotate(45deg);
 
-  @media(min-width: $breakpoint-sm) {
-    padding: 0 0 0 45px;
+    @media(min-width: $breakpoint-md) {
+      width: 24px;
+      height: 5px;
+      top: 17px;
+    }
+  }
+  &::after {
+    transform: rotate(-45deg);
+    left: 10px;
+
+    @media(min-width: $breakpoint-md) {
+      left: 14px;
+    }
   }
 
   @media(min-width: $breakpoint-md) {
-    padding: 0 0 0 55px;
-  }
-
-  @media(min-width: $desktop-lg) {
-    padding: 0 0 0 75px;
+    padding: 0 0 0 70px;
   }
 
 }
 
 .accordion-panel__heading.is-active {
-  &::before {
-    transform: rotate(180deg);
-  }
+    &::before {
+      transform: rotate(135deg);
+    }
+    &::after {
+      transform: rotate(-135deg);
+    }
 }
 
 .accordion-panel__body {
@@ -145,5 +152,21 @@ $accordion-title-padding: 10px;
 
   &.is-visible {
     display: block;
+  }
+}
+
+.accordion-panel__row {
+  padding-left: 20px;
+
+  .form-list {
+    padding-left: 20px;
+  }
+
+  @media(min-width: $breakpoint-md) {
+    padding-left: 30px;
+
+    .form-list {
+      padding-left: 30px;
+    }
   }
 }

@@ -1,0 +1,268 @@
+.datepicker {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  text-align: center;
+  overflow-y: auto;
+
+  &::after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: "";
+  }
+
+  &._show {
+    display: block;
+  }
+}
+
+.datepicker__close-icon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.datepicker__content {
+
+  max-width: calc(100vw - 20px);
+  background: #fff;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 0 10px 4px;
+
+  @media(min-width: $desktop-lg) {
+    max-width: 685px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.datepicker__title {
+  background: #f9f9fa;
+  font-size: 1.385rem;
+  padding: 20px 10px 10px;
+
+  @media(min-width: $breakpoint-md) {
+    padding: 45px 20px;
+  }
+}
+
+.datepicker__date-start,
+.datepicker__date-end {
+  background: #f9f9fa;
+  border-bottom: 1px solid $border-color;
+  padding: 15px 20px 15px 50px;
+  position: relative;
+  font-size: 1rem;
+  text-align: left;
+
+  @media(min-width: $breakpoint-md) {
+    padding: 26px 20px 26px 123px;
+  }
+}
+
+.datepicker__date-end {
+  border-bottom: none;
+}
+
+.datepicker__date-start::before,
+.datepicker__date-end::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  background: #00adeb;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  margin-top: -10px;
+  box-sizing: border-box;
+
+  @media(min-width: $breakpoint-md) {
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    margin-top: -12px;
+  }
+}
+
+.datepicker__date-start::before {
+  background: #fff;
+  border: 3px solid #00adeb;
+
+  @media(min-width: $breakpoint-md) {
+    border-width: 6px;
+  }
+}
+
+.datepicker__container {
+  padding: 5px 15px 15px;
+
+  @media(min-width: $breakpoint-md) {
+    padding: 5px 35px 35px;
+  }
+}
+
+.datepicker__date-container,
+.datepicker__mounth-container {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.datepicker__week-days {
+  display: table-header-group;
+}
+
+.datepicker__days {
+  display: table-row-group;
+}
+
+.datepicker__week-day,
+.datepicker__day,
+.datepicker__mounth-prev,
+.datepicker__mounth-next,
+.datepicker__mounth-current {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 7px 2px;
+  font-size: 1rem;
+}
+.datepicker__mounth-current {
+  font-size: 1.154rem;
+}
+
+.datepicker__week-day {
+  padding: 7px 2px;
+
+  @media(min-width: $breakpoint-md) {
+    padding: 7px 2px 30px;
+  }
+}
+
+.datepicker__days-row {
+  display: table-row;
+}
+
+.datepicker__day-info {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  &._start {
+    border: 3px solid #00adeb;
+    background: #fff;
+    line-height: 26px;
+  }
+  &._end {
+    background: #00adeb;
+    color: #fff;
+  }
+
+  @media(min-width: $breakpoint-md) {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    &._start {
+      border-width: 4px;
+      line-height: 52px;
+    }
+  }
+}
+
+.datepicker__buttons-container {
+  text-align: right;
+  padding-top: 5px;
+
+  .inline-sm-btn {
+    font-size: 1rem;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media(min-width: $breakpoint-md) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media(min-width: $breakpoint-md) {
+    padding-top: 35px;
+  }
+}
+
+.datepicker__mounth-container {
+  margin-bottom: 15px;
+  margin-top: 10px;
+
+  @media(min-width: $breakpoint-md) {
+    margin-bottom: 35px;
+    margin-top: 25px;
+  }
+}
+
+.datepicker__mounth-prev {
+  width: 40px;
+}
+
+.datepicker__mounth-next {
+  width: 40px;
+  transform: rotate(-180deg);
+}
+
+.datepicker__mounth-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 5px;
+  &:hover {
+    opacity: 0.35;
+  }
+  &::before,
+  &::after{
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    transform: rotate(45deg);
+  }
+  &::after {
+    top: 11px;
+    transform: rotate(-45deg);
+  }
+
+  @media(min-width: $breakpoint-md) {
+    width: 60px;
+    height: 60px;
+
+    &::before,
+    &::after{
+      width: 20px;
+      height: 3px;
+      top: 35px;
+      left: 25px;
+    }
+    &::after {
+      top: 22px;
+    }
+  }
+}

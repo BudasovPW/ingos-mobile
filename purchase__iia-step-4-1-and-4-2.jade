@@ -10,7 +10,7 @@ block content
 		include assets/jade/partials/purchase-chosen-data
 
 		.content-section__inner
-			.section-subtitle Выберите способ оплаты:
+			.section-subtitle._normal Выберите способ оплаты:
 
 		.content-section__inner
 			.tabs
@@ -24,6 +24,11 @@ block content
 		.tab-container.is-visible#bank-card
 			.tab-container__section-inner
 				.content-section__inner
+					.form-row.form-row--cards
+						img(src='assets/img/visa.png' alt='')
+						img(src='assets/img/mastercard.png' alt='')
+
+
 					.form-row
 						label(for='purchase-bank-card-number').form-row__title
 							| Номер банковской карты:
@@ -33,8 +38,10 @@ block content
 						placeholder='Введите номер банковской карты'
 						required,
 						id='purchase-bank-card-number').form-control
-						p
-							| Введите 16 или 18 цифр с лицевой стороны вашей карты.
+						p.text-center
+							| Введите 16 или 18 цифр с лицевой стороны
+							br
+							|вашей карты.
 
 					.form-row
 						label(for='purchase-bank-card-holder').form-row__title
@@ -45,12 +52,15 @@ block content
 						placeholder='Введите имя и фамилию держателя карты'
 						required,
 						id='purchase-bank-card-holder').form-control
-						p Введите имя и фамилию транслитом, как указано на карте.
+						p.text-center
+							| Введите имя и фамилию транслитом,
+							br
+							| как указано на карте.
 
 					.form-row
 						label.form-row__title
 							| Срок действия карты:
-						.form-grid
+						.form-grid.double
 							.cell
 								select.form-control.small
 									- for(var i=1; i<=12; i++) {
@@ -70,7 +80,7 @@ block content
 						placeholder='CVV/CVC2'
 						required,
 						id='purchase-bank-cvv').form-control.small
-						p
+						p.text-center
 							| Введите последние 3 цифры с обратной стороны карты, находящиеся под магнитной полоской.
 
 					.form-row
@@ -82,11 +92,16 @@ block content
 			.tab-container__section-inner
 				.content-section__inner
 					p.inside
-						| Уважаемый, Ковалев Сергей Алексеевич. Благодарим Вас за оформление заявки на приобретение инвестиционных паев. Для приобретения инвестиционных паев Вам необходимо перечислить денежные средства в их оплату.
+						| Уважаемый, Ковалев Сергей Алексеевич.
+						br
+						| Благодарим Вас за оформление заявки на приобретение инвестиционных паев. Для приобретения инвестиционных паев Вам необходимо перечислить денежные средства в их оплату.
 
-					.section-subtitle Назначение платежа для банковского перевода:
+					.section-subtitle._normal
+						| Назначение платежа
+						br
+						| для банковского перевода:
 
-				.table-content.full
+				.table-content.full.no-bottom-border
 					.type-row
 						.type-cell
 							.content-section__inner
@@ -131,9 +146,11 @@ block content
 									.type-cell Оплата инвестиционных паев ОПИФ фондов «ИИ» от Ковалев Сергей Алексеевич по заявке № 57.1275001.040 от 20.04.2016 г.
 
 				.content-section__inner
-					.form-row.marginTop20
+					.form-row.marginTop30
 						button.btn-grey.fontSizeBase
-							| Отправить реквизиты для перечисления денежных средств в оплату паев на email
+							| Отправить реквизиты для перечисления
+							br
+							|денежных средств в оплату паев на email
 
 
 

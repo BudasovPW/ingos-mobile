@@ -4,7 +4,7 @@ block header
 block content
 	.content-section.content-section--padding
 		.content-section__inner
-			.section-title
+			.section-title._no-b-indent
 				| Открытие индивидуального инвестиционного счета
 		form.form-strategy-planning
 			.form-row.form-row--risks
@@ -29,11 +29,11 @@ block content
 								.item
 									+step-block('Шаг 5', '')
 
-							.form-row.accordion-panel__body-item
-								label.form-row__title.text-left.inside
+							.form-row.accordion-panel__body-item.accordion-panel__row
+								label.form-row__title.text-left
 									| Укажите ваш возраст:
 
-								.form-list.inside
+								.form-list
 									.form-list__item
 										input(type='radio' name='age' id='age-1')
 

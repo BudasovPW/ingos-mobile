@@ -97,7 +97,7 @@
             </div>
           </div>
           <div class="content-section__inner">
-            <div class="section-subtitle">Выберите способ оплаты:</div>
+            <div class="section-subtitle _normal">Выберите способ оплаты:</div>
           </div>
           <div class="content-section__inner">
             <div class="tabs">
@@ -107,19 +107,20 @@
           <div id="bank-card" class="tab-container is-visible">
             <div class="tab-container__section-inner">
               <div class="content-section__inner">
+                <div class="form-row form-row--cards"><img src="assets/img/visa.png" alt=""><img src="assets/img/mastercard.png" alt=""></div>
                 <div class="form-row">
                   <label for="purchase-bank-card-number" class="form-row__title">Номер банковской карты:</label>
                   <input type="text" value="5486 7325 5408 7596" placeholder="Введите номер банковской карты" required id="purchase-bank-card-number" class="form-control">
-                  <p>Введите 16 или 18 цифр с лицевой стороны вашей карты.</p>
+                  <p class="text-center">Введите 16 или 18 цифр с лицевой стороны<br>вашей карты.</p>
                 </div>
                 <div class="form-row">
                   <label for="purchase-bank-card-holder" class="form-row__title">Имя и фамилия держателя карты:</label>
                   <input type="text" value="SERGEI KOVALEV" placeholder="Введите имя и фамилию держателя карты" required id="purchase-bank-card-holder" class="form-control">
-                  <p>Введите имя и фамилию транслитом, как указано на карте.</p>
+                  <p class="text-center">Введите имя и фамилию транслитом,<br>как указано на карте.</p>
                 </div>
                 <div class="form-row">
                   <label class="form-row__title">Срок действия карты:</label>
-                  <div class="form-grid">
+                  <div class="form-grid double">
                     <div class="cell">
                       <select class="form-control small">
                         <option>1</option>
@@ -211,7 +212,7 @@
                 <div class="form-row">
                   <label for="purchase-bank-cvv" class="form-row__title">CVV/CVC2 код:</label>
                   <input type="text" value="547" placeholder="CVV/CVC2" required id="purchase-bank-cvv" class="form-control small">
-                  <p>Введите последние 3 цифры с обратной стороны карты, находящиеся под магнитной полоской.</p>
+                  <p class="text-center">Введите последние 3 цифры с обратной стороны карты, находящиеся под магнитной полоской.</p>
                 </div>
                 <div class="form-row">
                   <button class="btn-primary">Далее</button>
@@ -222,10 +223,10 @@
           <div id="bank-transfer" class="tab-container">
             <div class="tab-container__section-inner">
               <div class="content-section__inner">
-                <p class="inside">Уважаемый, Ковалев Сергей Алексеевич. Благодарим Вас за оформление заявки на приобретение инвестиционных паев. Для приобретения инвестиционных паев Вам необходимо перечислить денежные средства в их оплату.</p>
-                <div class="section-subtitle">Назначение платежа для банковского перевода:</div>
+                <p class="inside">Уважаемый, Ковалев Сергей Алексеевич.<br>Благодарим Вас за оформление заявки на приобретение инвестиционных паев. Для приобретения инвестиционных паев Вам необходимо перечислить денежные средства в их оплату.</p>
+                <div class="section-subtitle _normal">Назначение платежа<br>для банковского перевода:</div>
               </div>
-              <div class="table-content full">
+              <div class="table-content full no-bottom-border">
                 <div class="type-row">
                   <div class="type-cell">
                     <div class="content-section__inner">
@@ -298,8 +299,8 @@
                 </div>
               </div>
               <div class="content-section__inner">
-                <div class="form-row marginTop20">
-                  <button class="btn-grey fontSizeBase">Отправить реквизиты для перечисления денежных средств в оплату паев на email</button>
+                <div class="form-row marginTop30">
+                  <button class="btn-grey fontSizeBase">Отправить реквизиты для перечисления<br>денежных средств в оплату паев на email</button>
                 </div>
               </div>
             </div>
@@ -328,7 +329,84 @@
         </div>
       </div>
     </main>
-    <!--include ../../partials/modal-popups/-->
+    <div class="datepicker js-datepicker">
+      <div class="datepicker__content">
+        <div class="datepicker__title">Выберите диапазон дат</div>
+        <div class="datepicker__date-start">Четверг. 1 сентября  2016</div>
+        <div class="datepicker__date-end">Пятница. 30 сентября  2016</div>
+        <div class="datepicker__container">
+          <div class="datepicker__mounth-container">
+            <div class="datepicker__mounth-prev">
+              <div class="datepicker__mounth-btn"></div>
+            </div>
+            <div class="datepicker__mounth-current">Сентябрь 2016</div>
+            <div class="datepicker__mounth-next">
+              <div class="datepicker__mounth-btn"></div>
+            </div>
+          </div>
+          <div class="datepicker__date-container">
+            <div class="datepicker__week-days">
+              <div class="datepicker__week-day">Пн</div>
+              <div class="datepicker__week-day">Вт</div>
+              <div class="datepicker__week-day">Ср</div>
+              <div class="datepicker__week-day">Чт</div>
+              <div class="datepicker__week-day">Пт</div>
+              <div class="datepicker__week-day">Сб</div>
+              <div class="datepicker__week-day">Вс</div>
+            </div>
+            <div class="datepicker__days">
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"></div>
+                <div class="datepicker__day"></div>
+                <div class="datepicker__day"></div>
+                <div class="datepicker__day"><span class="datepicker__day-info _start">1</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">2</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">3</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">4</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">5</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">6</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">7</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">8</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">9</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">10</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">11</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">12</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">13</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">14</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">15</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">16</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">17</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">18</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">19</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">20</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">21</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">22</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">23</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">24</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">25</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">26</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">27</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">28</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">29</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">30</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info _end">31</span></div>
+                <div class="datepicker__day"></div>
+              </div>
+            </div>
+          </div>
+          <div class="datepicker__buttons-container"><span class="btn-grey inline-sm-btn js-datepicker-close">Отмена</span><span class="btn-primary inline-sm-btn js-datepicker-close">Выбрать</span></div>
+        </div>
+      </div>
+      <div class="datepicker__close-icon js-datepicker-close"></div>
+    </div>
     <script type="text/javascript" src="assets/js/libs/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="assets/js/vendors/jquery.selectric.js"></script>
     <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>

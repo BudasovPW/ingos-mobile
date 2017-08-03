@@ -82,7 +82,7 @@
       <div class="page-content__inner">
         <div class="content-section content-section--padding">
           <div class="content-section__inner">
-            <div class="section-title">Открытие индивидуального инвестиционного счета</div>
+            <div class="section-title _text-indent">Открытие индивидуального инвестиционного счета</div>
           </div>
           <div class="obj-list-container">
             <div class="obj-list content-section__inner">
@@ -113,16 +113,34 @@
           </div>
         </div>
         <div class="content-section content-section-separator">
-          <div class="content-section__inner">
-            <div class="section-subtitle">Для совершения процедуры подачи заявки на Ваш телефон будет отправлен подтверждающий код, который необходимо ввести ниже.</div>
-            <div class="form-row">
-              <label class="form-row__title"></label>
-              <button class="btn-grey">Получить код</button>
+          <div class="content-section__inner js-phone-code">
+            <div class="get-phone-code js-get-phone-code">
+              <div class="section-subtitle">Для совершения процедуры подачи заявки на Ваш телефон будет отправлен подтверждающий код, который необходимо ввести ниже.</div>
+              <div class="form-row">
+                <label class="form-row__title"></label>
+                <button class="btn-grey js-get-phone-code-btn">Получить код</button>
+              </div>
+              <div class="form-row">
+                <div class="form-grid">
+                  <div class="cell"><a href="#" class="link-text-small">Отправить еще раз</a></div>
+                  <div class="cell"><a href="#" class="link-text-small">SMS не приходит?</a></div>
+                </div>
+              </div>
             </div>
-            <div class="form-row">
-              <div class="form-grid">
-                <div class="cell"><a href="#" class="link-text-small">Отправить еще раз</a></div>
-                <div class="cell"><a href="#" class="link-text-small">SMS не приходит?</a></div>
+            <div class="put-phone-code js-put-phone-code">
+              <div class="section-subtitle">На ваш мобильный телефон +7 (937) ххх-хх-19 выслано SMS-сообщение с кодом.</div>
+              <div class="form-row">
+                <label for="purchase-check-code" class="form-row__title">Введите код:</label>
+                <input type="password" placeholder="••••" required id="purchase-check-code" class="form-control">
+              </div>
+              <div class="form-row">
+                <input type="submit" value="Отправить" class="form-submit">
+              </div>
+              <div class="form-row">
+                <div class="form-grid">
+                  <div class="cell"><a href="#" class="link-text-small">Отправить еще раз</a></div>
+                  <div class="cell"><a href="#" class="link-text-small">SMS не приходит?</a></div>
+                </div>
               </div>
             </div>
           </div>

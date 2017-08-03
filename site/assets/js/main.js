@@ -39,6 +39,11 @@ var commonActions = (function (document, $) {
         datepickerValue: 'data-range-input__value',
         toggleMenuIcon: '.js-toggle-menu',
         fileUploader: '#fileUploader',
+        phoneCode: '.js-phone-code',
+        getPhoneCodeBtn: '.js-get-phone-code-btn',
+        showDatepicker: '.js-show-datepicker',
+        closeDatepicker: '.js-datepicker-close',
+        Datepicker: '.js-datepicker'
     };
 
     var className = {
@@ -66,17 +71,6 @@ var commonActions = (function (document, $) {
             }, 200);
 
             return false;
-        });
-    }
-
-    function _activateDatepicker() {
-        $('input[name="daterange"]').daterangepicker({
-            timePicker: true,
-            locale: {
-                format: 'DD-MM-YYYY'
-            },
-            startDate: '2013-01-01',
-            endDate: '2013-12-31'
         });
     }
 
@@ -126,6 +120,15 @@ var commonActions = (function (document, $) {
                 $modalEl.modal('show');
             }
 
+        });
+    }
+
+    function _showDatepicker() {
+        $(selector.showDatepicker).on('click', function(){
+            $(selector.Datepicker).toggleClass('_show');
+        });
+        $(selector.closeDatepicker).on('click', function(){
+            $(selector.Datepicker).removeClass('_show');
         });
     }
 
@@ -227,8 +230,10 @@ var commonActions = (function (document, $) {
         }
     }
 
-    function _onDocumentClick() {
-
+    function _showPutPhoneCode() {
+        $(selector.getPhoneCodeBtn).on('click', function(){
+            $(selector.phoneCode).addClass(className.active);
+        });
     }
 
     function _formControlHacks() {
@@ -253,7 +258,7 @@ var commonActions = (function (document, $) {
     }
 
     function bind() {
-        //_activateDatepicker();
+        _showDatepicker();
 
         _formControlHacks();
 
@@ -284,6 +289,8 @@ var commonActions = (function (document, $) {
         _initCustomFormElements();
 
         _uploadFile();
+
+        _showPutPhoneCode();
 
     }
 
