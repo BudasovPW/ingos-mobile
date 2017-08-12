@@ -1,0 +1,121 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.content-section__inner
+			a(href='#').panel.panel__download
+				i.icon-ring
+				span.panel-title
+					| Ваш отчет сформирован
+				span.link-text-small Скачать
+
+			.bullets
+				.bullet-item
+				.bullet-item._active
+				.bullet-item
+
+		.chart-pie
+			.content-section--dark._no-paddings.chart-pie__section
+				.chart-pie__main-title Портфель
+
+				.content-section__inner
+					.chart-pie__container#portfolio-structure
+					.chart-pie__main-info
+						.chart-pie__main-info__title
+							| Общая оценка портфеля
+						.chart-pie__main-info__value
+							| 3 952 289,00 руб
+
+				.chart-pie__tabs
+					.content-section__inner
+						.chart-pie__tab
+							.chart-pie__tab-icon.icon-datepicker
+							.chart-pie__tab-text
+								| На дату:&nbsp;
+								span.link-text-small Сегодня
+
+						.chart-pie__tab
+							.chart-pie__tab-icon.icon-currency
+							.chart-pie__tab-text
+								| Валюта:&nbsp;
+								span.link-text-small Рубли
+
+			.chart-pie__info-container
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| Линейная P&G
+
+						.chart-pie__info-title
+							| 47,43%
+
+						.chart-pie__info-value
+							| $ 50,000.00
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #ff6961; width: 47.43%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| ИИС Рыночная
+
+						.chart-pie__info-title
+							| 25,49%
+
+						.chart-pie__info-value
+							| 320 000,00 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #b6e329; width: 25.49%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| Линейная Apple
+
+						.chart-pie__info-title
+							| 19,91%
+
+						.chart-pie__info-value
+							| 250 000,00 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #1b7cd0; width: 19.91%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| ИИС Рыночная
+
+						.chart-pie__info-title
+							| 4,38%
+
+						.chart-pie__info-value
+							| 125 280,58 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #da62cc; width: 4.38%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| Открытие – Облигации
+
+						.chart-pie__info-title
+							| 2,79%
+
+						.chart-pie__info-value
+							| 55 000,00 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="width: 2.79%;")
+
+		.content-section__inner
+			a(href='#').panel.panel__add-assets
+				i.icon-add
+				span.panel-title
+					| Добавить иные активы
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

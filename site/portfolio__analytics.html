@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-row">
+        <div class="header-row__inner">
+          <div class="header__logo">
+            <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
+          </div>
+        </div><a href="#" class="menu-bar js-toggle-menu"><i></i><i></i><i></i></a>
+      </div>
+      <div class="header-menu">
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">Портфель
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Оценка портфеля</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Анализ портфеля</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">История</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">ПИФы
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Инвестиционный портфель ПИФ</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Заявки на приобретение</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Сводный отчет</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Документы по ПИФ</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">ДУ
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Инвестиционный портфель ДУ</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о движении денежных средств</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о начисленных комиссиях</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация по сделкам</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Документы по ДУ</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">ИИС
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Портфель ИИС</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о движении денежных средств</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о начисленных комиссиях</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация по сделкам</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Документы по ИИС</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item"><a href="#" class="header-menu__link">Медиа</a></div>
+        <div class="header-menu__item"><a href="#" class="header-menu__link">Уведомления<span class="notice-count">30</span></a></div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">Профиль и настройки
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Пользователь</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Правила пользования</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Ваш персональный менеджер</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">FAQ</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Настройки</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item"><a href="#" class="header-menu__link">Выход</a></div>
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="page-content__inner">
+        <div class="content-section">
+          <div class="tabs not-shadow">
+            <div class="tabs__nav"><a href="#portfolio-geography" class="tabs__nav-item is-active">География</a><a href="#portfolio-industries" class="tabs__nav-item">Отрасли</a><a href="#portfolio-assets" class="tabs__nav-item">Классы активов</a><a href="#portfolio-issuers" class="tabs__nav-item">Эмитенты</a><a href="#portfolio-currencies" class="tabs__nav-item">Валюты</a></div>
+            <div id="portfolio-geography" class="tab-container is-visible">
+              <div class="content-section__inner">
+                <div class="section-title _no-b-indent">Диверсификация портфеля<br>по географии</div>
+                <div class="section-subtitle _no-b-indent">
+                  На карте показано географическое распределение ценных бумаг
+                  (производных финансовых инструментов) изменение рыночной стоимости которых,
+                  оказывает влияние на стоимость
+                  Вашего портфеля.
+                </div>
+              </div>
+              <div class="chart-pie__info-container _no-percents">
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__info-title">Россия</div>
+                    <div class="chart-pie__info-value">66,7%</div>
+                    <div class="chart-pie__date-and-value">
+                      <dl>
+                        <dt>Дата:</dt>
+                        <dd>15 августа 2016</dd>
+                        <dt>Значение:</dt>
+                        <dd>5000</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__info-title">Европа</div>
+                    <div class="chart-pie__info-value">19,1%</div>
+                    <div class="chart-pie__date-and-value">
+                      <dl>
+                        <dt>Дата:</dt>
+                        <dd>14 августа 2016</dd>
+                        <dt>Значение:</dt>
+                        <dd>2500</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__info-title">Северная Америка</div>
+                    <div class="chart-pie__info-value">6,6%</div>
+                    <div class="chart-pie__date-and-value">
+                      <dl>
+                        <dt>Дата:</dt>
+                        <dd>15 августа 2016</dd>
+                        <dt>Значение:</dt>
+                        <dd>500</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__info-title">Центральная и Южная Америка</div>
+                    <div class="chart-pie__info-value">5,5%</div>
+                    <div class="chart-pie__date-and-value">
+                      <dl>
+                        <dt>Дата:</dt>
+                        <dd>15 августа 2016</dd>
+                        <dt>Значение:</dt>
+                        <dd>500</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__info-title">Ближний Восток</div>
+                    <div class="chart-pie__info-value">2,1%</div>
+                    <div class="chart-pie__date-and-value">
+                      <dl>
+                        <dt>Дата:</dt>
+                        <dd>16 августа 2016</dd>
+                        <dt>Значение:</dt>
+                        <dd>100</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio-industries" class="tab-container">
+              <div class="content-section__inner">
+                <div class="section-title _no-b-indent">Диверсификация портфеля<br>по отраслям</div>
+              </div>
+              <div class="chart-pie__info-container">
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Не определено</div>
+                    <div class="chart-pie__info-title">89,15%</div>
+                    <div class="chart-pie__info-value">4 471,61</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 89.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Государственные ценные бумаги</div>
+                    <div class="chart-pie__info-title">10,85%</div>
+                    <div class="chart-pie__info-value">460,87</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 10.85%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio-assets" class="tab-container">
+              <div class="content-section__inner">
+                <div class="section-title _no-b-indent">Диверсификация портфеля<br>по классам активов</div>
+              </div>
+              <div class="chart-pie__info-container">
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Фонды</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">4 932,48</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 94.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio-issuers" class="tab-container">
+              <div class="content-section__inner">
+                <div class="section-title _no-b-indent">Диверсификация портфеля<br>по эмитентам</div>
+                <div class="section-subtitle _no-b-indent">
+                  На графике показаны 10 наиболее крупных
+                  по объему позиций. Объем позиции указан
+                  в выбранной вами валюте.
+                </div>
+              </div>
+              <div class="chart-pie__info-container">
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">МинФин России</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">1 728,99</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 87.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ОАО «Силовые машины»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">267,1</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 15.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">
+                      Правительство Москвы в лице
+                      Департамента финансов г. Москвы
+                    </div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">263,82</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 14.95%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ПАО «Магнит»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">258,95</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 14.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ОАО «Акрон»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">245,25</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 13.8%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ПАО «ВымпелКом»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">245,07</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 13.75%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ООО «ИКС 5 Финанс»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">225,79</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 13.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ОАО «АФК Система»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">206,85</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 12.45%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ООО «МегаФон Финанс»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">202,41</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 12.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">ОАО «Полюс Золото»</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">197,91</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 11.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Другое</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">1 096,54</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 55.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="portfolio-currencies" class="tab-container">
+              <div class="content-section__inner">
+                <div class="section-title _no-b-indent">Диверсификация портфеля<br>по валютам</div>
+                <div class="section-subtitle _no-b-indent">
+                  На графике показан Ваш портфель в разрезе валют открытых позиций. Суммы приведены
+                  к выбранной Вами валюте.
+                </div>
+              </div>
+              <div class="chart-pie__info-container">
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Российский рубль</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">4 952,48</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 94.15%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Доллар США</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">0</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 0%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Евро</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">0</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 0%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Фунт стерлингов</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">0</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 0%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Японская Йена</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">0</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 0%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="chart-pie__info">
+                  <div class="content-section__inner">
+                    <div class="chart-pie__title">Швейцарский франк</div>
+                    <div class="chart-pie__info-title">&nbsp;</div>
+                    <div class="chart-pie__info-value">0</div>
+                    <div class="chart-pie__percents">
+                      <div style="width: 0%;" class="chart-pie__percents-value"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section content-section--dark content-section--open-pif">
+          <div class="content-section__inner">
+            <div class="section-title">Отправить заявку на открытие</div>
+            <div class="cards-list-container">
+              <div class="cards-list cards-list--call-to-action">
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-fund"></div>
+                    <div class="card__caption">ПИФы</div>
+                  </div>
+                </div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--trust-management"></div>
+                    <div class="card__caption">ДУ</div>
+                  </div>
+                </div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-accs"></div>
+                    <div class="card__caption">ИИС</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-section content-section--outcoming-link">
+          <div class="content-section__inner"><a href="#" class="link-text">Перейти в полную версию кабинета</a></div>
+        </div>
+        <div class="content-section content-section--dark content-section--top-border">
+          <div class="content-section__inner">
+            <div class="privacy-policy">
+              <p>
+                АО УК «Ингосстрах-Инвестиции». Лицензия ФКЦБ России № 21-000-1-00020 от 25.08.1997 г.
+                на осуществление деятельности по управлению инвестиционными фондами,
+                паевыми инвестиционными фондами и негосударственными пенсионными фондами,
+                без ограничения срока действия. Лицензия ФСФР России № 077-08203-001000 от 23.12.2004 г.
+                на осуществление деятельности по доверительному управлению ценными бумагами без ограничения срока действия.
+                Раздел Демо-Пиф предназначен для оценки возможной эффективности инвестиций в паевые инвестиционные фонды,
+                вероятность которых рассматривается конкретным инвестором. Операции, осуществляемые инвестором с помощью сервиса «Демо-Пиф»,
+                не влекут каких-либо юридических последствий как для инвестора, так и для АО УК «Ингосстрах – Инвестиции».
+                Никакие действия, осуществляемые пользователем в разделе Демо-Пифы не будут иметь своим результатом приобретение,
+                погашение или обмен инвестиционных паев ПИФов под управлением АО УК «Ингосстрах – Инвестиции» или какой-либо другой управляющей компании.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="datepicker js-datepicker">
+      <div class="datepicker__content">
+        <div class="datepicker__title">Выберите диапазон дат</div>
+        <div class="datepicker__date-start">Четверг. 1 сентября  2016</div>
+        <div class="datepicker__date-end">Пятница. 30 сентября  2016</div>
+        <div class="datepicker__container">
+          <div class="datepicker__mounth-container">
+            <div class="datepicker__mounth-prev">
+              <div class="datepicker__mounth-btn"></div>
+            </div>
+            <div class="datepicker__mounth-current">Сентябрь 2016</div>
+            <div class="datepicker__mounth-next">
+              <div class="datepicker__mounth-btn"></div>
+            </div>
+          </div>
+          <div class="datepicker__date-container">
+            <div class="datepicker__week-days">
+              <div class="datepicker__week-day">Пн</div>
+              <div class="datepicker__week-day">Вт</div>
+              <div class="datepicker__week-day">Ср</div>
+              <div class="datepicker__week-day">Чт</div>
+              <div class="datepicker__week-day">Пт</div>
+              <div class="datepicker__week-day">Сб</div>
+              <div class="datepicker__week-day">Вс</div>
+            </div>
+            <div class="datepicker__days">
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"></div>
+                <div class="datepicker__day"></div>
+                <div class="datepicker__day"></div>
+                <div class="datepicker__day"><span class="datepicker__day-info _start">1</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">2</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">3</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">4</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">5</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">6</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">7</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">8</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">9</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">10</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">11</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">12</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">13</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">14</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">15</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">16</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">17</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">18</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">19</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">20</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">21</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">22</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">23</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">24</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">25</span></div>
+              </div>
+              <div class="datepicker__days-row">
+                <div class="datepicker__day"><span class="datepicker__day-info">26</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">27</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">28</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">29</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info">30</span></div>
+                <div class="datepicker__day"><span class="datepicker__day-info _end">31</span></div>
+                <div class="datepicker__day"></div>
+              </div>
+            </div>
+          </div>
+          <div class="datepicker__buttons-container"><span class="btn-grey inline-sm-btn js-datepicker-close">Отмена</span><span class="btn-primary inline-sm-btn js-datepicker-close">Выбрать</span></div>
+        </div>
+      </div>
+      <div class="datepicker__close-icon js-datepicker-close"></div>
+    </div>
+    <script type="text/javascript" src="assets/js/libs/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/highcharts.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/charts.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/jquery.selectric.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/jquery.mask.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/password-strength.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/jquery.uploadfile.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/video-js.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      $(function () {
+      		commonActions.init();
+      })
+      
+    </script>
+  </body>
+</html>

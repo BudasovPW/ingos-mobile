@@ -1,0 +1,31 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section.content-section--padding
+		.content-section__inner
+			.section-title._no-b-indent
+				| История
+
+	.content-section--dark._no-paddings.chart-pie__section
+		.chart-pie__tabs
+			.content-section__inner
+				.chart-pie__tab
+					.chart-pie__tab-icon.icon-datepicker.js-show-datepicker
+					.chart-pie__tab-text
+						.chart-pie__tab-label Выбрать период:
+						span.chart-pie__tab-value.link-text-small.js-show-datepicker 1 сен 2016 - 30 сен 2016
+
+				.chart-pie__tab
+					.chart-pie__tab-icon.icon-graph
+					.chart-pie__tab-text
+						.chart-pie__tab-label Изменение за период:
+						span.chart-pie__tab-value.green-text +336,4 (59,61%)
+
+	include assets/jade/partials/chart-period
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

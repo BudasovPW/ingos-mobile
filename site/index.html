@@ -13,53 +13,122 @@
           <div class="header__logo">
             <div class="brand-logo"><img src="assets/img/brand-logo.png" alt="ИНГОССТРАХ Инвестиции"></div>
           </div>
+        </div><a href="#" class="menu-bar js-toggle-menu"><i></i><i></i><i></i></a>
+      </div>
+      <div class="header-menu">
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">Портфель
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Оценка портфеля</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Анализ портфеля</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">История</a></div>
+          </div>
         </div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">ПИФы
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Инвестиционный портфель ПИФ</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Заявки на приобретение</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Сводный отчет</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Документы по ПИФ</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">ДУ
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Инвестиционный портфель ДУ</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о движении денежных средств</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о начисленных комиссиях</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация по сделкам</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Документы по ДУ</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">ИИС
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Портфель ИИС</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о движении денежных средств</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация о начисленных комиссиях</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Информация по сделкам</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Документы по ИИС</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item"><a href="#" class="header-menu__link">Медиа</a></div>
+        <div class="header-menu__item"><a href="#" class="header-menu__link">Уведомления<span class="notice-count">30</span></a></div>
+        <div class="header-menu__item">
+          <div class="header-menu__link js-toggle-next-el">Профиль и настройки
+            <div class="header-menu__toggle-icon"></div>
+          </div>
+          <div class="header-menu__submenu">
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Пользователь</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Правила пользования</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Ваш персональный менеджер</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">FAQ</a></div>
+            <div class="header-menu__item"><a href="#" class="header-menu__link">Настройки</a></div>
+          </div>
+        </div>
+        <div class="header-menu__item"><a href="#" class="header-menu__link">Выход</a></div>
       </div>
     </header>
     <main class="page-content">
       <div class="page-content__inner">
         <div class="content-section content-section--padding">
           <div class="content-section__inner">
-            <div class="section-title _no-b-indent">Подключить личный кабинет</div>
-            <div class="section-subtitle">Введите email и придумайте пароль</div>
-            <form method="" action="" class="form-cabinet-connection-password js-form-validate">
-              <div class="form-row">
-                <label for="ccd-email" class="form-row__title">Логин (ваш email):</label>
-                <div class="form-item">
-                  <input type="text" required placeholder="Введите ваш email" id="ccd-email" class="form-control">
+            <div class="section-title _no-b-indent">История</div>
+          </div>
+        </div>
+        <div class="content-section--dark _no-paddings chart-pie__section">
+          <div class="chart-pie__tabs">
+            <div class="content-section__inner">
+              <div class="chart-pie__tab">
+                <div class="chart-pie__tab-icon icon-datepicker js-show-datepicker"></div>
+                <div class="chart-pie__tab-text">
+                  <div class="chart-pie__tab-label">Выбрать период:</div><span class="chart-pie__tab-value link-text-small js-show-datepicker">1 сен 2016 - 30 сен 2016</span>
                 </div>
               </div>
-              <div class="form-row">
-                <label for="ccd-password" class="form-row__title">Пароль:</label>
-                <input type="password" required placeholder="•••••" data-validate-strength data-parsley-required-message="Введите пароль" name="ccd-password" id="ccd-password" class="form-control">
+              <div class="chart-pie__tab">
+                <div class="chart-pie__tab-icon icon-graph"></div>
+                <div class="chart-pie__tab-text">
+                  <div class="chart-pie__tab-label">Изменение за период:</div><span class="chart-pie__tab-value green-text">+336,4 (59,61%)</span>
+                </div>
               </div>
-              <div class="form-row">
-                <label for="ccd-password" class="form-row__title">Введите пароль еще раз:</label>
-                <input type="password" required data-parsley-equalto="#ccd-password" data-parsley-required-message="Подтвердите пароль" placeholder="Повторите пароль" name="ccd-password-check" id="ccd-password-check" class="form-control">
-              </div>
-              <div class="form-row password-row">
-                <div class="form-grid">
-                  <div class="cell style-nowrap">
-                    <p>Сложность пароля:</p>
+            </div>
+          </div>
+        </div>
+        <div class="period-block_grid">График</div>
+        <div class="content-section content-section--dark content-section--open-pif">
+          <div class="content-section__inner">
+            <div class="section-title">Отправить заявку на открытие</div>
+            <div class="cards-list-container">
+              <div class="cards-list cards-list--call-to-action">
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-fund"></div>
+                    <div class="card__caption">ПИФы</div>
                   </div>
-                  <div class="cell">
-                    <div id="password-strength-scale" class="password-strength-scale">
-                      <div class="password-strength-scale__degree"></div>
-                      <div class="password-strength-scale__degree"></div>
-                      <div class="password-strength-scale__degree"></div>
-                      <div class="password-strength-scale__degree"></div>
-                      <div class="password-strength-scale__degree"></div>
-                    </div>
+                </div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--trust-management"></div>
+                    <div class="card__caption">ДУ</div>
+                  </div>
+                </div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-accs"></div>
+                    <div class="card__caption">ИИС</div>
                   </div>
                 </div>
               </div>
-              <div class="form-row form-row--password-note">
-                <div class="form-note">Пароль должен содержать не менее 8 символов.<span class="line-break">Используйте хотя бы одну цифру и прописную букву.</span></div>
-              </div>
-              <div class="form-row">
-                <input type="submit" value="Войти" class="form-submit">
-              </div>
-            </form>
+            </div>
           </div>
         </div>
         <div class="content-section content-section--outcoming-link">

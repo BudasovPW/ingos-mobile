@@ -181,3 +181,23 @@ form {
     }
   }
 }
+dl {
+
+  dt {
+    display: inline-block;
+  }
+  dd {
+    display: inline;
+    margin: 0;
+    &::after {
+      display: block;
+      content: "";
+      margin-top: 10px;
+    }
+  }
+
+}
+
+.green-text {
+  color: $status-positive;
+}

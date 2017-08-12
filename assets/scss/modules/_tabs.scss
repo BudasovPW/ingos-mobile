@@ -43,6 +43,7 @@
   text-decoration: none;
   border-bottom: 4px solid transparent;
   -webkit-font-smoothing: antialiased;
+  white-space: nowrap;
 
   @media(min-width: $breakpoint-md) {
     padding: 32px $tab-content-padding-h 29px !important;

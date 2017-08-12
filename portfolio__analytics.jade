@@ -1,0 +1,89 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#portfolio-geography').tabs__nav-item.is-active
+					| География
+
+				a(href='#portfolio-industries').tabs__nav-item
+					| Отрасли
+
+				a(href='#portfolio-assets').tabs__nav-item
+					| Классы активов
+
+				a(href='#portfolio-issuers').tabs__nav-item
+					| Эмитенты
+
+				a(href='#portfolio-currencies').tabs__nav-item
+					| Валюты
+
+			.tab-container#portfolio-geography.is-visible
+				.content-section__inner
+					.section-title._no-b-indent
+						| Диверсификация портфеля
+						br
+						| по географии
+
+					.section-subtitle._no-b-indent
+						| На карте показано географическое распределение ценных бумаг
+						| (производных финансовых инструментов) изменение рыночной стоимости которых,
+						| оказывает влияние на стоимость
+						| Вашего портфеля.
+
+				include assets/jade/partials/portfolio/geography
+
+			.tab-container#portfolio-industries
+				.content-section__inner
+					.section-title._no-b-indent
+						| Диверсификация портфеля
+						br
+						| по отраслям
+
+				include assets/jade/partials/portfolio/industries
+
+			.tab-container#portfolio-assets
+				.content-section__inner
+					.section-title._no-b-indent
+						| Диверсификация портфеля
+						br
+						| по классам активов
+
+				include assets/jade/partials/portfolio/assets
+
+			.tab-container#portfolio-issuers
+				.content-section__inner
+					.section-title._no-b-indent
+						| Диверсификация портфеля
+						br
+						| по эмитентам
+
+					.section-subtitle._no-b-indent
+						| На графике показаны 10 наиболее крупных
+						| по объему позиций. Объем позиции указан
+						| в выбранной вами валюте.
+
+				include assets/jade/partials/portfolio/issuers
+
+			.tab-container#portfolio-currencies
+				.content-section__inner
+					.section-title._no-b-indent
+						| Диверсификация портфеля
+						br
+						| по валютам
+
+					.section-subtitle._no-b-indent
+						| На графике показан Ваш портфель в разрезе валют открытых позиций. Суммы приведены
+						| к выбранной Вами валюте.
+
+				include assets/jade/partials/portfolio/currencies
+
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
