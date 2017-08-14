@@ -711,6 +711,64 @@ $adventage-bottom-margin: 35px;
     }
   }
 
+  .icon-email {
+    width: 34px;
+    height: 25px;
+    background: url(../img/icon-mail.png) no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    top: calc(50% - 13px);
+    left: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      width: 50px;
+      height: 36px;
+      top: calc(50% - 18px);
+      left: 38px;
+    }
+  }
+
+  .icon-choose-fund {
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-search.png) $degree-color no-repeat;
+    background-size: 32px 23px;
+    background-position: 11px center;
+    border-radius: $border-radius-circle;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 17px;
+
+    @media(min-width: $breakpoint-md) {
+      width: 70px;
+      height: 70px;
+      background-size: 50px 36px;
+      background-position: 12px center;
+      top: calc(50% - 35px);
+      left: 27px;
+    }
+  }
+
+  .icon-make-request {
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-request.png) $degree-color no-repeat;
+    background-size: 32px 32px;
+    background-position: center center;
+    border-radius: $border-radius-circle;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 17px;
+
+    @media(min-width: $breakpoint-md) {
+      width: 70px;
+      height: 70px;
+      background-size: 50px 50px;
+      top: calc(50% - 35px);
+      left: 27px;
+    }
+  }
+
   &__download {
     padding: 30px 50px 30px 80px;
 
@@ -723,6 +781,24 @@ $adventage-bottom-margin: 35px;
 
       .panel-title {
         padding-bottom: 20px;
+      }
+    }
+  }
+
+  &__with-rounded-icon {
+    width: 100%;
+    display: table;
+    padding: 0;
+
+    .panel-title {
+      display: table-cell;
+      vertical-align: middle;
+      height: 105px;
+      padding: 10px 40px 10px 80px;
+
+      @media(min-width: $breakpoint-md) {
+          height: 175px;
+          padding: 0 100px 0 122px;
       }
     }
   }
@@ -753,6 +829,13 @@ $adventage-bottom-margin: 35px;
     @media(min-width: $breakpoint-md) {
       right: 30px;
       top: calc(50% + 4px);
+    }
+  }
+
+  &._no-arrow {
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }
@@ -816,6 +899,228 @@ $adventage-bottom-margin: 35px;
   @media(min-width: $breakpoint-md) {
     width: 60px;
     height: 53px;
+  }
+}
+
+.chosen-parameters-info {
+  &__item{
+    border-bottom: 2px solid $border-color;
+    padding: 27px 0 30px;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 37px 0 40px;
+    }
+
+    &-title,
+    &-info {
+      padding: 0 20px;
+
+      @media(min-width: $breakpoint-md) {
+        padding: 0 30px;
+      }
+    }
+
+    &-title {
+      font-family: $base-font-family-light;
+      font-size: 1.385rem;
+      padding-bottom: 12px;
+
+      @media(min-width: $breakpoint-md) {
+        padding-bottom: 27px;
+      }
+    }
+
+    &-info {
+      font-family: $base-font-family-light;
+      font-size: 1rem;
+    }
+
+    &-info + &-info {
+      padding-top: 5px;
+
+      @media(min-width: $breakpoint-md) {
+        padding-top: 10px;
+      }
+    }
+
+    &-value {
+      font-family: $base-font-family;
+      white-space: nowrap;
+
+      &._new-line {
+        display: block;
+        padding-top: 5px;
+
+        @media(min-width: $breakpoint-md) {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.files-nav {
+  background: $dark-bg-color;
+  margin-bottom: 20px;
+  padding: 25px 0;
+
+  @media(min-width: $breakpoint-md) {
+    margin-bottom: 30px;
+    padding: 35px 0;
+  }
+
+  .content-section__inner {
+    position: relative;
+  }
+
+  &__value {
+    text-align: center;
+    font-size: 1.385rem;
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 38px;
+    position: absolute;
+    top: calc(50% - 19px);
+    left: 40px;
+
+    @media(min-width: $breakpoint-md) {
+      left: 60px;
+    }
+
+    &._right {
+      transform: rotate(180deg);
+      right: 40px;
+      left: auto;
+
+      @media(min-width: $breakpoint-md) {
+        right: 60px;
+      }
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: 0;
+      width: 20px;
+      height: 4px;
+      background: $arrow-color;
+      transform: rotate(-135deg);
+
+      @media(min-width: $breakpoint-md) {
+        top: 24px;
+        left: -2px;
+        width: 26px;
+        height: 5px;
+      }
+    }
+    &::after {
+      top: 11px;
+      transform: rotate(135deg);
+
+      @media(min-width: $breakpoint-md) {
+        top: 9px;
+      }
+    }
+  }
+}
+
+.folders-list {
+  &__item {
+    font-size: 1.385rem;
+    padding: 24px 0;
+    border-top: 2px solid $border-color;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 44px 0;
+    }
+  }
+
+  &__year {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .icon-folder {
+    margin-right: 40px;
+    margin-left: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      margin-right: 60px;
+      margin-left: 30px;
+    }
+  }
+}
+
+
+.bid {
+  &__item {
+    border-bottom: 2px solid $border-color;
+    padding: 40px 0 35px;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    @media(min-width: $breakpoint-md) {
+      padding: 50px 0 40px;
+    }
+  }
+
+  &__title {
+    font-size: 1.385rem;
+    font-family: $base-font-family-light;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__item-info {
+    font-size: 0;
+    font-family: $base-font-family-light;
+    padding: 0 20px 15px;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 0 20px 25px;
+    }
+
+    &__title,
+    &__info{
+      font-size: 0.923rem;
+      display: inline-block;
+      vertical-align: top;
+      padding-bottom: 3px;
+
+      @media(min-width: $breakpoint-md) {
+        font-size: 1rem;
+      }
+    }
+    &__title {
+      width: 40%;
+    }
+    &__info {
+      width: 60%;
+      text-align: right;
+      font-family: $base-font-family;
+    }
+  }
+
+  &__send-btn {
+    width: calc(100% - 40px);
+    font-size: 1rem;
+    min-height: auto;
+    padding: 15px 35px 17px;
+    margin-left: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 20px 35px;
+    }
   }
 }
 

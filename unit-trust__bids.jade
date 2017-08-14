@@ -1,0 +1,74 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title._medium-indent
+				| Заявки на приобретение
+
+		.bids
+			.bid__item
+				.content-section__inner
+					.bid__title
+						| ПИФ «Ингосстрах. Облигации»
+					dl.bid__item-info
+						dt.bid__item-info__title
+							| Дата заявки:
+						dd.bid__item-info__info
+							| 29.05.2009
+						dt.bid__item-info__title
+							| № заявки:
+						dd.bid__item-info__info
+							| 22.45.01.0438.00.0200
+						dt.bid__item-info__title
+							| № лицевого счета:
+						dd.bid__item-info__info
+							| 910555552
+					.btn-grey.bid__send-btn Отправить реквизиты для перечисления денежных средств в оплату паев на email
+
+			.bid__item
+				.content-section__inner
+					.bid__title
+						| ПИФ «Ингосстрах. Сбалансированный»
+					dl.bid__item-info
+						dt.bid__item-info__title
+							| Дата заявки:
+						dd.bid__item-info__info
+							| 12.12.2013
+						dt.bid__item-info__title
+							| № заявки:
+						dd.bid__item-info__info
+							| 22.98.01.0438.00.1234
+						dt.bid__item-info__title
+							| № лицевого счета:
+						dd.bid__item-info__info
+							| 121000004
+					.btn-grey.bid__send-btn Отправить реквизиты для перечисления денежных средств в оплату паев на email
+
+			.bid__item
+				.content-section__inner
+					.bid__title
+						| ПИФ «Ингосстрах. Риэл-Эстейт»
+					dl.bid__item-info
+						dt.bid__item-info__title
+							| Дата заявки:
+						dd.bid__item-info__info
+							| 06.01.2015
+						dt.bid__item-info__title
+							| № заявки:
+						dd.bid__item-info__info
+							| 22.90.01.0438.00.1467
+						dt.bid__item-info__title
+							| № лицевого счета:
+						dd.bid__item-info__info
+							| 911000456
+					.btn-grey.bid__send-btn Отправить реквизиты для перечисления денежных средств в оплату паев на email
+
+	include assets/jade/partials/send-report
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

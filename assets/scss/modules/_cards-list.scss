@@ -37,7 +37,7 @@
     }
 
     > .card {
-      width: calc(100% - #{$card-list-padding});
+      width: calc(100% - 20px);
       margin: 0 auto;
     }
 

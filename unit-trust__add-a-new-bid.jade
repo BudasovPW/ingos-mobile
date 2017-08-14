@@ -1,0 +1,40 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title._medium-indent._no-b-indent
+				| Паевые инвестиционные фонды
+			.section-subtitle
+				| Сергей Алексеевич, к сожалению, на данный момент у Вас отсутствуют паи фондов.
+				br
+				| Для того, чтобы начать инвестировать, вам необходимо:
+
+			a(href='#').panel.panel__with-rounded-icon
+				i.icon-choose-fund
+				span.panel-title
+					| Выбрать фонд
+					br
+					| на сайте АО УК
+					br
+					| «Ингосстрах Инвестиции»
+
+			a(href='#').panel.panel__with-rounded-icon
+				i.icon-make-request
+				span.panel-title
+					| Оформить заявку в любом
+					| удобном для вас офисе
+
+			.section-more-info
+				| Более подробную информацию Вы можете
+				| получить по телефону:
+				a(href='tel: 8 800 100-48-98').no-wrap
+					|  8 800 100-48-98
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

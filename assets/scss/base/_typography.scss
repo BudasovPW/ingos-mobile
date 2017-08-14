@@ -7,27 +7,35 @@
     font-size: 0.962rem; //25px
   }
 
-  &._no-b-indent {
-    margin-bottom: 15px;
-  }
   &._text-indent {
     margin-bottom: 20px;
   }
   &._tabs-indent {
     margin-bottom: 35px;
   }
+  &._medium-indent {
+    margin: 60px 0 35px;
+  }
+  &._no-b-indent {
+    margin-bottom: 15px;
+  }
 
   @media(min-width: $breakpoint-md) {
     margin: 70px 0;
 
-    &._no-b-indent {
-      margin-bottom: 30px;
-    }
     &._text-indent {
       margin-bottom: 40px;
     }
     &._tabs-indent {
       margin-bottom: 50px;
+    }
+
+    &._medium-indent {
+      margin: 80px 0 55px;
+    }
+
+    &._no-b-indent {
+      margin-bottom: 30px;
     }
   }
 }
@@ -104,9 +112,21 @@
   }
 }
 
+.section-more-info {
+  font-family: $base-font-family-light;
+  font-size: 1.154rem;
+  text-align: center;
+  padding: 5px 0 40px;
 
-.tooltip-link {
+  @media(min-width: $breakpoint-md) {
+    padding: 30px 0 60px;
+  }
 
+  a {
+    font-family: $base-font-family;
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 .title {

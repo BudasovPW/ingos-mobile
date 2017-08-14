@@ -1,0 +1,67 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title._medium-indent
+				| Сводный отчёт
+
+		.period-block
+			.period-block_header
+				.content-section__inner
+					.period-block_header-content
+						i.icon.icon-datepicker
+						.text
+							.text-label Дата оценки:
+							span.link-text-small 31 мар 2016
+
+		.content-section__inner
+			.form-row
+				.form-row__main-title
+					| Детализация по фонду
+
+			.form-row
+				label(for='choose-parameters').form-row__title
+					| Выберите параметр для отображения:
+
+				select.form-control._small-text#choose-parameters
+					option Текущая стоимость оставшихся паев, руб.
+					option Текущая стоимость оставшихся паев, дол.
+
+		.chosen-parameters-info
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| «Ингосстрах. Еврооблигации»
+					.chosen-parameters-info__item-info
+						| Текущая стоимость оставшихся паев, руб:
+						span.chosen-parameters-info__item-value._new-line
+							|  2 733,86
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| «Ингосстрах. Денежный рынок»
+					.chosen-parameters-info__item-info
+						| Текущая стоимость оставшихся паев, руб:
+						span.chosen-parameters-info__item-value._new-line
+							|  1 774,04
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| «Ингосстрах. Товарно-сырьевой рынок»
+					.chosen-parameters-info__item-info
+						| Текущая стоимость оставшихся паев, руб:
+						span.chosen-parameters-info__item-value._new-line
+							|  1 310,51
+
+		include assets/jade/partials/send-report
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

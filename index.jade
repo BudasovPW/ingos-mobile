@@ -3,27 +3,180 @@ block header
     include assets/jade/layouts/global/partials/header-menu
 
 block content
-    .content-section.content-section--padding
+    .content-section
         .content-section__inner
-            .section-title._no-b-indent
-                | История
+            .section-title._medium-indent
+                | Ингосстрах. Облигации
 
-    .content-section--dark._no-paddings.chart-pie__section
-        .chart-pie__tabs
+        .period-block
+            .period-block_header
+                .content-section__inner
+                    .period-block_header-content
+                        i.icon.icon-datepicker
+                        .text
+                            .text-label Дата оценки:
+                            span.link-text-small 31 мар 2016
+        .chart-container
             .content-section__inner
-                .chart-pie__tab
-                    .chart-pie__tab-icon.icon-datepicker.js-show-datepicker
-                    .chart-pie__tab-text
-                        .chart-pie__tab-label Выбрать период:
-                        span.chart-pie__tab-value.link-text-small.js-show-datepicker 1 сен 2016 - 30 сен 2016
+                ul.chart__legends
+                    li.chart__legend._blue ОПИФ
+                    li.chart__legend._red Индекс облигаций ММВБ
+                #unit-trust-detalization
 
-                .chart-pie__tab
-                    .chart-pie__tab-icon.icon-graph
-                    .chart-pie__tab-text
-                        .chart-pie__tab-label Изменение за период:
-                        span.chart-pie__tab-value.green-text +336,4 (59,61%)
+                .chart__date-info
+                    .chart__date-info--title
+                       | Апрель 2016
+                    .chart__date-range
+                        .chart__date-range--item._left 14
+                        .chart__date-range--item._left 15
+                        .chart__date-range--item._left 16
+                        .chart__date-range--item._left 17
+                        .chart__date-range--item._active 18
+                        .chart__date-range--item._right 19
+                        .chart__date-range--item._right 20
+                        .chart__date-range--item._right 21
+                        .chart__date-range--item._right 22
 
-    include assets/jade/partials/chart-period
+                    .chart__info-block
+                        .chart__info-block--title
+                            | ОПИФ:
+                        .chart__info-block--value
+                            | 101
+                            span  +1 (1%)
+
+                    .chart__info-block
+                        .chart__info-block--title
+                            | Индекс облигаций ММВБ:
+                        .chart__info-block--value
+                            | 104
+                            span  +4 (4%)
+
+        .content-section__inner
+            .form-row
+                .form-row__main-title
+                    | Детализация по фонду
+
+            .form-row
+                label(for='choose-parameters').form-row__title
+                    | Выберите параметр для отображения:
+
+                select.form-control._small-text#choose-parameters
+                    option Сумма паев приобретения, руб.
+                    option Сумма паев приобретения, дол.
+
+        .chosen-parameters-info
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-info
+                        | Дата приобретения:
+                        span.chosen-parameters-info__item-value
+                            |  07.07.2015
+                    .chosen-parameters-info__item-info
+                        | Сумма паев приобретения, руб:
+                        span.chosen-parameters-info__item-value
+                            |  500 000,00
+
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-info
+                        | Дата приобретения:
+                        span.chosen-parameters-info__item-value
+                            |  15.06.2015
+                    .chosen-parameters-info__item-info
+                        | Сумма паев приобретения, руб:
+                        span.chosen-parameters-info__item-value
+                            |  100 000,00
+
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-info
+                        | Дата приобретения:
+                        span.chosen-parameters-info__item-value
+                            |  07.08.2014
+                    .chosen-parameters-info__item-info
+                        | Сумма паев приобретения, руб:
+                        span.chosen-parameters-info__item-value
+                            |  300 000,00
+
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-info
+                        | Дата приобретения:
+                        span.chosen-parameters-info__item-value
+                            |  27.12.2011
+                    .chosen-parameters-info__item-info
+                        | Сумма паев приобретения, руб:
+                        span.chosen-parameters-info__item-value
+                            |  599 302,53
+
+        .content-section__inner
+            .form-row
+                .form-row__main-title
+                    | Совершенные операции по фонду
+
+            .form-row
+                label(for='choose-parameters-operations').form-row__title
+                    | Выберите параметр для отображения:
+
+                select.form-control._small-text#choose-parameters-operations
+                    option Сумма операции, руб.
+                    option Сумма операции, дол.
+
+        .chosen-parameters-info
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-title
+                        | Погашение
+                    .chosen-parameters-info__item-info
+                        | Дата проведения операции:
+                        span.chosen-parameters-info__item-value
+                            |  10.07.2015
+                    .chosen-parameters-info__item-info
+                        | Сумма операции, руб:
+                        span.chosen-parameters-info__item-value
+                            |  150 000,00
+
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-title
+                        | Обмен
+                    .chosen-parameters-info__item-info
+                        | Дата проведения приобретения:
+                        span.chosen-parameters-info__item-value
+                            |  10.03.2013
+                    .chosen-parameters-info__item-info
+                        | Сумма операции, руб:
+                        span.chosen-parameters-info__item-value
+                            |  213 191,21
+
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-title
+                        | Приобретение
+                    .chosen-parameters-info__item-info
+                        | Дата проведения приобретения:
+                        span.chosen-parameters-info__item-value
+                            |  10.08.2013
+                    .chosen-parameters-info__item-info
+                        | Сумма операции, руб:
+                        span.chosen-parameters-info__item-value
+                            |  -100 000,00
+
+            .chosen-parameters-info__item
+                .content-section__inner
+                    .chosen-parameters-info__item-title
+                        | Приобретение
+                    .chosen-parameters-info__item-info
+                        | Дата проведения приобретения:
+                        span.chosen-parameters-info__item-value
+                            |  10.07.2013
+                    .chosen-parameters-info__item-info
+                        | Сумма операции, руб:
+                        span.chosen-parameters-info__item-value
+                            |  -200 000,00
+
+        include assets/jade/partials/send-report
+
     include assets/jade/partials/request-to-open-pif
     include assets/jade/partials/outgoing-link
     include assets/jade/partials/privacy-policy

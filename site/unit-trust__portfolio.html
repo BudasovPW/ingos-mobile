@@ -81,128 +81,91 @@
     <main class="page-content">
       <div class="page-content__inner">
         <div class="content-section">
-          <div class="content-section__inner">
-            <div class="section-title _medium-indent">Ингосстрах. Облигации</div>
-          </div>
-          <div class="period-block">
-            <div class="period-block_header">
+          <div class="chart-pie">
+            <div class="content-section--dark _no-paddings chart-pie__section">
+              <div class="chart-pie__main-title _top-indent">Инвестиционный портфель ПИФ</div>
               <div class="content-section__inner">
-                <div class="period-block_header-content"><i class="icon icon-datepicker"></i>
-                  <div class="text">
-                    <div class="text-label">Дата оценки:</div><span class="link-text-small">31 мар 2016</span>
+                <div id="unit-trust-portfolio" class="chart-pie__container"></div>
+                <div class="chart-pie__main-info">
+                  <div class="chart-pie__main-info__title">Общая оценка</div>
+                  <div class="chart-pie__main-info__value">1 512 980,06 руб</div>
+                </div>
+              </div>
+              <div class="chart-pie__tabs">
+                <div class="content-section__inner">
+                  <div class="chart-pie__tab">
+                    <div class="chart-pie__tab-icon icon-datepicker"></div>
+                    <div class="chart-pie__tab-text">Дата оценки:&nbsp;<span class="link-text-small">31 мар 2016</span></div>
+                  </div>
+                  <div class="chart-pie__tab">
+                    <div class="chart-pie__tab-icon icon-currency"></div>
+                    <div class="chart-pie__tab-text">Валюта:&nbsp;<span class="link-text-small">Рубли</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-pie__info-container">
+              <div class="chart-pie__info">
+                <div class="content-section__inner">
+                  <div class="chart-pie__title"><a href="#">Ингосстрах. Облигации</a></div>
+                  <div class="chart-pie__info-title">59,69%</div>
+                  <div class="chart-pie__info-value">903 174,44 руб</div>
+                  <div class="chart-pie__percents">
+                    <div style="background-color: #ff6961; width: 59.69%;" class="chart-pie__percents-value"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="chart-pie__info">
+                <div class="content-section__inner">
+                  <div class="chart-pie__title"><a href="#">Ингосстрах. Еврооблигации</a></div>
+                  <div class="chart-pie__info-title">32,03%</div>
+                  <div class="chart-pie__info-value">484 525,04 руб</div>
+                  <div class="chart-pie__percents">
+                    <div style="background-color: #b6e329; width: 32.03%;" class="chart-pie__percents-value"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="chart-pie__info">
+                <div class="content-section__inner">
+                  <div class="chart-pie__title"><a href="#">Ингосстрах. Риэл Эстейт</a></div>
+                  <div class="chart-pie__info-title">8,28%</div>
+                  <div class="chart-pie__info-value">125 280,58 руб</div>
+                  <div class="chart-pie__percents">
+                    <div style="background-color: #1b7cd0; width: 8.28%;" class="chart-pie__percents-value"></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="chart-container">
-            <div class="content-section__inner">
-              <ul class="chart__legends">
-                <li class="chart__legend _blue">ОПИФ</li>
-                <li class="chart__legend _red">Индекс облигаций ММВБ</li>
-              </ul>
-              <div id="unit-trust-detalization"></div>
-              <div class="chart__date-info">
-                <div class="chart__date-info--title">Апрель 2016</div>
-                <div class="chart__date-range">
-                  <div class="chart__date-range--item _left">14</div>
-                  <div class="chart__date-range--item _left">15</div>
-                  <div class="chart__date-range--item _left">16</div>
-                  <div class="chart__date-range--item _left">17</div>
-                  <div class="chart__date-range--item _active">18</div>
-                  <div class="chart__date-range--item _right">19</div>
-                  <div class="chart__date-range--item _right">20</div>
-                  <div class="chart__date-range--item _right">21</div>
-                  <div class="chart__date-range--item _right">22</div>
-                </div>
-                <div class="chart__info-block">
-                  <div class="chart__info-block--title">ОПИФ:</div>
-                  <div class="chart__info-block--value">101<span> +1 (1%)</span></div>
-                </div>
-                <div class="chart__info-block">
-                  <div class="chart__info-block--title">Индекс облигаций ММВБ:</div>
-                  <div class="chart__info-block--value">104<span> +4 (4%)</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="content-section__inner">
             <div class="form-row">
-              <div class="form-row__main-title">Детализация по фонду</div>
+              <div class="form-row__main-title">ПИФы</div>
             </div>
             <div class="form-row">
               <label for="choose-parameters" class="form-row__title">Выберите параметр для отображения:</label>
-              <select id="choose-parameters" class="form-control _small-text">
-                <option>Сумма паев приобретения, руб.</option>
-                <option>Сумма паев приобретения, дол.</option>
+              <select id="choose-parameters" class="form-control">
+                <option>Текущая оценка 1 пая, руб.</option>
+                <option>Текущая оценка 2 паев, руб.</option>
               </select>
             </div>
           </div>
           <div class="chosen-parameters-info">
             <div class="chosen-parameters-info__item">
               <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-info">Дата приобретения:<span class="chosen-parameters-info__item-value"> 07.07.2015</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма паев приобретения, руб:<span class="chosen-parameters-info__item-value"> 500 000,00</span></div>
+                <div class="chosen-parameters-info__item-title">«Ингосстрах. Облигации»</div>
+                <div class="chosen-parameters-info__item-info">Текущая оценка 1 пая, руб:<span class="chosen-parameters-info__item-value"> 2 733,86</span></div>
               </div>
             </div>
             <div class="chosen-parameters-info__item">
               <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-info">Дата приобретения:<span class="chosen-parameters-info__item-value"> 15.06.2015</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма паев приобретения, руб:<span class="chosen-parameters-info__item-value"> 100 000,00</span></div>
+                <div class="chosen-parameters-info__item-title">«Ингосстрах. Еврооблигации»</div>
+                <div class="chosen-parameters-info__item-info">Текущая оценка 1 пая, руб:<span class="chosen-parameters-info__item-value"> 1 774,04</span></div>
               </div>
             </div>
             <div class="chosen-parameters-info__item">
               <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-info">Дата приобретения:<span class="chosen-parameters-info__item-value"> 07.08.2014</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма паев приобретения, руб:<span class="chosen-parameters-info__item-value"> 300 000,00</span></div>
-              </div>
-            </div>
-            <div class="chosen-parameters-info__item">
-              <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-info">Дата приобретения:<span class="chosen-parameters-info__item-value"> 27.12.2011</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма паев приобретения, руб:<span class="chosen-parameters-info__item-value"> 599 302,53</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="content-section__inner">
-            <div class="form-row">
-              <div class="form-row__main-title">Совершенные операции по фонду</div>
-            </div>
-            <div class="form-row">
-              <label for="choose-parameters-operations" class="form-row__title">Выберите параметр для отображения:</label>
-              <select id="choose-parameters-operations" class="form-control _small-text">
-                <option>Сумма операции, руб.</option>
-                <option>Сумма операции, дол.</option>
-              </select>
-            </div>
-          </div>
-          <div class="chosen-parameters-info">
-            <div class="chosen-parameters-info__item">
-              <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-title">Погашение</div>
-                <div class="chosen-parameters-info__item-info">Дата проведения операции:<span class="chosen-parameters-info__item-value"> 10.07.2015</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма операции, руб:<span class="chosen-parameters-info__item-value"> 150 000,00</span></div>
-              </div>
-            </div>
-            <div class="chosen-parameters-info__item">
-              <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-title">Обмен</div>
-                <div class="chosen-parameters-info__item-info">Дата проведения приобретения:<span class="chosen-parameters-info__item-value"> 10.03.2013</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма операции, руб:<span class="chosen-parameters-info__item-value"> 213 191,21</span></div>
-              </div>
-            </div>
-            <div class="chosen-parameters-info__item">
-              <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-title">Приобретение</div>
-                <div class="chosen-parameters-info__item-info">Дата проведения приобретения:<span class="chosen-parameters-info__item-value"> 10.08.2013</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма операции, руб:<span class="chosen-parameters-info__item-value"> -100 000,00</span></div>
-              </div>
-            </div>
-            <div class="chosen-parameters-info__item">
-              <div class="content-section__inner">
-                <div class="chosen-parameters-info__item-title">Приобретение</div>
-                <div class="chosen-parameters-info__item-info">Дата проведения приобретения:<span class="chosen-parameters-info__item-value"> 10.07.2013</span></div>
-                <div class="chosen-parameters-info__item-info">Сумма операции, руб:<span class="chosen-parameters-info__item-value"> -200 000,00</span></div>
+                <div class="chosen-parameters-info__item-title">«Ингосстрах. Риэл Эстейт»</div>
+                <div class="chosen-parameters-info__item-info">Текущая оценка 1 пая, руб:<span class="chosen-parameters-info__item-value"> 1 310,51</span></div>
               </div>
             </div>
           </div>

@@ -1,0 +1,121 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+
+		.chart-pie
+			.content-section--dark._no-paddings.chart-pie__section
+				.chart-pie__main-title._top-indent Инвестиционный портфель ПИФ
+
+				.content-section__inner
+					.chart-pie__container#unit-trust-portfolio
+					.chart-pie__main-info
+						.chart-pie__main-info__title
+							| Общая оценка
+						.chart-pie__main-info__value
+							| 1 512 980,06 руб
+
+				.chart-pie__tabs
+					.content-section__inner
+						.chart-pie__tab
+							.chart-pie__tab-icon.icon-datepicker
+							.chart-pie__tab-text
+								| Дата оценки:&nbsp;
+								span.link-text-small 31 мар 2016
+
+						.chart-pie__tab
+							.chart-pie__tab-icon.icon-currency
+							.chart-pie__tab-text
+								| Валюта:&nbsp;
+								span.link-text-small Рубли
+
+			.chart-pie__info-container
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							a(href='#') Ингосстрах. Облигации
+
+						.chart-pie__info-title
+							| 59,69%
+
+						.chart-pie__info-value
+							| 903 174,44 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #ff6961; width: 59.69%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							a(href='#') Ингосстрах. Еврооблигации
+
+						.chart-pie__info-title
+							| 32,03%
+
+						.chart-pie__info-value
+							| 484 525,04 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #b6e329; width: 32.03%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							a(href='#') Ингосстрах. Риэл Эстейт
+
+						.chart-pie__info-title
+							| 8,28%
+
+						.chart-pie__info-value
+							| 125 280,58 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #1b7cd0; width: 8.28%;")
+
+		.content-section__inner
+			.form-row
+				.form-row__main-title
+					| ПИФы
+
+			.form-row
+				label(for='choose-parameters').form-row__title
+					| Выберите параметр для отображения:
+
+				select.form-control#choose-parameters
+					option Текущая оценка 1 пая, руб.
+					option Текущая оценка 2 паев, руб.
+
+		.chosen-parameters-info
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| «Ингосстрах. Облигации»
+					.chosen-parameters-info__item-info
+						| Текущая оценка 1 пая, руб:
+						span.chosen-parameters-info__item-value
+							|  2 733,86
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| «Ингосстрах. Еврооблигации»
+					.chosen-parameters-info__item-info
+						| Текущая оценка 1 пая, руб:
+						span.chosen-parameters-info__item-value
+							|  1 774,04
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| «Ингосстрах. Риэл Эстейт»
+					.chosen-parameters-info__item-info
+						| Текущая оценка 1 пая, руб:
+						span.chosen-parameters-info__item-value
+							|  1 310,51
+
+		include assets/jade/partials/send-report
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

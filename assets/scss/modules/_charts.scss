@@ -1,6 +1,5 @@
 .chart-container {
-  margin: 25px 0;
-  height: 350px;
+  border-bottom: 2px solid $border-color;
 
   &._no-b-indent {
     margin-bottom: 0;
@@ -23,9 +22,17 @@
     padding-top: 35px;
     padding-bottom: 20px;
 
+    &._top-indent {
+      padding-top: 60px;
+    }
+
     @media(min-width: $breakpoint-md) {
       padding-top: 50px;
       padding-bottom: 35px;
+
+      &._top-indent {
+        padding-top: 90px;
+      }
     }
   }
 
@@ -286,6 +293,112 @@
   &-value {
     &._green {
       color: $status-positive;
+    }
+  }
+}
+
+.chart__legends {
+  font-size: 1rem;
+  padding: 50px 0 10px;
+}
+.chart__legend {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0;
+  margin: 0 35px 25px 0 !important;
+
+  &::before {
+    display: none;
+  }
+
+  &._blue {
+    color: $color-chart-blue;
+  }
+
+  &._red {
+    color: $color-chart-red;
+  }
+}
+
+
+.chart {
+  &__date-info {
+    font-family: $base-font-family-light;
+    padding-top: 15px;
+
+    @media(min-width: $breakpoint-md) {
+      padding-top: 35px;
+    }
+
+    &--title {
+      font-size: 1rem;
+      text-align: center;
+      padding-bottom: 30px;
+
+      @media(min-width: $breakpoint-md) {
+        padding-bottom: 40px;
+      }
+    }
+  }
+
+  &__date-range {
+    font-size: 0;
+    text-align: center;
+    padding-bottom: 33px;
+
+    @media(min-width: $breakpoint-md) {
+      padding-bottom: 43px;
+    }
+
+    &--item {
+      font-size: 0.9231rem;
+      width: 11.5%;
+      display: inline-block;
+      vertical-align: middle;
+
+      @media(min-width: $breakpoint-md) {
+        font-size: 1.154rem;
+      }
+
+      &._left {
+        text-align: left;
+      }
+      &._right {
+        text-align: right;
+      }
+
+      &._active {
+        width: 8%;
+        font-family: $base-font-family;
+        font-size: 1.308rem;
+
+        @media(min-width: $breakpoint-md) {
+          font-size: 1.615rem;
+        }
+      }
+    }
+  }
+
+  &__info-block {
+    @include clearfix();
+    padding-bottom: 25px;
+
+    @media(min-width: $breakpoint-md) {
+      padding-bottom: 35px;
+    }
+
+    &--title,
+    &--value {
+      width: 60%;
+      float: left;
+    }
+    &--value {
+      width: 40%;
+      text-align: right;
+
+      span {
+        color: $color-step-default;
+      }
     }
   }
 }

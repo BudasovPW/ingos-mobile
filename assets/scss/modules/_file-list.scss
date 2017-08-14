@@ -6,9 +6,12 @@
 .file-preview__icon {
   display: table-cell;
   vertical-align: top;
-  width: 50px;
+  width: 70px;
+  padding-left: 20px;
+
   @media(min-width: $breakpoint-md) {
     width: 125px;
+    padding-left: 30px;
   }
 }
 
@@ -26,6 +29,21 @@
     height: 60px;
     background-size: 100px 300px;
     margin-top: 8px;
+  }
+}
+
+.icon-folder {
+  position: relative;
+  width: 34px;
+  height: 27px;
+  background: url(../../assets/img/icon-folder.png) no-repeat;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+
+  @media(min-width: $breakpoint-md) {
+    width: 52px;
+    height: 42px;
   }
 }
 
