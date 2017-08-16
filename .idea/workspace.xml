@@ -15,41 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_charts.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_charts.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scss/modules/_charts.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="395" column="14" lean-forward="false" selection-start-line="395" selection-start-column="14" selection-end-line="395" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unit-trust__detalization.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/unit-trust__detalization.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="183" column="14" lean-forward="false" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="15" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/base/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="542">
+              <caret line="437" column="3" lean-forward="true" selection-start-line="437" selection-start-column="3" selection-end-line="437" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -58,28 +28,48 @@
       <file leaf-file-name="_page-content.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="692">
-              <caret line="1120" column="4" lean-forward="false" selection-start-line="1120" selection-start-column="4" selection-end-line="1122" selection-end-column="5" />
+            <state relative-caret-position="195">
+              <caret line="1168" column="3" lean-forward="false" selection-start-line="1168" selection-start-column="3" selection-end-line="1168" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_typography.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/base/_typography.scss">
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="612">
+              <caret line="54" column="56" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="54" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_scaffolding.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/base/_scaffolding.scss">
+      <file leaf-file-name="purchase__iia-step-1-3.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-3.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3468">
-              <caret line="204" column="0" lean-forward="false" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="8" />
+            <state relative-caret-position="384">
+              <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="76" lean-forward="false" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_highstock.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index_highstock.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -88,8 +78,8 @@
       <file leaf-file-name="charts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/site/assets/js/vendors/charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="843">
-              <caret line="192" column="29" lean-forward="false" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
+            <state relative-caret-position="408">
+              <caret line="228" column="37" lean-forward="false" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -99,36 +89,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>r</find>
-      <find>rem</find>
-      <find>section-subtitle</find>
-      <find>._no-b-indent</find>
-      <find>panel__download</find>
-      <find>d</find>
-      <find>do</find>
-      <find>download</find>
-      <find>.icon-ring</find>
-      <find>00adeb</find>
-      <find>.section</find>
-      <find>whi</find>
-      <find>whit</find>
-      <find>white</find>
-      <find>white-</find>
-      <find>.chosen-parameters-info</find>
-      <find>unit-trust-detalization</find>
-      <find>u</find>
-      <find>us</find>
-      <find>use</find>
-      <find>useh</find>
-      <find>useht</find>
-      <find>usehtm</find>
-      <find>usehtml</find>
-      <find>useHTML: true,</find>
-      <find>height</find>
-      <find>clea</find>
+      <find>Открыть виртуа</find>
+      <find>Открыть виртуал</find>
+      <find>Открыть виртуаль</find>
+      <find>Открыть виртуальн</find>
+      <find>Открыть виртуальны</find>
+      <find>.btn-primary</find>
+      <find>.period-block_header</find>
+      <find>c</find>
       <find>clear</find>
-      <find>8c9196</find>
-      <find>.chart-container</find>
+      <find>.chosen-parameters-info</find>
+      <find>margin-top: 10px;</find>
+      <find>bid</find>
+      <find>Следующие купонные выплаты</find>
+      <find>#trust-managment-portfolio</find>
+      <find>history</find>
+      <find>с</find>
+      <find>се</find>
+      <find>сен</find>
+      <find>сент</find>
+      <find>сентя</find>
+      <find>сентяб</find>
+      <find>сентябр</find>
+      <find>сентябрь</find>
+      <find>сентябрь</find>
+      <find>сентябрь 2</find>
+      <find>сентябрь 20</find>
+      <find>сентябрь 201</find>
+      <find>сентябрь 2016</find>
+      <find>date-range</find>
+      <find>__date-range</find>
     </findStrings>
     <replaceStrings>
       <replace>content-section--padding</replace>
@@ -155,15 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/scss/modules/_buttons.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_forms.scss" />
-        <option value="$PROJECT_DIR$/assets/jade/partials/modal-popups/change-personal-mananger-accepted.jade" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_modal-popups.scss" />
-        <option value="$PROJECT_DIR$/purchase__iia-step-1-1-and-1-2.jade" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_accordion.scss" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_form-elements.scss" />
-        <option value="$PROJECT_DIR$/purchase__iia-step-1-4.jade" />
-        <option value="$PROJECT_DIR$/purchase__iia-step-2-1.jade" />
         <option value="$PROJECT_DIR$/purchase__iia-step-2-3.jade" />
         <option value="$PROJECT_DIR$/assets/jade/partials/get-phone-code.jade" />
         <option value="$PROJECT_DIR$/purchase__iia-step-3-1.jade" />
@@ -187,25 +168,34 @@
         <option value="$PROJECT_DIR$/assets/jade/partials/portfolio/geography.jade" />
         <option value="$PROJECT_DIR$/portfolio__analytics.jade" />
         <option value="$PROJECT_DIR$/assets/jade/partials/chart-period.jade" />
-        <option value="$PROJECT_DIR$/purchase__iia-step-1-3.jade" />
-        <option value="$PROJECT_DIR$/portfolio__analytics-history.jade" />
         <option value="$PROJECT_DIR$/unit-trust__portfolio.jade" />
         <option value="$PROJECT_DIR$/assets/jade/partials/files-list.jade" />
         <option value="$PROJECT_DIR$/unit-trust__documents.jade" />
         <option value="$PROJECT_DIR$/assets/jade/partials/folders-list.jade" />
         <option value="$PROJECT_DIR$/unit-trust__folders.jade" />
         <option value="$PROJECT_DIR$/assets/jade/partials/send-report.jade" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
         <option value="$PROJECT_DIR$/unit-trust__bids.jade" />
         <option value="$PROJECT_DIR$/assets/scss/base/_typography.scss" />
         <option value="$PROJECT_DIR$/assets/scss/base/_scaffolding.scss" />
         <option value="$PROJECT_DIR$/unit-trust__add-a-new-bid.jade" />
         <option value="$PROJECT_DIR$/unit-trust__consolidated-report.jade" />
         <option value="$PROJECT_DIR$/assets/scss/base/_variables.scss" />
-        <option value="$PROJECT_DIR$/index.jade" />
-        <option value="$PROJECT_DIR$/site/assets/js/vendors/charts.js" />
-        <option value="$PROJECT_DIR$/assets/scss/modules/_charts.scss" />
         <option value="$PROJECT_DIR$/unit-trust__detalization.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__documents.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__folders.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__add-a-new-one.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__dealings.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__comissions.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__portfolio.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__flow-of-funds.jade" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_page-content.scss" />
+        <option value="$PROJECT_DIR$/assets/jade/layouts/global/index_highstock.jade" />
+        <option value="$PROJECT_DIR$/site/assets/js/vendors/charts.js" />
+        <option value="$PROJECT_DIR$/index.jade" />
+        <option value="$PROJECT_DIR$/trust-managment__portfolio-dynamics.jade" />
+        <option value="$PROJECT_DIR$/portfolio__analytics-history.jade" />
+        <option value="$PROJECT_DIR$/purchase__iia-step-1-3.jade" />
+        <option value="$PROJECT_DIR$/assets/scss/modules/_charts.scss" />
       </list>
     </option>
   </component>
@@ -227,10 +217,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1029" />
-    <option name="y" value="17" />
-    <option name="width" value="1515" />
-    <option name="height" value="1399" />
+    <option name="x" value="1155" />
+    <option name="y" value="46" />
+    <option name="width" value="1250" />
+    <option name="height" value="1277" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -247,6 +237,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -269,14 +261,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ingos-mobile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="global" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,15 +403,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ingos_git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile" />
-      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\assets\jade\partials" />
-      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\assets\jade\partials\portfolio" />
-      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\assets\js\vendors" />
-      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\site\assets\js\vendors" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\site\assets\js\vendors" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\site\assets\js\vendors" />
+      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\assets\jade\layouts\global" />
+      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile" />
+      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\assets" />
+      <recent name="C:\Users\Michael\Desktop\ingos-mobile-git\ingos-mobile\assets\jade\partials" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,22 +550,25 @@
       <workItem from="1502616450258" duration="8901000" />
       <workItem from="1502709865151" duration="5927000" />
       <workItem from="1502720332278" duration="3031000" />
+      <workItem from="1502778202366" duration="1317000" />
+      <workItem from="1502779884333" duration="9000" />
+      <workItem from="1502780637004" duration="14725000" />
+      <workItem from="1502885706439" duration="6219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264618000" />
+    <option name="totallyTimeSpent" value="286888000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1029" y="17" width="1515" height="1399" extended-state="1" />
-    <editor active="true" />
+    <frame x="1155" y="46" width="1250" height="1277" extended-state="0" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25050777" sideWeight="0.43789473" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25050777" sideWeight="0.56210524" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29042906" sideWeight="0.45240176" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29042906" sideWeight="0.54759824" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14694202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25019732" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26288208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -478,87 +595,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/site/purchase__iia-step-3-1-and-3-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-2_v2.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-elements.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10353">
-          <caret line="609" column="36" lean-forward="false" selection-start-line="609" selection-start-column="36" selection-end-line="609" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-2.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_form-grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="12" lean-forward="false" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/partials/datepicker.jade" />
-    <entry file="file://$PROJECT_DIR$/assets/jade/partials/datepicker.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/site/assets/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/purchase__iia-step-4-1-and-4-2.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="136" column="51" lean-forward="false" selection-start-line="136" selection-start-column="51" selection-end-line="136" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_datepicker.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="2" lean-forward="false" selection-start-line="57" selection-start-column="2" selection-end-line="59" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/media.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="45" lean-forward="true" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_chat.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="71" column="3" lean-forward="false" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/purchase__iia-step-2-1.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -570,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="26" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="20" column="87" lean-forward="false" selection-start-line="20" selection-start-column="87" selection-end-line="20" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="76" lean-forward="false" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -652,20 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-3.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio__analytics-history.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/jade/partials/chart-period.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -698,13 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit-trust__portfolio.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="126" column="14" lean-forward="false" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -743,13 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit-trust__bids.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="42" column="52" lean-forward="false" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/jade/partials/send-report.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -761,7 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -780,57 +779,180 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/trust-managment__folders.jade" />
+    <entry file="file://$PROJECT_DIR$/trust-managment__documents.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust-managment__folders.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust-managment__add-a-new-one.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-trust__portfolio.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unit-trust__consolidated-report.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="44" column="20" lean-forward="false" selection-start-line="44" selection-start-column="20" selection-end-line="45" selection-end-column="54" />
+        <state relative-caret-position="170">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="17" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust-managment__portfolio.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="232" column="51" lean-forward="false" selection-start-line="228" selection-start-column="8" selection-end-line="232" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust-managment__flow-of-funds.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="844">
+          <caret line="222" column="14" lean-forward="false" selection-start-line="222" selection-start-column="14" selection-end-line="222" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust-managment__comissions.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="45" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="19" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust-managment__dealings.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="57" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/base/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit-trust__bids.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/assets/js/vendors/highstock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index_highstock.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/jade/layouts/global/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="76" lean-forward="false" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/site/assets/js/vendors/charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="192" column="29" lean-forward="false" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
+        <state relative-caret-position="408">
+          <caret line="228" column="37" lean-forward="false" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
+    <entry file="file://$PROJECT_DIR$/site/unit-trust__detalization.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="692">
-          <caret line="1120" column="4" lean-forward="false" selection-start-line="1120" selection-start-column="4" selection-end-line="1122" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_charts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="395" column="14" lean-forward="false" selection-start-line="395" selection-start-column="14" selection-end-line="395" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="183" selection-end-column="14" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit-trust__detalization.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
-          <caret line="183" column="14" lean-forward="false" selection-start-line="183" selection-start-column="14" selection-end-line="183" selection-end-column="14" />
+        <state relative-caret-position="198">
+          <caret line="19" column="12" lean-forward="false" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trust-managment__portfolio-dynamics.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="475" column="14" lean-forward="false" selection-start-line="475" selection-start-column="14" selection-end-line="475" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="54" column="56" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="54" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio__analytics-history.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/purchase__iia-step-1-3.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="27" column="54" lean-forward="false" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_page-content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="1168" column="3" lean-forward="false" selection-start-line="1168" selection-start-column="3" selection-end-line="1168" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scss/modules/_charts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="437" column="3" lean-forward="true" selection-start-line="437" selection-start-column="3" selection-end-line="437" selection-end-column="3" />
           <folding />
         </state>
       </provider>

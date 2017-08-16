@@ -1,0 +1,223 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#portfolio-1').tabs__nav-item.is-active
+					| Общий портфель
+
+				a(href='#portfolio-2').tabs__nav-item
+					| Портфель по договору №111
+
+		.tab-container#portfolio-1.is-visible
+			.content-section__inner
+				.section-title._medium-indent
+					| Информация о движении
+					| денежных средств
+
+			.period-block
+				.period-block_header
+					.content-section__inner
+						.period-block_header-content
+							i.icon.icon-datepicker
+							.text
+								.text-label Дата оценки:
+								span.link-text-small 01 окт 2016
+
+			.transactions
+				.transactions__month-year
+					.content-section__inner
+						.transactions__month-year--row
+							| Сентябрь 2016
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 30.09.2016
+							.transactions__item--cell._right._sum
+								| +90 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 29.09.2016
+							.transactions__item--cell._right._sum
+								| +68 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 28.09.2016
+							.transactions__item--cell._right._sum
+								| +20 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| USD
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 27.09.2016
+							.transactions__item--cell._right._sum
+								| +150 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 27.09.2016
+							.transactions__item--cell._right._sum
+								| +300 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 04.09.2016
+							.transactions__item--cell._right._sum
+								| -50 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 03.09.2016
+							.transactions__item--cell._right._sum
+								| +77 543,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__month-year
+					.content-section__inner
+						.transactions__month-year--row
+							| Август 2016
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 07.08.2016
+							.transactions__item--cell._right._sum
+								| +50 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__month-year
+					.content-section__inner
+						.transactions__month-year--row
+							| Июль 2016
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 11.07.2016
+							.transactions__item--cell._right._sum
+								| +50 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__month-year
+					.content-section__inner
+						.transactions__month-year--row
+							| Июнь 2016
+
+				.transactions__item
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell
+								| Дата операции: 12.06.2016
+							.transactions__item--cell._right._sum
+								| +50 000,00
+						.transactions__item--row
+							.transactions__item--cell
+								| Тип: Ввод ДС
+							.transactions__item--cell._right
+								| Валюта:
+								span.transactions__item-currency
+									| RUB
+
+				.transactions__item._total
+					.content-section__inner
+						.transactions__item--row
+							.transactions__item--cell._sum
+								| ИТОГО:
+							.transactions__item--cell._right._sum
+								| 480 543,00
+
+
+		.tab-container#portfolio-2
+			.content-section__inner
+				.section-title._medium-indent
+					| Информация о движении
+					| денежных средств 2
+
+
+		include assets/jade/partials/send-report
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

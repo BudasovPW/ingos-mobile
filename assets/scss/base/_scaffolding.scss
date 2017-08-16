@@ -185,6 +185,11 @@ dl {
 
   dt {
     display: inline-block;
+    &::after {
+      display: block;
+      content: "";
+      margin-top: 10px;
+    }
   }
   dd {
     display: inline;

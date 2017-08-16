@@ -68,8 +68,16 @@
 
   min-height: $input-height / 2 * 1.5;
 
+  &._b-indent {
+    margin-bottom: 40px;
+  }
+
   @media(min-width: $breakpoint-md) {
     min-height: $input-height * 1.25;
+
+    &._b-indent {
+      margin-bottom: 60px;
+    }
   }
 }
 

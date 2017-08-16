@@ -344,7 +344,7 @@
   &__date-range {
     font-size: 0;
     text-align: center;
-    padding-bottom: 33px;
+    padding-bottom: 27px;
 
     @media(min-width: $breakpoint-md) {
       padding-bottom: 43px;
@@ -399,6 +399,64 @@
       span {
         color: $color-step-default;
       }
+    }
+  }
+
+  &__current-value {
+    font-family: $base-font-family-light;
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+.chart-history {
+  position: relative;
+  height: 350px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+
+  @media(min-width: $breakpoint-md) {
+    margin-bottom: 20px;
+  }
+
+  &__container {
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 25px;
+
+    &._inside-accordion {
+      border-bottom: none;
+      padding-bottom: 4px;
+    }
+
+    @media(min-width: $breakpoint-md) {
+      padding-bottom: 35px;
+
+      &._inside-accordion {
+        padding-bottom: 14px;
+      }
+    }
+  }
+
+  &__start-data,
+  &__end-data {
+    font-family: $base-font-family-light;
+    font-size: 1rem;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 100;
+
+    @media(min-width: $breakpoint-md) {
+      top: 35px;
+      left: 30px;
+    }
+  }
+  &__end-data {
+    left: auto;
+    right: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      right: 30px;
     }
   }
 }

@@ -1,0 +1,153 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#portfolio-1').tabs__nav-item.is-active
+					| Общий портфель
+
+				a(href='#portfolio-2').tabs__nav-item
+					| Портфель по договору №111
+
+		.tab-container#portfolio-1.is-visible
+			.content-section__inner
+				.section-title._medium-indent
+					| Информация
+					br
+					| о начисленных комиссиях
+
+			.period-block
+				.period-block_header
+					.content-section__inner
+						.period-block_header-content
+							i.icon.icon-datepicker.js-show-datepicker
+							.text
+								.text-label Выбрать период:
+								span.link-text-small.js-show-datepicker 1 сен 2016 - 30 сен 2016
+
+			.bids._single
+				.bid__item
+					.content-section__inner
+						.bid__title
+							| Комиссия брокера (посредника)
+						dl.bid__item-info._no-b-indent
+							dt.bid__item-info__title
+								| Начисление:
+							dd.bid__item-info__info
+								| 333,51
+							dt.bid__item-info__title
+								| В том числе НДС:
+							dd.bid__item-info__info
+								| 50,87
+							dt.bid__item-info__title
+								| Валюта:
+							dd.bid__item-info__info
+								| RUB
+
+				.bid__item
+					.content-section__inner
+						.bid__title
+							| Комиссия биржи (торговой системы)
+						dl.bid__item-info._no-b-indent
+							dt.bid__item-info__title
+								| Начисление:
+							dd.bid__item-info__info
+								| 264,14
+							dt.bid__item-info__title
+								| В том числе НДС:
+							dd.bid__item-info__info
+								| 40,29
+							dt.bid__item-info__title
+								| Валюта:
+							dd.bid__item-info__info
+								| RUB
+
+				.bid__item
+					.content-section__inner
+						.bid__title
+							| Комиссия депозитария (регистратора)
+						dl.bid__item-info._no-b-indent
+							dt.bid__item-info__title
+								| Начисление:
+							dd.bid__item-info__info
+								| 3 324,76
+							dt.bid__item-info__title
+								| В том числе НДС:
+							dd.bid__item-info__info
+								| 507,17
+							dt.bid__item-info__title
+								| Валюта:
+							dd.bid__item-info__info
+								| RUB
+
+				.bid__item
+					.content-section__inner
+						.bid__title
+							| Комиссия банка
+						dl.bid__item-info._no-b-indent
+							dt.bid__item-info__title
+								| Начисление:
+							dd.bid__item-info__info
+								| 1 412,87
+							dt.bid__item-info__title
+								| В том числе НДС:
+							dd.bid__item-info__info
+								| 215,52
+							dt.bid__item-info__title
+								| Валюта:
+							dd.bid__item-info__info
+								| RUB
+
+				.bid__item
+					.content-section__inner
+						.bid__title
+							| Вознаграждение доверительного управляющего за управление
+						dl.bid__item-info._no-b-indent
+							dt.bid__item-info__title
+								| Начисление:
+							dd.bid__item-info__info
+								| 28 687,20
+							dt.bid__item-info__title
+								| В том числе НДС:
+							dd.bid__item-info__info
+								| 4 376,01
+							dt.bid__item-info__title
+								| Валюта:
+							dd.bid__item-info__info
+								| RUB
+
+				.bid__item
+					.content-section__inner
+						.bid__title
+							| Расчеты с бюджетом по НДФЛ
+						dl.bid__item-info._no-b-indent
+							dt.bid__item-info__title
+								| Начисление:
+							dd.bid__item-info__info
+								| 4 331,00
+							dt.bid__item-info__title
+								| В том числе НДС:
+							dd.bid__item-info__info
+								| &nbsp;
+							dt.bid__item-info__title
+								| Валюта:
+							dd.bid__item-info__info
+								| RUB
+
+
+		.tab-container#portfolio-2
+			.content-section__inner
+				.section-title._medium-indent
+					| Информация по сделкам 2
+
+
+		include assets/jade/partials/send-report
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

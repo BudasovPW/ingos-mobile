@@ -1,0 +1,46 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title._medium-indent._no-b-indent
+				| Доверительное управление
+			.section-subtitle
+				| Сергей Алексеевич, к сожалению, на данный момент у Вас отсутствует Доверительное управление. Для того, чтобы заключить
+				| договор ДУ, вам необходимо:
+
+			a(href='#').panel.panel__with-rounded-icon
+				i.icon-choose-fund
+				span.panel-title
+					| Выбрать фонд
+					br
+					| на сайте АО УК
+					br
+					| «Ингосстрах Инвестиции»
+
+			a(href='#').panel.panel__with-rounded-icon
+				i.icon-make-request
+				span.panel-title
+					| Оформить заявку в любом
+					| удобном для вас офисе
+
+			a(href='#').panel.panel__with-rounded-icon
+				i.icon-open-online
+				span.panel-title
+					| Или открыть
+					| Доверительное
+					| управление онлайн
+
+			.section-more-info
+				| Более подробную информацию Вы можете
+				| получить по телефону:
+				a(href='tel: 8 800 100-48-98').no-wrap
+					|  8 800 100-48-98
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

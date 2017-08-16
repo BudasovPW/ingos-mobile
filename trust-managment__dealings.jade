@@ -1,0 +1,179 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.tabs.not-shadow
+			.tabs__nav
+				a(href='#portfolio-1').tabs__nav-item.is-active
+					| Общий портфель
+
+				a(href='#portfolio-2').tabs__nav-item
+					| Портфель по договору №111
+
+		.tab-container#portfolio-1.is-visible
+			.content-section__inner
+				.section-title._medium-indent
+					| Информация по сделкам
+
+			.period-block
+				.period-block_header
+					.content-section__inner
+						.period-block_header-content
+							i.icon.icon-datepicker.js-show-datepicker
+							.text
+								.text-label Выбрать период:
+								span.link-text-small.js-show-datepicker 1 сен 2016 - 30 сен 2016
+
+			.content-section__inner
+				.form-row
+					label(for='choose-parameters-portoflio-1').form-row__title._without-title
+						| Выберите параметр для отображения:
+
+					select.form-control._small-text#choose-parameters-portoflio-1
+						option Цена
+						option Дата
+
+			.chosen-parameters-info
+				.chosen-parameters-info__item
+					.content-section__inner
+						.chosen-parameters-info__item-title
+							| 2571330351 от 01.11.2016, 14:21
+						.chosen-parameters-info__item-info
+							| Вид сделки:
+							span.chosen-parameters-info__item-value
+								|  Продажа
+						.chosen-parameters-info__item-info
+							| Эмитент:
+							span.chosen-parameters-info__item-value
+								|  VTB Eurasia Limited
+						.chosen-parameters-info__item-info
+							| Контрагент:
+							span.chosen-parameters-info__item-value
+								|  Atonline Limited
+						.chosen-parameters-info__item-info
+							| Цена:
+							span.chosen-parameters-info__item-value
+								|  1067.50 USD
+
+			.chosen-parameters-info
+				.chosen-parameters-info__item
+					.content-section__inner
+						.chosen-parameters-info__item-title
+							| 1460175960 от 11.08.2016, 18:26
+						.chosen-parameters-info__item-info
+							| Вид сделки:
+							span.chosen-parameters-info__item-value
+								|  Покупка
+						.chosen-parameters-info__item-info
+							| Эмитент:
+							span.chosen-parameters-info__item-value
+								|  Нота 2Y Quanto Autocall-Phoenix Note
+						.chosen-parameters-info__item-info
+							| Контрагент:
+							span.chosen-parameters-info__item-value
+								|  Veles International Limited
+						.chosen-parameters-info__item-info
+							| Цена:
+							span.chosen-parameters-info__item-value
+								|  1000,30 USD
+
+			.chosen-parameters-info
+				.chosen-parameters-info__item
+					.content-section__inner
+						.chosen-parameters-info__item-title
+							| 2571330351 от 14.07.2016, 14:21
+						.chosen-parameters-info__item-info
+							| Вид сделки:
+							span.chosen-parameters-info__item-value
+								|  Покупка
+						.chosen-parameters-info__item-info
+							| Эмитент:
+							span.chosen-parameters-info__item-value
+								|  Элемент Лизинг БО-04
+						.chosen-parameters-info__item-info
+							| Контрагент:
+							span.chosen-parameters-info__item-value
+								|  ЗАО «ФБ ММВБ»
+						.chosen-parameters-info__item-info
+							| Цена:
+							span.chosen-parameters-info__item-value
+								|  1000.00 RUB
+
+			.chosen-parameters-info
+				.chosen-parameters-info__item
+					.content-section__inner
+						.chosen-parameters-info__item-title
+							| 1460175960 от 22.06.2016, 18:26
+						.chosen-parameters-info__item-info
+							| Вид сделки:
+							span.chosen-parameters-info__item-value
+								|  Покупка
+						.chosen-parameters-info__item-info
+							| Эмитент:
+							span.chosen-parameters-info__item-value
+								|  МТС-АОО
+						.chosen-parameters-info__item-info
+							| Контрагент:
+							span.chosen-parameters-info__item-value
+								|  ЗАО «ФБ ММВБ»
+						.chosen-parameters-info__item-info
+							| Цена:
+							span.chosen-parameters-info__item-value
+								|  256,40 RUB
+
+
+		.tab-container#portfolio-2
+			.content-section__inner
+				.section-title._medium-indent
+					| Информация по сделкам 2
+
+			.period-block
+				.period-block_header
+					.content-section__inner
+						.period-block_header-content
+							i.icon.icon-datepicker.js-show-datepicker
+							.text
+								.text-label Выбрать период:
+								span.link-text-small.js-show-datepicker 1 сен 2016 - 30 сен 2016
+
+			.content-section__inner
+				.form-row
+					label(for='choose-parameters-portoflio-2').form-row__title._without-title
+						| Выберите параметр для отображения:
+
+					select.form-control._small-text#choose-parameters-portoflio-2
+						option Цена
+						option Дата
+
+			.chosen-parameters-info
+				.chosen-parameters-info__item
+					.content-section__inner
+						.chosen-parameters-info__item-title
+							| 1460175960 от 11.08.2016, 18:26
+						.chosen-parameters-info__item-info
+							| Вид сделки:
+							span.chosen-parameters-info__item-value
+								|  Покупка
+						.chosen-parameters-info__item-info
+							| Эмитент:
+							span.chosen-parameters-info__item-value
+								|  Нота 2Y Quanto Autocall-Phoenix Note
+						.chosen-parameters-info__item-info
+							| Контрагент:
+							span.chosen-parameters-info__item-value
+								|  Veles International Limited
+						.chosen-parameters-info__item-info
+							| Цена:
+							span.chosen-parameters-info__item-value
+								|  1000,30 USD
+
+
+		include assets/jade/partials/send-report
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

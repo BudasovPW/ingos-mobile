@@ -1,4 +1,4 @@
-extends assets/jade/layouts/global/index
+extends assets/jade/layouts/global/index_highstock
 block header
 	include assets/jade/layouts/global/partials/header-menu
 block content
@@ -24,7 +24,33 @@ block content
 										.text
 											.text-label Выбрать период
 											span.link-text-small.js-show-datepicker 1 сен 2016 - 30 сен 2016
-							include assets/jade/partials/chart-period
+
+							.chart-history__container._inside-accordion
+								.chart-history
+									.chart-history__start-data
+										| 564,28
+									.chart-history__end-data
+										| 900,68
+									#history-chart
+
+								.content-section__inner
+									.chart__date-info
+										.chart__date-info--title
+											| Апрель 2016
+										.chart__date-range
+											.chart__date-range--item._left 14
+											.chart__date-range--item._left 15
+											.chart__date-range--item._left 16
+											.chart__date-range--item._left 17
+											.chart__date-range--item._active 18
+											.chart__date-range--item._right 19
+											.chart__date-range--item._right 20
+											.chart__date-range--item._right 21
+											.chart__date-range--item._right 22
+										.chart__current-value
+											| Изменение: &nbsp;
+											span.green-text +15,8 (2,8%)
+
 		.content-section__inner
 			include assets/jade/partials/purchase-strategy-form-bottom
 

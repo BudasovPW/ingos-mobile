@@ -769,6 +769,26 @@ $adventage-bottom-margin: 35px;
     }
   }
 
+  .icon-open-online {
+    width: 50px;
+    height: 50px;
+    background: url(../img/icon-list.png) $degree-color no-repeat;
+    background-size: 25px 29px;
+    background-position: center center;
+    border-radius: $border-radius-circle;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 17px;
+
+    @media(min-width: $breakpoint-md) {
+      width: 70px;
+      height: 70px;
+      background-size: 41px 48px;
+      top: calc(50% - 35px);
+      left: 27px;
+    }
+  }
+
   &__download {
     padding: 30px 50px 30px 80px;
 
@@ -925,6 +945,10 @@ $adventage-bottom-margin: 35px;
       font-size: 1.385rem;
       padding-bottom: 12px;
 
+      &._normal {
+        font-family: $base-font-family;
+      }
+
       @media(min-width: $breakpoint-md) {
         padding-bottom: 27px;
       }
@@ -1063,6 +1087,14 @@ $adventage-bottom-margin: 35px;
 
     &:first-child {
       padding-top: 0;
+
+      ._single & {
+        padding-top: 40px;
+
+        @media(min-width: $breakpoint-md) {
+          padding-top: 50px;
+        }
+      }
     }
 
     @media(min-width: $breakpoint-md) {
@@ -1086,6 +1118,11 @@ $adventage-bottom-margin: 35px;
     font-family: $base-font-family-light;
     padding: 0 20px 15px;
 
+    &._no-b-indent {
+      padding-bottom: 0;
+      margin-bottom: -10px;
+    }
+
     @media(min-width: $breakpoint-md) {
       padding: 0 20px 25px;
     }
@@ -1103,11 +1140,19 @@ $adventage-bottom-margin: 35px;
     }
     &__title {
       width: 40%;
+
+      ._equal-cols & {
+        width: 50%;
+      }
     }
     &__info {
       width: 60%;
       text-align: right;
       font-family: $base-font-family;
+
+      ._equal-cols & {
+        width: 50%;
+      }
     }
   }
 
@@ -1121,6 +1166,83 @@ $adventage-bottom-margin: 35px;
     @media(min-width: $breakpoint-md) {
       padding: 20px 35px;
     }
+  }
+}
+
+.transactions {
+  font-family: $base-font-family-light;
+  font-size: 1rem;
+
+  &__month-year,
+  &__item {
+    border-bottom: 2px solid $border-color;
+  }
+
+  &__month-year {
+    background: $dark-bg-color;
+
+    &--row {
+      padding: 15px 0;
+
+      @media(min-width: $breakpoint-md) {
+        padding: 20px 30px;
+      }
+    }
+  }
+
+  &__item {
+    padding: 20px 0 25px;
+
+    @media(min-width: $breakpoint-md) {
+      padding: 35px 0 40px;
+    }
+
+    &--row {
+      @include clearfix();
+      padding: 0 0 10px;
+
+      &:last-child {
+        padding: 0 ;
+      }
+
+      @media(min-width: $breakpoint-md) {
+        padding: 0 30px 20px;
+
+        &:last-child {
+          padding: 0 30px;
+        }
+      }
+    }
+    &--cell {
+      width: 55%;
+      float: left;
+
+      &._right {
+        width: 45%;
+        text-align: right;
+      }
+
+      &._sum {
+        font-family: $base-font-family;
+        font-size: 1.231rem;
+        top: -3px;
+        position: relative;
+
+        ._total & {
+          top: 0;
+        }
+
+        @media(min-width: $breakpoint-md) {
+          font-size: 1.308rem;
+          top: -7px;
+        }
+      }
+    }
+
+    &-currency {
+      font-family: $base-font-family;
+    }
+
   }
 }
 

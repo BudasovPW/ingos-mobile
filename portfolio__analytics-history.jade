@@ -1,4 +1,4 @@
-extends assets/jade/layouts/global/index
+extends assets/jade/layouts/global/index_highstock
 block header
 	include assets/jade/layouts/global/partials/header-menu
 
@@ -23,7 +23,32 @@ block content
 						.chart-pie__tab-label Изменение за период:
 						span.chart-pie__tab-value.green-text +336,4 (59,61%)
 
-	include assets/jade/partials/chart-period
+	.chart-history__container
+		.chart-history
+			.chart-history__start-data
+				| 564,28
+			.chart-history__end-data
+				| 900,68
+			#history-chart
+
+		.content-section__inner
+			.chart__date-info
+				.chart__date-info--title
+					| Апрель 2016
+				.chart__date-range
+					.chart__date-range--item._left 14
+					.chart__date-range--item._left 15
+					.chart__date-range--item._left 16
+					.chart__date-range--item._left 17
+					.chart__date-range--item._active 18
+					.chart__date-range--item._right 19
+					.chart__date-range--item._right 20
+					.chart__date-range--item._right 21
+					.chart__date-range--item._right 22
+				.chart__current-value
+					| Изменение: &nbsp;
+					span.green-text +15,8 (2,8%)
+
 	include assets/jade/partials/request-to-open-pif
 	include assets/jade/partials/outgoing-link
 	include assets/jade/partials/privacy-policy

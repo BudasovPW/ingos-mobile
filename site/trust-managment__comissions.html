@@ -80,88 +80,138 @@
     </header>
     <main class="page-content">
       <div class="page-content__inner">
-        <div class="content-section content-section--padding">
-          <div class="content-section__inner">
-            <div class="section-title">Открытие индивидуального инвестиционного счета</div>
+        <div class="content-section">
+          <div class="tabs not-shadow">
+            <div class="tabs__nav"><a href="#portfolio-1" class="tabs__nav-item is-active">Общий портфель</a><a href="#portfolio-2" class="tabs__nav-item">Портфель по договору №111</a></div>
           </div>
-          <form class="form-strategy-planning">
-            <div class="form-row form-row--risks">
-              <div class="accordion-panel js-toggle-parent-el">
+          <div id="portfolio-1" class="tab-container is-visible">
+            <div class="content-section__inner">
+              <div class="section-title _medium-indent">Информация<br>о начисленных комиссиях</div>
+            </div>
+            <div class="period-block">
+              <div class="period-block_header">
                 <div class="content-section__inner">
-                  <div class="accordion-panel__heading js-toggle-parent-el-button">
-                    <div class="title">Сбалансированная стратегия. Оценка исторических данных</div>
-                  </div>
-                </div>
-                <div class="accordion-panel__body js-toggle-parent-el-body">
-                  <div class="content-section__inner">
-                    <p class="inside accordion-panel__body-item">Рекомендованная Вам стратегия с учетом Вашей склонности к риску, инвестиционных целей, а также всевозможных планов и сроков по выводу размещаемых стредств — Сбалансированная.</p>
-                  </div>
-                  <div class="period-block">
-                    <div class="period-block_header">
-                      <div class="content-section__inner">
-                        <div class="period-block_header-content"><i class="icon icon-datepicker js-show-datepicker"></i>
-                          <div class="text">
-                            <div class="text-label">Выбрать период</div><span class="link-text-small js-show-datepicker">1 сен 2016 - 30 сен 2016</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="chart-history__container _inside-accordion">
-                      <div class="chart-history">
-                        <div class="chart-history__start-data">564,28</div>
-                        <div class="chart-history__end-data">900,68</div>
-                        <div id="history-chart"></div>
-                      </div>
-                      <div class="content-section__inner">
-                        <div class="chart__date-info">
-                          <div class="chart__date-info--title">Апрель 2016</div>
-                          <div class="chart__date-range">
-                            <div class="chart__date-range--item _left">14</div>
-                            <div class="chart__date-range--item _left">15</div>
-                            <div class="chart__date-range--item _left">16</div>
-                            <div class="chart__date-range--item _left">17</div>
-                            <div class="chart__date-range--item _active">18</div>
-                            <div class="chart__date-range--item _right">19</div>
-                            <div class="chart__date-range--item _right">20</div>
-                            <div class="chart__date-range--item _right">21</div>
-                            <div class="chart__date-range--item _right">22</div>
-                          </div>
-                          <div class="chart__current-value">Изменение: &nbsp;<span class="green-text">+15,8 (2,8%)</span></div>
-                        </div>
-                      </div>
+                  <div class="period-block_header-content"><i class="icon icon-datepicker js-show-datepicker"></i>
+                    <div class="text">
+                      <div class="text-label">Выбрать период:</div><span class="link-text-small js-show-datepicker">1 сен 2016 - 30 сен 2016</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </form>
+            <div class="bids _single">
+              <div class="bid__item">
+                <div class="content-section__inner">
+                  <div class="bid__title">Комиссия брокера (посредника)</div>
+                  <dl class="bid__item-info _no-b-indent">
+                    <dt class="bid__item-info__title">Начисление:</dt>
+                    <dd class="bid__item-info__info">333,51</dd>
+                    <dt class="bid__item-info__title">В том числе НДС:</dt>
+                    <dd class="bid__item-info__info">50,87</dd>
+                    <dt class="bid__item-info__title">Валюта:</dt>
+                    <dd class="bid__item-info__info">RUB</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="bid__item">
+                <div class="content-section__inner">
+                  <div class="bid__title">Комиссия биржи (торговой системы)</div>
+                  <dl class="bid__item-info _no-b-indent">
+                    <dt class="bid__item-info__title">Начисление:</dt>
+                    <dd class="bid__item-info__info">264,14</dd>
+                    <dt class="bid__item-info__title">В том числе НДС:</dt>
+                    <dd class="bid__item-info__info">40,29</dd>
+                    <dt class="bid__item-info__title">Валюта:</dt>
+                    <dd class="bid__item-info__info">RUB</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="bid__item">
+                <div class="content-section__inner">
+                  <div class="bid__title">Комиссия депозитария (регистратора)</div>
+                  <dl class="bid__item-info _no-b-indent">
+                    <dt class="bid__item-info__title">Начисление:</dt>
+                    <dd class="bid__item-info__info">3 324,76</dd>
+                    <dt class="bid__item-info__title">В том числе НДС:</dt>
+                    <dd class="bid__item-info__info">507,17</dd>
+                    <dt class="bid__item-info__title">Валюта:</dt>
+                    <dd class="bid__item-info__info">RUB</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="bid__item">
+                <div class="content-section__inner">
+                  <div class="bid__title">Комиссия банка</div>
+                  <dl class="bid__item-info _no-b-indent">
+                    <dt class="bid__item-info__title">Начисление:</dt>
+                    <dd class="bid__item-info__info">1 412,87</dd>
+                    <dt class="bid__item-info__title">В том числе НДС:</dt>
+                    <dd class="bid__item-info__info">215,52</dd>
+                    <dt class="bid__item-info__title">Валюта:</dt>
+                    <dd class="bid__item-info__info">RUB</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="bid__item">
+                <div class="content-section__inner">
+                  <div class="bid__title">Вознаграждение доверительного управляющего за управление</div>
+                  <dl class="bid__item-info _no-b-indent">
+                    <dt class="bid__item-info__title">Начисление:</dt>
+                    <dd class="bid__item-info__info">28 687,20</dd>
+                    <dt class="bid__item-info__title">В том числе НДС:</dt>
+                    <dd class="bid__item-info__info">4 376,01</dd>
+                    <dt class="bid__item-info__title">Валюта:</dt>
+                    <dd class="bid__item-info__info">RUB</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="bid__item">
+                <div class="content-section__inner">
+                  <div class="bid__title">Расчеты с бюджетом по НДФЛ</div>
+                  <dl class="bid__item-info _no-b-indent">
+                    <dt class="bid__item-info__title">Начисление:</dt>
+                    <dd class="bid__item-info__info">4 331,00</dd>
+                    <dt class="bid__item-info__title">В том числе НДС:</dt>
+                    <dd class="bid__item-info__info">&nbsp;</dd>
+                    <dt class="bid__item-info__title">Валюта:</dt>
+                    <dd class="bid__item-info__info">RUB</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="portfolio-2" class="tab-container">
+            <div class="content-section__inner">
+              <div class="section-title _medium-indent">Информация по сделкам 2</div>
+            </div>
+          </div>
+          <div class="content-section__inner"><a href="#" class="panel _no-arrow panel__get-retort"><i class="icon-email"></i><span class="panel-title">Сформировать отчёт<br>и отправить на email</span></a></div>
+        </div>
+        <div class="content-section content-section--dark content-section--open-pif">
           <div class="content-section__inner">
-            <div class="form-row">
-              <label for="cabinet-connection-data-last-name" class="form-row__title">Выберите стратегию:</label>
-              <select id="fsp-strategy-select" class="form-control">
-                <option>Сбалансированная</option>
-                <option>Обычная</option>
-              </select>
-              <p class="inside">Рекомендовано при инвестировании от 250 000 руб. в год; при использовании данной стратегии, лучше воспользоваться освобождением от налога на полученный доход.</p>
-              <p class="inside _b-indent"><a href="#">Подробнее о стратегиях</a></p>
-            </div>
-            <div class="form-row">
-              <label for="cabinet-connection-data-last-name" class="form-row__title">Укажите сумму инвестирования (руб.):</label>
-              <input type="text" value="250000.00" placeholder="" required id="cabinet-connection-data-last-name" class="form-control">
-            </div>
-            <div class="form-row">
-              <div class="form-list inside">
-                <div class="form-list__item">
-                  <input type="radio" checked="checked" name="iia-opening-agreement-status" id="iia-opening-agreement-status-1">
-                  <label for="iia-opening-agreement-status-1">На дату подачи настоящего заяления у меня отстутствует договор с другим профессиональным участником рынка ценных бумаг на ведение индивидуального инвестиционного счета.</label>
+            <div class="section-title">Отправить заявку на открытие</div>
+            <div class="cards-list-container">
+              <div class="cards-list cards-list--call-to-action">
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-fund"></div>
+                    <div class="card__caption">ПИФы</div>
+                  </div>
                 </div>
-                <div class="form-list__item">
-                  <input type="radio" name="iia-opening-agreement-status" id="iia-opening-agreement-status-2">
-                  <label for="iia-opening-agreement-status-2">На дату подачи настоящего заявления у меня действует договор на ведение индивидуального инвестиционного счета.</label>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--trust-management"></div>
+                    <div class="card__caption">ДУ</div>
+                  </div>
+                </div>
+                <div class="cards-list__item">
+                  <div class="card">
+                    <div class="card__icon card__icon--investment-accs"></div>
+                    <div class="card__caption">ИИС</div>
+                  </div>
                 </div>
               </div>
             </div>
-            <button class="btn-primary">Далее</button>
           </div>
         </div>
         <div class="content-section content-section--outcoming-link">
@@ -266,7 +316,7 @@
       <div class="datepicker__close-icon js-datepicker-close"></div>
     </div>
     <script type="text/javascript" src="assets/js/libs/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="assets/js/vendors/highstock.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/highcharts.js"></script>
     <script type="text/javascript" src="assets/js/vendors/charts.js"></script>
     <script type="text/javascript" src="assets/js/vendors/jquery.selectric.js"></script>
     <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>

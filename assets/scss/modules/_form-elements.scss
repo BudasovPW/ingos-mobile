@@ -83,6 +83,14 @@ $input-font-size: 1.154rem; //30px
   padding-left: 3px;
   font-family: $base-font-family-light;
 
+  &._without-title {
+    padding-top: 30px;
+
+    @media(min-width: $breakpoint-md) {
+      padding-top: 50px;
+    }
+  }
+
   &.required {
     &:after {
       content: '*';
