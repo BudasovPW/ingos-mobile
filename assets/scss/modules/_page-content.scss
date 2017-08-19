@@ -818,7 +818,7 @@ $adventage-bottom-margin: 35px;
 
       @media(min-width: $breakpoint-md) {
           height: 175px;
-          padding: 0 100px 0 122px;
+          padding: 0 60px 0 122px;
       }
     }
   }
@@ -1243,6 +1243,46 @@ $adventage-bottom-margin: 35px;
       font-family: $base-font-family;
     }
 
+  }
+}
+
+.one-asterisk::before {
+  content: "*";
+}
+.two-asterisks::before {
+  content: "**";
+}
+.one-asterisk::before,
+.two-asterisks::before {
+  padding-left: 5px;
+}
+
+.asterisk,
+.one-asterisk::before,
+.two-asterisks::before {
+  color: $brand-color;
+}
+
+.asterisk-info {
+  font-family: $base-font-family-light;
+  font-size: 1rem;
+  line-height: 1.2;
+  padding: 27px 20px;
+
+  @media(min-width: $breakpoint-md) {
+    padding: 37px 30px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+
+    @media(min-width: $breakpoint-md) {
+      margin-bottom: 40px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

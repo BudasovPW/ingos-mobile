@@ -1,0 +1,142 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.chart-pie
+			.content-section--dark._no-paddings.chart-pie__section
+				.chart-pie__main-title._top-indent Портфель ИИС
+
+				.content-section__inner
+					.chart-pie__container#trust-managment-portfolio
+					.chart-pie__main-info
+						.chart-pie__main-info__title
+							| Общая оценка
+						.chart-pie__main-info__value
+							| 32 509 178,66 руб
+
+				.period-block
+					.period-block_header
+						.content-section__inner
+							.period-block_header-content
+								i.icon.icon-datepicker
+								.text
+									.text-label Дата и время оценки:
+									span.link-text-small 02 дек 2016, 0:00
+
+			.chart-pie__info-container
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| Облигации
+
+						.chart-pie__info-title
+							| 96,78%
+
+						.chart-pie__info-value
+							| 32 114 130,50 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #ff6961; width: 96.78%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| Прочие вложения
+
+						.chart-pie__info-title
+							| 2,21%
+
+						.chart-pie__info-value
+							| 394 952,91 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #b6e329; width: 2.21%;")
+
+				.chart-pie__info
+					.content-section__inner
+						.chart-pie__title
+							| Денежные средства у брокера
+
+						.chart-pie__info-title
+							| 1,01%
+
+						.chart-pie__info-value
+							| 95,25 руб
+						.chart-pie__percents
+							.chart-pie__percents-value(style="background-color: #1b7cd0; width: 1.01%;")
+
+		.content-section__inner
+			.form-row
+				.form-row__main-title
+					| Финансовые инструменты
+
+			.form-row
+				label(for='choose-parameters').form-row__title
+					| Выберите параметр для отображения:
+
+				select.form-control.custom-options#choose-parameters
+					option.one-asterisk Балансовая стоимость, руб.
+					option.two-asterisks Балансовая стоимость, дол.
+
+		.chosen-parameters-info
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| 4B02-01-20075-F РУСАЛ Братск БО-01
+					.chosen-parameters-info__item-info
+						| Балансовая стоимость, руб:
+						span.chosen-parameters-info__item-value
+							|  100 395,09
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| 4B02-04-36193-R Элемент Лизинг БО-04
+					.chosen-parameters-info__item-info
+						| Балансовая стоимость, руб:
+						span.chosen-parameters-info__item-value
+							|  1 548 615,95
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| Деньги у брокера,
+						br
+						| р/с 30601810400001013546 (RUB)
+					.chosen-parameters-info__item-info
+						| Балансовая стоимость, руб:
+						span.chosen-parameters-info__item-value
+							|  95,25
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| р/с 40701810800000028886 (RUB)
+						| в Банк ГПБ (АО)
+					.chosen-parameters-info__item-info
+						| Балансовая стоимость, руб:
+						span.chosen-parameters-info__item-value
+							|  7 858,25
+		.content-section__inner
+			.asterisk-info
+				.asterisk-info__text
+					| Средневзвешенная доходность с начала года на 20.07.2016 (по оценке): — 6.07%
+
+				.asterisk-info__text
+					span.asterisk *
+					| &nbsp;— Балансовая стоимость приведена с учетом накопленных процентов и дисконтов.
+					br
+					span.asterisk **
+					| &nbsp;— Оценка долговых обязательств (в случае отсутствия котировок) произведена с учетом срока их обращения с момента постановки на баланс.
+
+		include assets/jade/partials/send-report
+
+		.content-section__inner
+			button.btn-primary._b-indent
+				| Показать динамику общего портфеля
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

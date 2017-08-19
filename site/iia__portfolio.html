@@ -81,77 +81,111 @@
     <main class="page-content">
       <div class="page-content__inner">
         <div class="content-section">
+          <div class="chart-pie">
+            <div class="content-section--dark _no-paddings chart-pie__section">
+              <div class="chart-pie__main-title _top-indent">Портфель ИИС</div>
+              <div class="content-section__inner">
+                <div id="trust-managment-portfolio" class="chart-pie__container"></div>
+                <div class="chart-pie__main-info">
+                  <div class="chart-pie__main-info__title">Общая оценка</div>
+                  <div class="chart-pie__main-info__value">32 509 178,66 руб</div>
+                </div>
+              </div>
+              <div class="period-block">
+                <div class="period-block_header">
+                  <div class="content-section__inner">
+                    <div class="period-block_header-content"><i class="icon icon-datepicker"></i>
+                      <div class="text">
+                        <div class="text-label">Дата и время оценки:</div><span class="link-text-small">02 дек 2016, 0:00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chart-pie__info-container">
+              <div class="chart-pie__info">
+                <div class="content-section__inner">
+                  <div class="chart-pie__title">Облигации</div>
+                  <div class="chart-pie__info-title">96,78%</div>
+                  <div class="chart-pie__info-value">32 114 130,50 руб</div>
+                  <div class="chart-pie__percents">
+                    <div style="background-color: #ff6961; width: 96.78%;" class="chart-pie__percents-value"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="chart-pie__info">
+                <div class="content-section__inner">
+                  <div class="chart-pie__title">Прочие вложения</div>
+                  <div class="chart-pie__info-title">2,21%</div>
+                  <div class="chart-pie__info-value">394 952,91 руб</div>
+                  <div class="chart-pie__percents">
+                    <div style="background-color: #b6e329; width: 2.21%;" class="chart-pie__percents-value"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="chart-pie__info">
+                <div class="content-section__inner">
+                  <div class="chart-pie__title">Денежные средства у брокера</div>
+                  <div class="chart-pie__info-title">1,01%</div>
+                  <div class="chart-pie__info-value">95,25 руб</div>
+                  <div class="chart-pie__percents">
+                    <div style="background-color: #1b7cd0; width: 1.01%;" class="chart-pie__percents-value"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="content-section__inner">
-            <div class="section-title _medium-indent">Документы по ИИС</div>
-          </div>
-          <div class="files-nav">
-            <div class="content-section__inner">
-              <div class="files-nav__arrow _left"></div>
-              <div class="files-nav__value">2016</div>
-              <div class="files-nav__arrow _right"></div>
+            <div class="form-row">
+              <div class="form-row__main-title">Финансовые инструменты</div>
+            </div>
+            <div class="form-row">
+              <label for="choose-parameters" class="form-row__title">Выберите параметр для отображения:</label>
+              <select id="choose-parameters" class="form-control custom-options">
+                <option class="one-asterisk">Балансовая стоимость, руб.</option>
+                <option class="two-asterisks">Балансовая стоимость, дол.</option>
+              </select>
             </div>
           </div>
-          <div class="table-content full">
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Анкета Управляющей компании</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div class="chosen-parameters-info">
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title">4B02-01-20075-F РУСАЛ Братск БО-01</div>
+                <div class="chosen-parameters-info__item-info">Балансовая стоимость, руб:<span class="chosen-parameters-info__item-value"> 100 395,09</span></div>
               </div>
             </div>
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Заявление об открытии лицевого счета (для физического лица)</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title">4B02-04-36193-R Элемент Лизинг БО-04</div>
+                <div class="chosen-parameters-info__item-info">Балансовая стоимость, руб:<span class="chosen-parameters-info__item-value"> 1 548 615,95</span></div>
               </div>
             </div>
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Редакция Договора доверительного управления (стандартная форма присоединения), действующая с 20.05.2016г. на текущий день</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title">Деньги у брокера,<br>р/с 30601810400001013546 (RUB)</div>
+                <div class="chosen-parameters-info__item-info">Балансовая стоимость, руб:<span class="chosen-parameters-info__item-value"> 95,25</span></div>
               </div>
             </div>
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Сводный отчет за период</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title">
+                  р/с 40701810800000028886 (RUB)
+                  в Банк ГПБ (АО)
                 </div>
+                <div class="chosen-parameters-info__item-info">Балансовая стоимость, руб:<span class="chosen-parameters-info__item-value"> 7 858,25</span></div>
               </div>
             </div>
+          </div>
+          <div class="content-section__inner">
+            <div class="asterisk-info">
+              <div class="asterisk-info__text">Средневзвешенная доходность с начала года на 20.07.2016 (по оценке): — 6.07%</div>
+              <div class="asterisk-info__text"><span class="asterisk">*</span>&nbsp;— Балансовая стоимость приведена с учетом накопленных процентов и дисконтов.<br><span class="asterisk">**</span>&nbsp;— Оценка долговых обязательств (в случае отсутствия котировок) произведена с учетом срока их обращения с момента постановки на баланс.</div>
+            </div>
+          </div>
+          <div class="content-section__inner"><a href="#" class="panel _no-arrow panel__get-retort"><i class="icon-email"></i><span class="panel-title">Сформировать отчёт<br>и отправить на email</span></a></div>
+          <div class="content-section__inner">
+            <button class="btn-primary _b-indent">Показать динамику общего портфеля</button>
           </div>
         </div>
         <div class="content-section content-section--dark content-section--open-pif">

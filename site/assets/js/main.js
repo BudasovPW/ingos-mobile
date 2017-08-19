@@ -217,6 +217,13 @@ var commonActions = (function (document, $) {
         if($('select').length){
             $('select').selectric();
         }
+
+        $('.custom-options').selectric({
+            labelBuilder: function(currItem) {
+                console.log(currItem)
+                return currItem.text + '<span class=' + currItem.className + '></span>';
+            }
+        });
     }
 
     function _uploadFile() {

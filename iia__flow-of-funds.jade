@@ -1,0 +1,84 @@
+extends assets/jade/layouts/global/index
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title._medium-indent._no-b-indent
+				| Информация о движении денежных средств
+
+		.period-block
+			.period-block_header
+				.content-section__inner
+					.period-block_header-content
+						i.icon.icon-datepicker
+						.text
+							.text-label Дата оценки:
+							span.link-text-small 01 окт 2016
+
+		.transactions
+			.transactions__month-year
+				.content-section__inner
+					.transactions__month-year--row
+						| Сентябрь 2016
+
+			.transactions__item
+				.content-section__inner
+					.transactions__item--row
+						.transactions__item--cell
+							| Дата операции: 30.09.2016
+						.transactions__item--cell._right._sum
+							| +68 000,00
+					.transactions__item--row
+						.transactions__item--cell
+							| Тип: Ввод ДС
+
+			.transactions__item
+				.content-section__inner
+					.transactions__item--row
+						.transactions__item--cell
+							| Дата операции: 29.09.2016
+						.transactions__item--cell._right._sum
+							| +20 000,00
+					.transactions__item--row
+						.transactions__item--cell
+							| Тип: Ввод ДС
+
+			.transactions__item
+				.content-section__inner
+					.transactions__item--row
+						.transactions__item--cell
+							| Дата операции: 28.09.2016
+						.transactions__item--cell._right._sum
+							| +150 000,00
+					.transactions__item--row
+						.transactions__item--cell
+							| Тип: Ввод ДС
+
+			.transactions__item
+				.content-section__inner
+					.transactions__item--row
+						.transactions__item--cell
+							| Дата операции: 27.09.2016
+						.transactions__item--cell._right._sum
+							| +50 000,00
+					.transactions__item--row
+						.transactions__item--cell
+							| Тип: Ввод ДС
+
+			.transactions__item._total
+				.content-section__inner
+					.transactions__item--row
+						.transactions__item--cell._sum
+							| ИТОГО:
+						.transactions__item--cell._right._sum
+							| 288 000,00
+
+		include assets/jade/partials/send-report
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end

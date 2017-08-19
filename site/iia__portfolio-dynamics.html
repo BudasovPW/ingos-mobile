@@ -82,77 +82,145 @@
       <div class="page-content__inner">
         <div class="content-section">
           <div class="content-section__inner">
-            <div class="section-title _medium-indent">Документы по ИИС</div>
+            <div class="section-title _medium-indent _no-b-indent">Динамика портфеля ИИС</div>
+            <div class="section-subtitle _no-b-indent">
+              График доходности. Динамика портфеля
+              с учетом вводов и выводов.
+            </div>
           </div>
-          <div class="files-nav">
+          <div class="period-block">
+            <div class="period-block_header">
+              <div class="content-section__inner">
+                <div class="period-block_header-content"><i class="icon icon-datepicker js-show-datepicker"></i>
+                  <div class="text">
+                    <div class="text-label">Выбрать период:</div><span class="link-text-small js-show-datepicker">1 сен 2016 - 30 сен 2016</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-history__container">
+            <div class="chart-history">
+              <div class="chart-history__start-data">414 752,05</div>
+              <div class="chart-history__end-data">414 785,91</div>
+              <div id="history-chart"></div>
+            </div>
             <div class="content-section__inner">
-              <div class="files-nav__arrow _left"></div>
-              <div class="files-nav__value">2016</div>
-              <div class="files-nav__arrow _right"></div>
-            </div>
-          </div>
-          <div class="table-content full">
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Анкета Управляющей компании</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
+              <div class="chart__date-info">
+                <div class="chart__date-info--title">Апрель 2016</div>
+                <div class="chart__date-range">
+                  <div class="chart__date-range--item _left">14</div>
+                  <div class="chart__date-range--item _left">15</div>
+                  <div class="chart__date-range--item _left">16</div>
+                  <div class="chart__date-range--item _left">17</div>
+                  <div class="chart__date-range--item _active">18</div>
+                  <div class="chart__date-range--item _right">19</div>
+                  <div class="chart__date-range--item _right">20</div>
+                  <div class="chart__date-range--item _right">21</div>
+                  <div class="chart__date-range--item _right">22</div>
                 </div>
-              </div>
-            </div>
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Заявление об открытии лицевого счета (для физического лица)</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Редакция Договора доверительного управления (стандартная форма присоединения), действующая с 20.05.2016г. на текущий день</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="type-row">
-              <div class="type-cell">
-                <div class="files-list content-section__inner">
-                  <div class="files-list__item">
-                    <div class="file-preview">
-                      <div class="file-preview__icon"><span class="icon-pdf"></span></div>
-                      <div class="file-preview__details">
-                        <p>Сводный отчет за период</p>
-                        <p><a href="#">Скачать</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div class="chart__current-value">Тек. оценка: 414 761,15</div>
               </div>
             </div>
           </div>
+          <div class="content-section__inner">
+            <div class="form-row">
+              <div class="form-row__main-title">Доходность рублевой части портфеля (RUB)</div>
+            </div>
+            <div class="form-row">
+              <label for="choose-parameters-portoflio-1" class="form-row__title">Выберите параметр для отображения:</label>
+              <select id="choose-parameters-portoflio-1" class="form-control _small-text">
+                <option>Средне-инвестированная сумма</option>
+                <option>Средне-инвестированная сумма 2</option>
+              </select>
+            </div>
+          </div>
+          <div class="chosen-parameters-info">
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title">Элемент Лизинг, БО-03</div>
+                <div class="chosen-parameters-info__item-info">Средне-инвестированная сумма:<span class="chosen-parameters-info__item-value"> 133 941,14</span></div>
+              </div>
+            </div>
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title _normal">ИТОГО:</div>
+                <div class="chosen-parameters-info__item-info">Средне-инвестированная сумма:<span class="chosen-parameters-info__item-value"> 133 941,14</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-section__inner">
+            <div class="form-row">
+              <div class="form-row__main-title">Информация о пришедших купонах, RUB</div>
+            </div>
+            <div class="form-row">
+              <label for="choose-parameters-portoflio-3" class="form-row__title">Выберите параметр для отображения:</label>
+              <select id="choose-parameters-portoflio-3" class="form-control _small-text">
+                <option>Сумма выплаты, RUB</option>
+                <option>Сумма выплаты, USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="chosen-parameters-info">
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title">Элемент Лизинг, БО-04</div>
+                <div class="chosen-parameters-info__item-info">Сумма выплаты, RUB:<span class="chosen-parameters-info__item-value"> 14 279,25</span></div>
+              </div>
+            </div>
+            <div class="chosen-parameters-info__item">
+              <div class="content-section__inner">
+                <div class="chosen-parameters-info__item-title _normal">ИТОГО:</div>
+                <div class="chosen-parameters-info__item-info">Сумма выплаты, RUB:<span class="chosen-parameters-info__item-value"> 14 279,25</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-section__inner">
+            <div class="form-row">
+              <div class="form-row__main-title">Следующие купонные выплаты</div>
+            </div>
+          </div>
+          <div class="bids _equal-cols">
+            <div class="bid__item">
+              <div class="content-section__inner">
+                <div class="bid__title">Российские железные дороги БО-03</div>
+                <dl class="bid__item-info _no-b-indent">
+                  <dt class="bid__item-info__title">Валюта:</dt>
+                  <dd class="bid__item-info__info">RUB</dd>
+                  <dt class="bid__item-info__title">Ставка купона, % годовых:</dt>
+                  <dd class="bid__item-info__info">11,75</dd>
+                  <dt class="bid__item-info__title">Количество бумаг:</dt>
+                  <dd class="bid__item-info__info">2187</dd>
+                  <dt class="bid__item-info__title">Сумма купона:</dt>
+                  <dd class="bid__item-info__info">58,59</dd>
+                  <dt class="bid__item-info__title">Сумма выплаты, RUB:</dt>
+                  <dd class="bid__item-info__info">128 136,33</dd>
+                  <dt class="bid__item-info__title">Дата выплаты:</dt>
+                  <dd class="bid__item-info__info">20.11.2016</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="bid__item">
+              <div class="content-section__inner">
+                <div class="bid__title">ЕвразХолдинг Финанс 001P-01R</div>
+                <dl class="bid__item-info _no-b-indent">
+                  <dt class="bid__item-info__title">Валюта:</dt>
+                  <dd class="bid__item-info__info">RUB</dd>
+                  <dt class="bid__item-info__title">Ставка купона, % годовых:</dt>
+                  <dd class="bid__item-info__info">12,60</dd>
+                  <dt class="bid__item-info__title">Количество бумаг:</dt>
+                  <dd class="bid__item-info__info">1 121</dd>
+                  <dt class="bid__item-info__title">Сумма купона:</dt>
+                  <dd class="bid__item-info__info">62,83</dd>
+                  <dt class="bid__item-info__title">Сумма выплаты, RUB:</dt>
+                  <dd class="bid__item-info__info">70 432,43</dd>
+                  <dt class="bid__item-info__title">Дата выплаты:</dt>
+                  <dd class="bid__item-info__info">23.03.2017</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="content-section__inner"><a href="#" class="panel _no-arrow panel__get-retort"><i class="icon-email"></i><span class="panel-title">Сформировать отчёт<br>и отправить на email</span></a></div>
         </div>
         <div class="content-section content-section--dark content-section--open-pif">
           <div class="content-section__inner">
@@ -283,7 +351,7 @@
       <div class="datepicker__close-icon js-datepicker-close"></div>
     </div>
     <script type="text/javascript" src="assets/js/libs/jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="assets/js/vendors/highcharts.js"></script>
+    <script type="text/javascript" src="assets/js/vendors/highstock.js"></script>
     <script type="text/javascript" src="assets/js/vendors/charts.js"></script>
     <script type="text/javascript" src="assets/js/vendors/jquery.selectric.js"></script>
     <script type="text/javascript" src="assets/js/vendors/parsley.js"></script>

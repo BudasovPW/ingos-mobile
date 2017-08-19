@@ -1,0 +1,184 @@
+extends assets/jade/layouts/global/index_highstock
+block header
+	include assets/jade/layouts/global/partials/header-menu
+
+block content
+	.content-section
+		.content-section__inner
+			.section-title._medium-indent._no-b-indent
+				| Динамика портфеля ИИС
+
+			.section-subtitle._no-b-indent
+				| График доходности. Динамика портфеля
+				| с учетом вводов и выводов.
+
+		.period-block
+			.period-block_header
+				.content-section__inner
+					.period-block_header-content
+						i.icon.icon-datepicker.js-show-datepicker
+						.text
+							.text-label Выбрать период:
+							span.link-text-small.js-show-datepicker 1 сен 2016 - 30 сен 2016
+
+		.chart-history__container
+			.chart-history
+				.chart-history__start-data
+					| 414 752,05
+				.chart-history__end-data
+					| 414 785,91
+				#history-chart
+
+			.content-section__inner
+				.chart__date-info
+					.chart__date-info--title
+						| Апрель 2016
+					.chart__date-range
+						.chart__date-range--item._left 14
+						.chart__date-range--item._left 15
+						.chart__date-range--item._left 16
+						.chart__date-range--item._left 17
+						.chart__date-range--item._active 18
+						.chart__date-range--item._right 19
+						.chart__date-range--item._right 20
+						.chart__date-range--item._right 21
+						.chart__date-range--item._right 22
+					.chart__current-value
+						| Тек. оценка: 414 761,15
+
+		.content-section__inner
+			.form-row
+				.form-row__main-title
+					| Доходность рублевой части портфеля (RUB)
+
+			.form-row
+				label(for='choose-parameters-portoflio-1').form-row__title
+					| Выберите параметр для отображения:
+
+				select.form-control._small-text#choose-parameters-portoflio-1
+					option Средне-инвестированная сумма
+					option Средне-инвестированная сумма 2
+
+		.chosen-parameters-info
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| Элемент Лизинг, БО-03
+					.chosen-parameters-info__item-info
+						| Средне-инвестированная сумма:
+						span.chosen-parameters-info__item-value
+							|  133 941,14
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title._normal
+						| ИТОГО:
+					.chosen-parameters-info__item-info
+						| Средне-инвестированная сумма:
+						span.chosen-parameters-info__item-value
+							|  133 941,14
+
+		.content-section__inner
+			.form-row
+				.form-row__main-title
+					| Информация о пришедших купонах, RUB
+
+			.form-row
+				label(for='choose-parameters-portoflio-3').form-row__title
+					| Выберите параметр для отображения:
+
+				select.form-control._small-text#choose-parameters-portoflio-3
+					option Сумма выплаты, RUB
+					option Сумма выплаты, USD
+
+		.chosen-parameters-info
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title
+						| Элемент Лизинг, БО-04
+					.chosen-parameters-info__item-info
+						| Сумма выплаты, RUB:
+						span.chosen-parameters-info__item-value
+							|  14 279,25
+
+			.chosen-parameters-info__item
+				.content-section__inner
+					.chosen-parameters-info__item-title._normal
+						| ИТОГО:
+					.chosen-parameters-info__item-info
+						| Сумма выплаты, RUB:
+						span.chosen-parameters-info__item-value
+							|  14 279,25
+
+		.content-section__inner
+			.form-row
+				.form-row__main-title
+					| Следующие купонные выплаты
+
+		.bids._equal-cols
+			.bid__item
+				.content-section__inner
+					.bid__title
+						| Российские железные дороги БО-03
+					dl.bid__item-info._no-b-indent
+						dt.bid__item-info__title
+							| Валюта:
+						dd.bid__item-info__info
+							| RUB
+						dt.bid__item-info__title
+							| Ставка купона, % годовых:
+						dd.bid__item-info__info
+							| 11,75
+						dt.bid__item-info__title
+							| Количество бумаг:
+						dd.bid__item-info__info
+							| 2187
+						dt.bid__item-info__title
+							| Сумма купона:
+						dd.bid__item-info__info
+							| 58,59
+						dt.bid__item-info__title
+							| Сумма выплаты, RUB:
+						dd.bid__item-info__info
+							| 128 136,33
+						dt.bid__item-info__title
+							| Дата выплаты:
+						dd.bid__item-info__info
+							| 20.11.2016
+
+			.bid__item
+				.content-section__inner
+					.bid__title
+						| ЕвразХолдинг Финанс 001P-01R
+					dl.bid__item-info._no-b-indent
+						dt.bid__item-info__title
+							| Валюта:
+						dd.bid__item-info__info
+							| RUB
+						dt.bid__item-info__title
+							| Ставка купона, % годовых:
+						dd.bid__item-info__info
+							| 12,60
+						dt.bid__item-info__title
+							| Количество бумаг:
+						dd.bid__item-info__info
+							| 1 121
+						dt.bid__item-info__title
+							| Сумма купона:
+						dd.bid__item-info__info
+							| 62,83
+						dt.bid__item-info__title
+							| Сумма выплаты, RUB:
+						dd.bid__item-info__info
+							| 70 432,43
+						dt.bid__item-info__title
+							| Дата выплаты:
+						dd.bid__item-info__info
+							| 23.03.2017
+
+		include assets/jade/partials/send-report
+
+	include assets/jade/partials/request-to-open-pif
+	include assets/jade/partials/outgoing-link
+	include assets/jade/partials/privacy-policy
+
+block body_end
