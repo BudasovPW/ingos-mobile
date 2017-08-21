@@ -243,6 +243,52 @@ var commonActions = (function (document, $) {
         });
     }
 
+    function _colorModePanel(){
+        $('.js-close-color-mode-panel').on('click', function(){
+            $('.js-color-mode-panel').removeClass('_show');
+        });
+        $('.js-show-color-mode-panel').on('click', function(){
+            $('body').removeClass('_opened-menu');
+            $('.js-color-mode-panel').addClass('_show');
+        });
+        $(document).mouseup(function(e) {
+            if (!$('.color-mode-panel__container').is(e.target) && $('.color-mode-panel').has(e.target).length === 0) {
+                $('.js-color-mode-panel').removeClass('_show');
+            }
+        });
+        $('.js-save-color-mode').on('click', function(){
+            $('html').removeClass();
+
+            var colorSchemeMode = '_' + $('input[name=color-scheme-mode]:checked').val(),
+                imageMode = '_' + $('input[name=image-mode]:checked').val(),
+                fontMode = '_' + $('input[name=font-mode]:checked').val(),
+                fontSizeMode = '_' + $('.js-font-chooser-value').text(),
+                colorModeClasses = colorSchemeMode + ' ' + imageMode + ' ' + fontMode + ' ' + fontSizeMode;
+
+            $('html').addClass(colorModeClasses);
+        });
+    }
+
+    function _plusMinusFontSizeMode(){
+        var minFontSize = $('.js-font-chooser-minus').data('min-font-size')
+        var maxFontSize = $('.js-font-chooser-plus').data('max-font-size')
+
+        $('.js-font-chooser-minus').on('click', function(){
+            var $currentFont = $('.js-font-chooser-value').text().replace('pt','');;
+            if($currentFont <= maxFontSize && $currentFont != minFontSize ){
+                $currentFont--;
+            }
+            $('.js-font-chooser-value').text($currentFont + 'pt');
+        });
+        $('.js-font-chooser-plus').on('click', function(){
+            var $currentFont = $('.js-font-chooser-value').text().replace('pt','');;
+            if($currentFont >= minFontSize && $currentFont != maxFontSize ){
+                $currentFont++;
+            }
+            $('.js-font-chooser-value').text($currentFont + 'pt');
+        });
+    }
+
     function _formControlHacks() {
         var $parentEl = $('.form-controls-group__item');
         var $formControl = $('.form-control');
@@ -298,6 +344,10 @@ var commonActions = (function (document, $) {
         _uploadFile();
 
         _showPutPhoneCode();
+
+        _colorModePanel();
+
+        _plusMinusFontSizeMode();
 
     }
 

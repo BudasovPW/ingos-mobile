@@ -4,6 +4,7 @@ header.page-header
 			.header__logo
 				.brand-logo
 					img(src='assets/img/brand-logo.png' alt='ИНГОССТРАХ Инвестиции')
+					img(src='assets/img/logo_white.png' alt='ИНГОССТРАХ Инвестиции')._inverted
 		include ../../../partials/menu-bar
 
 	.header-menu
@@ -113,7 +114,99 @@ header.page-header
 						| Настройки
 
 		.header-menu__item
+			a(href='#').header-menu__link.js-show-color-mode-panel
+				| Версия для слабовидящих
+				.header-menu__toggle-icon._accessibility
+
+		.header-menu__item
 			a(href='#').header-menu__link
 				| Выход
 
 
+	.color-mode-panel.js-color-mode-panel
+		.header-menu__item
+			.header-menu__link._title.js-close-color-mode-panel
+				| Версия для слабовидящих
+				.header-menu__toggle-icon
+
+		.header-menu__item
+			.header-menu__link.js-toggle-next-el
+				| Цветовая тема:
+				.header-menu__toggle-icon
+			.header-menu__submenu
+				.color-mode-panel__content
+					.color-mode-panel__row
+						.color-mode-panel__col._full-width
+							.theme-chooser
+								input(type='radio' value='color-scheme-default' checked='checked' name='color-scheme-mode' id='color-scheme-default')
+								label(for='color-scheme-default')
+									| По умолчанию
+
+							.theme-chooser
+								input(type='radio' value='color-scheme-contrast' name='color-scheme-mode' id='color-scheme-contrast')
+								label(for='color-scheme-contrast')
+									| Контрастная
+
+							.theme-chooser
+								input(type='radio' value='color-scheme-inverted' name='color-scheme-mode' id='color-scheme-inverted')
+								label(for='color-scheme-inverted')
+									| Инверсия
+
+		.header-menu__item
+			.header-menu__link.js-toggle-next-el
+				| Изображения:
+				.header-menu__toggle-icon
+			.header-menu__submenu
+				.color-mode-panel__content
+					.color-mode-panel__row
+						.color-mode-panel__col
+							.image-chooser
+								input(type='radio' value='image-show' checked='checked' name='image-mode' id='image-show')
+								label(for='image-show')
+									| Показывать
+
+						.color-mode-panel__col
+							.image-chooser
+								input(type='radio' value='image-hide' name='image-mode' id='image-hide')
+								label(for='image-hide')
+									| Скрывать
+
+		.header-menu__item
+			.header-menu__link.js-toggle-next-el
+				| Шрифт:
+				.header-menu__toggle-icon
+			.header-menu__submenu
+				.color-mode-panel__content
+					.color-mode-panel__row
+						.color-mode-panel__col._full-width
+							.theme-chooser
+								input(type='radio' value='font-default' checked='checked' name='font-mode' id='font-default')
+								label(for='font-default')
+									| По умолчанию
+
+							.theme-chooser
+								input(type='radio' value='font-serif' name='font-mode' id='font-serif')
+								label(for='font-serif')
+									| С засечками
+
+		.header-menu__item
+			.header-menu__link.js-toggle-next-el
+				| Размер шрифта:
+				.header-menu__toggle-icon
+			.header-menu__submenu
+				.color-mode-panel__content
+					.color-mode-panel__row
+						.color-mode-panel__col._full-width
+							.font-chooser
+								.font-chooser__button._minus.js-font-chooser-minus(data-min-font-size='16')
+								.font-chooser__value.js-font-chooser-value
+									| 16pt
+								.font-chooser__button._plus.js-font-chooser-plus(data-max-font-size='18')
+
+
+		.header-menu__item
+			.header-menu__link
+				.color-mode-panel__content
+					.color-mode-panel__row._save
+						.color-mode-panel__col._full-width
+							input(type='button' value='Сохранить').btn-black.js-close-color-mode-panel.js-save-color-mode

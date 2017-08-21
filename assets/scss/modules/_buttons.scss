@@ -45,6 +45,20 @@
   }
 }
 
+%btn-black {
+  @include button();
+  color: white;
+  background: #000;
+  text-align: center;
+  &:hover {
+    background-color: #8c9196;
+  }
+  &:active {
+    outline: none;
+    background-color: #6a6a6a;
+  }
+}
+
 
 .btn-bordered {
   @include button();
@@ -93,6 +107,16 @@
 
 .btn-grey {
   @extend %btn-grey;
+
+  min-height: $input-height / 2 * 1.5;
+
+  @media(min-width: $breakpoint-md) {
+    min-height: $input-height * 1.25;
+  }
+}
+
+.btn-black {
+  @extend %btn-black;
 
   min-height: $input-height / 2 * 1.5;
 

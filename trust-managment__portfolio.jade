@@ -6,13 +6,13 @@ block content
 	.content-section
 		.tabs.not-shadow
 			.tabs__nav
-				a(href='#portfolio-1').tabs__nav-item.is-active
+				a(href='#portfolio-1').tabs__nav-item.no-wrap.is-active
 					| Общий портфель
 
-				a(href='#portfolio-2').tabs__nav-item
+				a(href='#portfolio-2').tabs__nav-item.no-wrap
 					| Портфель по договору №111
 
-		.tab-container#portfolio-1.is-visible
+		.tab-container._black-inverted#portfolio-1.is-visible
 			.chart-pie
 				.content-section--dark._no-paddings.chart-pie__section
 					.chart-pie__main-title._top-indent Инвестиционный портфель ДУ
@@ -220,7 +220,7 @@ block content
 							span.chosen-parameters-info__item-value
 								|  382 707,31
 
-		.tab-container#portfolio-2
+		.tab-container._black-inverted#portfolio-2
 			.content-section__inner
 				.section-title._medium-indent
 					| Инвестиционный портфель ДУ 2

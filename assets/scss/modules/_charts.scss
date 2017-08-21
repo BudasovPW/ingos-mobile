@@ -444,7 +444,7 @@
     position: absolute;
     top: 15px;
     left: 20px;
-    z-index: 100;
+    z-index: 5;
 
     @media(min-width: $breakpoint-md) {
       top: 35px;
